@@ -49,6 +49,7 @@ function setLocalPort() {
   fi
   echo "Setting local port to: $JEKYLL_PORT";
   sed -i 's/4000/'$JEKYLL_PORT'/g' ./_config.yml
+  sed -i 's/4000/'$JEKYLL_PORT'/g' ./_config.docker.yml
   sed -i 's/4000/'$JEKYLL_PORT'/g' ./docker-compose.yml
 }
 
