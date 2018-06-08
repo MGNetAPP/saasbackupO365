@@ -103,7 +103,11 @@
   width: 90vw;
 }
 
-p.downlevel {
+main {
+  min-height: 86vh;
+}
+
+#downlevel-header {
   color: blue;
   font-weight: bold;
   padding-left: 10px;

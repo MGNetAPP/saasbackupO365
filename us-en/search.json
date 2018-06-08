@@ -5,7 +5,7 @@
 "title": "Where to get help and find more information",
 "tags": "",
 "keywords": "where to find more information, help",
-"url": "concept_get_help_find_info.html",
+"url": "/saasbackupO365/us-en/concept_get_help_find_info.html",
 "summary": "NetApp SaaS Backup (formerly named NetApp Cloud Control) for Office 365 is a secure, web-based, software-as-a-service (SaaS) offering that backs up your Microsoft Office 365 data to Amazon S3 storage, Microsoft Azure Blob storage, or StorageGRID Webscale object storage."
 }
 ,
@@ -16,7 +16,7 @@
 "title": "NetApp SaaS Backup for Office 365 Overview",
 "tags": "",
 "keywords": "overview, concepts, features, use case",
-"url": "concept_overview.html",
+"url": "/saasbackupO365/us-en/concept_overview.html",
 "summary": "NetApp SaaS Backup (formerly named NetApp Cloud Control) for Office 365 is a secure, web-based, software-as-a-service (SaaS) offering that backs up your Microsoft Office 365 data to Amazon S3 storage, Microsoft Azure Blob storage, or StorageGRID Webscale object storage."
 }
 ,
@@ -27,7 +27,7 @@
 "title": "NetApp SaaS Backup (formerly named &quot;NetApp Cloud Control&quot;) for Office 365 documentation",
 "tags": "",
 "keywords": "",
-"url": "index.html",
+"url": "/saasbackupO365/us-en/index.html",
 "summary": "Welcome to the documentation portal for NetApp SaaS Backup for Office 365."
 }
 ,
@@ -38,7 +38,7 @@
 "title": "Pagination",
 "tags": "",
 "keywords": "",
-"url": "pagination/",
+"url": "/saasbackupO365/us-en/pagination/",
 "summary": ""
 }
 ,
@@ -49,7 +49,7 @@
 "title": "What&amp;#8217;s new in NetApp SaaS Backup (formerly named &quot;NetApp Cloud Control&quot;) for Office 365",
 "tags": "",
 "keywords": "what's new, features, new, release notes, bugs, limitations, known issues, enhancements",
-"url": "reference_new_saasbackupO365.html",
+"url": "/saasbackupO365/us-en/reference_new_saasbackupO365.html",
 "summary": "SaaS Backup for Office 365 regularly introduces a new release to bring you new features, enhancements, and bug fixes."
 }
 ,
@@ -62,7 +62,7 @@
 "title": "Getting started with Saas Backup for Office 365",
 "tags": "",
 "keywords": "netapp, saas backup, office 365, getting started",
-"url": "task_getting_started.html",
+"url": "/saasbackupO365/us-en/task_getting_started.html",
 "summary": "Getting started with SaaS Backup for Office 365 includes deciding what type of storage you want to use to back up your data, gathering pertinent information, creating a MS Office 365 service account, and assigning user permissions."
 }
 ,
@@ -73,7 +73,7 @@
 "title": "Managing backups with NetApp SaaS Backup for Office 365",
 "tags": "",
 "keywords": "netapp, saas backup, office 365, backup policies, changing backup policies, canceling job, immediate backup, SharePoint Online templates,",
-"url": "task_managing_backups.html",
+"url": "/saasbackupO365/us-en/task_managing_backups.html",
 "summary": "Getting started with SaaS Backup for Office 365 includes deciding what type of storage you want to use to back up your data, gathering pertinent information, creating a MS Office 365 service account, and assigning user permissions."
 }
 ,
@@ -84,7 +84,7 @@
 "title": "Creating and managing rules inside NetApp SaaS Backup for Office 365",
 "tags": "",
 "keywords": "netapp, saas backup, office 365, creating rules, managing rules, preselected backup tier",
-"url": "task_managing_creating_rules.html",
+"url": "/saasbackupO365/us-en/task_managing_creating_rules.html",
 "summary": "You can view information within SaaS Backup for Office 365 in various ways."
 }
 ,
@@ -95,7 +95,7 @@
 "title": "Managing restores with NetApp SaaS Backup for Office 365",
 "tags": "",
 "keywords": "netapp, saas restores, office 365, high-level restores, granular restores, Microsoft Exchange Online, Microsoft OneDrive for Business, Microsoft SharePoint Online, backup settings",
-"url": "task_managing_restores.html",
+"url": "/saasbackupO365/us-en/task_managing_restores.html",
 "summary": "You can use SaaS Backup for Office 365 to perform high-level and graular level restores for Microsoft Office 365."
 }
 ,
@@ -106,7 +106,7 @@
 "title": "Managing role-based account access",
 "tags": "",
 "keywords": "netapp, saas backup, office 365, role-based accounts, administrative roles, privileges, granting",
-"url": "task_managing_role_based_account_access.html",
+"url": "/saasbackupO365/us-en/task_managing_role_based_account_access.html",
 "summary": "You can assign administrative roles to user accounts to grant administrative privileges to selected users for one or more services."
 }
 ,
@@ -117,7 +117,7 @@
 "title": "Managing services",
 "tags": "",
 "keywords": "netapp, saas backup, office 365, activating service, deactivating, synchronizing, user accounts, sites, groups, adding, license, granting, permissions, enabling shared mailboxes, azure, active directory",
-"url": "task_managing_services.html",
+"url": "/saasbackupO365/us-en/task_managing_services.html",
 "summary": "Within NetApp SaaS Backup for Office 365 you can activate new services, deactivate existing services, synchronize your service account users, and grant permissions to service accounts."
 }
 ,
@@ -128,7 +128,7 @@
 "title": "Providing feedback",
 "tags": "",
 "keywords": "netapp, saas backup, office 365, backup policies, changing backup policies, canceling job, immediate backup, SharePoint Online templates,",
-"url": "task_providing_feedback.html",
+"url": "/saasbackupO365/us-en/task_providing_feedback.html",
 "summary": "Provide feedback to help us serve you better."
 }
 ,
@@ -139,7 +139,7 @@
 "title": "Upgrading from a trial subscription",
 "tags": "",
 "keywords": "netapp, saas backup, office 365, activating service, deactivating, synchronizing, user accounts, sites, groups, adding, license, granting, permissions, enabling shared mailboxes, azure, active directory",
-"url": "task_upgrading_from_trial.html",
+"url": "/saasbackupO365/us-en/task_upgrading_from_trial.html",
 "summary": "When you upgrade from a trial subscription to a licensed subscription, your trial data is only preserved if you do not change your backup storage destination."
 }
 ,
@@ -150,7 +150,7 @@
 "title": "Viewing data with NetApp SaaS Backup for Office 365",
 "tags": "",
 "keywords": "netapp, saas backup, office 365, viewing, filtering, data, information, user defined filters, creating filters, search, viewing, job history, activity log, downloading log",
-"url": "task_viewing_data.html",
+"url": "/saasbackupO365/us-en/task_viewing_data.html",
 "summary": "You can view information within SaaS Backup for Office 365 in various ways."
 }
 ,
@@ -161,7 +161,7 @@
 "title": "",
 "tags": "",
 "keywords": "",
-"url": "assets/css/style.css",
+"url": "/saasbackupO365/us-en/assets/css/style.css",
 "summary": ""
 }
 ,
@@ -172,7 +172,7 @@
 "title": "",
 "tags": "",
 "keywords": "",
-"url": "feed.xml",
+"url": "/saasbackupO365/us-en/feed.xml",
 "summary": ""
 }
 ,
@@ -183,7 +183,7 @@
 "title": "",
 "tags": "",
 "keywords": "",
-"url": "sitemap.xml",
+"url": "/saasbackupO365/us-en/sitemap.xml",
 "summary": ""
 }
 ,
@@ -194,7 +194,7 @@
 "title": "",
 "tags": "",
 "keywords": "",
-"url": "robots.txt",
+"url": "/saasbackupO365/us-en/robots.txt",
 "summary": ""
 }
 
