@@ -3,7 +3,7 @@
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
   <head>
-  <title>What&#8217;s new in NetApp SaaS Backup (formerly "NetApp Cloud Control") for Office 365 | NetApp Cloud Docs</title>
+  <title>What&#8217;s new in NetApp SaaS Backup (formerly named "NetApp Cloud Control") for Office 365 | NetApp Cloud Docs</title>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -279,7 +279,7 @@
   
 
   
-    <li><a href="task_getting_started_free_trial.html">Getting Started</a></li>
+    <li><a href="task_getting_started.html">Getting Started</a></li>
   
 
   
@@ -333,7 +333,7 @@
                   
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">What&#8217;s new in NetApp SaaS Backup (formerly "NetApp Cloud Control") for Office 365
+  <h1 class="n-doc__component-detail-heading">What&#8217;s new in NetApp SaaS Backup (formerly named "NetApp Cloud Control") for Office 365
     <span>
       
         <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/reference_new_saasbackupO365.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
@@ -344,11 +344,12 @@
 
 <div id="preamble">
 <div class="sectionbody">
+<div class="paragraph lead">
+<p>The following new features and updates have been added to this release of NetApp SaaS Backup for Office 365</p>
+</div>
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#new-features-and-updates">New features and updates</a>
-<ul class="sectlevel2">
 <li><a href="#may-2018">May 2018</a></li>
 <li><a href="#april-2018">April 2018</a></li>
 <li><a href="#march-2018">March 2018</a></li>
@@ -357,20 +358,12 @@
 <li><a href="#november-2017">November 2017</a></li>
 <li><a href="#october-2017">October 2017</a></li>
 </ul>
-</li>
-<li><a href="#known-problems-and-limitations">Known problems and limitations</a></li>
-</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="new-features-and-updates">New features and updates</h2>
+<h2 id="may-2018">May 2018</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>The following new features and updates have been added to this release of NetApp SaaS Backup for Office 365</p>
-</div>
-<div class="sect2">
-<h3 id="may-2018">May 2018</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -386,24 +379,22 @@
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="april-2018">April 2018</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>SaaS Backup for Office 365 now supports shared mailboxes for Microsoft Office Exchange Online.<br>
-Shared mailboxes are discovered through the use of an automatically created service account.  If you have not activated service for Microsoft Office Exchange Online prior to this update, the automatic service account for shared mailboxes is created by SaaS Backup when you activate Microsoft Office Exchange Online. If your service for Microsoft Office Exchange Online is already activated, you must grant SaaS Backup permission to create the automatic service account, so that your shared mailboxes can be discovered and backed up.  <a href="task_managing_services.html#granting-permissions-to-enable-shared-mailboxes">Granting permissions to enable shared mailboxes</a></p>
-<div class="literalblock">
-<div class="content">
-<pre>After your automatic service account is created, your shared mailboxes will be automatically discovered during the next scheduled synchronization of your user account.  If you want your shared mailboxes discovered immediately, you can   &lt;&lt;task_managing_services.adoc#synchronizing-user-accounts-sites-and-groups,synchronizing your user accounts immediately&gt;&gt;.</pre>
+</div>
+<div class="sect1">
+<h2 id="april-2018">April 2018</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Control now supports shared mailboxes for Microsoft Office Exchange Online.<br>
+Shared mailboxes are discovered through the use of an automatically created service account.  If you have not activated service for Microsoft Office Exchange Online prior to this update, the automatic service account for shared mailboxes is created by Cloud Control when you activate Microsoft Office Exchange Online. If your service for Microsoft Office Exchange Online is already activated, you must grant Cloud Control permission to create the automatic service account, so that your shared mailboxes can be discovered and backed up.  <a href="task_managing_services.html#granting-permissions-to-enable-shared-mailboxes">Granting permissions to enable shared mailboxes</a></p>
+</div>
+<div class="paragraph">
+<p>After your automatic service account is created, your shared mailboxes will be automatically discovered during the next scheduled synchronization of your user account.  If you want your shared mailboxes discovered immediately, you can   <a href="task_managing_services.html#synchronizing-user-accounts-sites-and-groups">synchronizing your user accounts immediately</a>.</p>
 </div>
 </div>
-</li>
-</ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="march-2018">March 2018</h3>
+<div class="sect1">
+<h2 id="march-2018">March 2018</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The location in which you enter an activation code for a free trial was moved to the Add a Service Provider wizard:</p>
 </div>
@@ -411,8 +402,10 @@ Shared mailboxes are discovered through the use of an automatically created serv
 <p><span class="image"><img src="./media/subscription_types_free_trial.jpg" alt="Screenshot that shows where you enter an activation code in the Subscription page when Free Trial is selected."></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="february-2018">February 2018</h3>
+</div>
+<div class="sect1">
+<h2 id="february-2018">February 2018</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
@@ -420,11 +413,11 @@ Shared mailboxes are discovered through the use of an automatically created serv
 <a href="task_viewing_data.html#creating-a-user-defined-filer">Creating a user defined filter</a></p>
 </li>
 <li>
-<p>You can now download the SaaS Backup for Office 365 user account activity log to a .csv file.<br>
+<p>You can now download the Cloud Control user account activity log to a .csv file.<br>
 <a href="task_viewing_data.html#downloading-the-activity-log">Downloading the activity log</a></p>
 </li>
 <li>
-<p>Synchronization of user accounts, sites, and groups between SaaS Backup for Office 365 and your service is now enabled by default.</p>
+<p>Synchronization of user accounts, sites, and groups between Cloud Control and your service is now enabled by default.</p>
 </li>
 <li>
 <p>Inclusion of backup version history is now enabled by default. The default number of versions is 20.<br>
@@ -433,15 +426,17 @@ Shared mailboxes are discovered through the use of an automatically created serv
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="january-2018">January 2018</h3>
+</div>
+<div class="sect1">
+<h2 id="january-2018">January 2018</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>The activity log now displays the name of the user ID associated with each action performed inside SaaS Backup for Office 365.</p>
+<p>The activity log now displays the name of the user ID associated with each action performed inside Cloud Control.</p>
 </li>
 <li>
-<p>You can now manually synchronize your user permissions with Azure Active Directory from within SaaS Backup for Office 365.</p>
+<p>You can now manually synchronize your user permissions with Azure Active Directory from within Cloud Control.</p>
 </li>
 <li>
 <p>Microsoft Exchange Online now supports export to PST for restore at the folder level.</p>
@@ -449,15 +444,17 @@ Shared mailboxes are discovered through the use of an automatically created serv
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="november-2017">November 2017</h3>
+</div>
+<div class="sect1">
+<h2 id="november-2017">November 2017</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>SaaS Backup for Office 365 now supports Azure Blob as an option for SaaS Backup provided storage.</p>
+<p>Cloud Control now supports Azure Blob as an option for Cloud Control provided storage.</p>
 </li>
 <li>
-<p>SaaS Backup for Office 365 now supports Microsoft Office 365 Groups for backup and restore.<br>
+<p>Cloud Control now supports Microsoft Office 365 Groups for backup and restore.<br>
 Microsoft Exchange Online or Microsoft SharePoint Online must be activated before you can activate Microsoft Office 365 Groups. Microsoft Office 365 Groups can only be protected by the tier 3 backup policy.</p>
 </li>
 <li>
@@ -466,28 +463,16 @@ Microsoft Exchange Online or Microsoft SharePoint Online must be activated befor
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="october-2017">October 2017</h3>
+</div>
+<div class="sect1">
+<h2 id="october-2017">October 2017</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
 <p>Rules can be created that allow you to automatically move users to a preselected backup tier based on predefined criteria.<br>
 You can create rules for Microsoft Exchange Online and Microsoft OneDrive for Business.  You cannot create rules for Microsoft SharePoint Online.<br>
 <a href="task_managing_creating_rules.html#creating-rules">Creating Rules</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="known-problems-and-limitations">Known problems and limitations</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Partially failed job status for restore of site collection group<br>
-If an entire site collection group is deleted, the restore of private groups in the collection fails, resulting in a restore job status of “partially failed.”  If this happens, the site is not accessible from the GUI.</p>
 </li>
 </ul>
 </div>
