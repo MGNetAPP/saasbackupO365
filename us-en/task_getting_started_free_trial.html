@@ -3,7 +3,7 @@
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
   <head>
-  <title>Search results | NetApp Cloud Docs</title>
+  <title>Getting started with NetApp SaaS Backup (formerly "NetApp Cloud Control") for Office 365 | NetApp Cloud Docs</title>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +15,8 @@
 
   
 
-  <meta name="description" content="">
-  <meta name="keywords" content=" ">
+  <meta name="description" content="Getting started with SaaS Backup for Office 365 includes deciding what type of storage you want to use to back up your data, gathering pertinent information,...">
+  <meta name="keywords" content=" netapp, saas backup, office 365, getting started">
 
   <!-- Icons -->
   <link rel="icon" href="/saasbackupO365/us-en/images/favicon.ico" type="image/x-icon">
@@ -49,6 +49,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   <!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/saasbackupO365/us-en/js/na-search.js'></script>
   
 
   <script src='/saasbackupO365/us-en/js/clouddocs.js'></script>
@@ -204,6 +206,10 @@
 
       <!-- NetApp Search Bar -->
       
+      <div id="search-demo-container" class="n-property-bar__search">
+        <div id="react-search"></div>
+      </div>
+      
 
       <div id="ie-i18n-menu" class="n-property-bar__utils">
         <ul class="n-property-navigation-bar__utils-list">
@@ -273,7 +279,7 @@
   
 
   
-    <li><a href="task_getting_started_free_trial.html">Getting Started</a></li>
+    <li class="active"><a href="task_getting_started_free_trial.html">Getting Started</a></li>
   
 
   
@@ -327,15 +333,336 @@
                   
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results
+  <h1 class="n-doc__component-detail-heading">Getting started with NetApp SaaS Backup (formerly "NetApp Cloud Control") for Office 365
     <span>
+      
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_getting_started_free_trial.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
       
     </span>
   </h1>
 </div>
 
-<div id="react-search"></div>
-
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>To get started with a free trial of SaaS Backup for Office 365, you must do the following:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If you do not have a Microsoft Office 365 test account, you must sign up for a Microsoft Office 365 free trial account.</p>
+</li>
+<li>
+<p>Sign up for SaaS Backup for Office 365 using your Microsoft Office 365 account or your NetApp SSO account.</p>
+</li>
+</ol>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#signing-up-for-a-microsoft-office-365-free-trial-account">Signing up for a Microsoft Office 365 free trial account</a></li>
+<li><a href="#signing-up-for-a-free-trial-of-saas-backup-for-office-365">Signing up for a free trial of SaaS Backup for Office 365</a></li>
+<li><a href="#signing-up-for-saas-backup-for-office-365">Signing up for SaaS Backup for Office 365</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="signing-up-for-a-microsoft-office-365-free-trial-account">Signing up for a Microsoft Office 365 free trial account</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With a free 30-day trial of Microsoft Office 365 for Business, you can discover the latest features of Microsoft Office 365 and SaaS Backup for Office 365.</p>
+</div>
+<div class="paragraph">
+<p>Steps</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to this <a href="http://o365setup.com/#Trial+Center">site</a>  to start your trial subscription.</p>
+</li>
+<li>
+<p>Under <strong>Enterprise Plan Trials</strong>, click <strong>Office 365 Enterprise E3-25 users</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Follow the on-screen instructions to complete the sign-up process.</p>
+</li>
+<li>
+<p>Download and install Microsoft Office 365.<br>
+You can add up to 25 users to your free trial.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="signing-up-for-a-free-trial-of-saas-backup-for-office-365">Signing up for a free trial of SaaS Backup for Office 365</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Steps</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <a href="http://www.netapp.com/us/products/cloud-storage/cloud-control-backup-saas.aspx">here</a> to go to the SaaS Backup for Office 365 free-trial URL.</p>
+</li>
+<li>
+<p>Click <strong>30-Day Free Trial</strong>.</p>
+</li>
+<li>
+<p>Enter the requested registration information.<br>
+After you submit the form, you will receive an email containing your free-trial activation code.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="signing-up-for-saas-backup-for-office-365">Signing up for SaaS Backup for Office 365</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can sign up for SaaS Backup for Office 365 with your Microsoft Office 365 service account or with your NetApp SSO account.</p>
+</div>
+<div class="sect3">
+<h4 id="signing-up-with-a-microsoft-office-365-service-account">Signing up with a Microsoft Office 365 service account</h4>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Enter the SaaS Backup for Office 365 URL into your web browser:<br>
+<a href="https://saasbackup.netapp.com" class="bare">https://saasbackup.netapp.com</a></p>
+</li>
+<li>
+<p>Select your region.<br>
+Your tenancy is created in the selected region.  Your data will be stored in that datacenter location and cannot be changed later.</p>
+</li>
+<li>
+<p>Click <strong>Sign up</strong> at the bottom of the landing page.</p>
+</li>
+<li>
+<p>Accept the End-User License Agreement.</p>
+</li>
+<li>
+<p>Click <strong>Sign Up with Office 365</strong>.<br>
+<span class="image"><img src="./media/sign_up_0365.jpg" alt="Screenshot of button clicked to sign for SaaS Backup for Office 365 using an Office 365 service account"></span></p>
+</li>
+<li>
+<p>Enter the email address and password for your Microsoft Office 365 test or trial account, and then click <strong>Sign in</strong>.<br>
+A list of the permissions requested by SaaS Backup for Office 365 is displayed.</p>
+</li>
+<li>
+<p>Click <strong>Accept</strong>.</p>
+</li>
+<li>
+<p>Enter the requested user information.</p>
+</li>
+<li>
+<p>Click <strong>Sign up</strong>.<br>
+Your user name and a list of permissions given to SaaS Backup for Office 365 is displayed.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.<br>
+A list of the available Microsoft Office 365 services is displayed.</p>
+</li>
+<li>
+<p>Select the Microsoft Office 365 services that you want to activate.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Free Trial</strong> for the subscription type.</p>
+</li>
+<li>
+<p>Enter the activation code provided by your channel partner or sales representative, or obtained from a marketing representative through email.</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="15">
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select your backup storage option.<br>
+You can use storage provided by SaaS Backup or the Bring Your Own Storage (BYOS) option.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>If you are using storage provided by SaaS Backup:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Click <strong>SaaS Backup Provided Storage</strong>.</p>
+</li>
+<li>
+<p>Select the <strong>Amazon S3</strong> or <strong>Azure Blob</strong> storage option.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Review your configuration, and then click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If you are using the BYOS option:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Click <strong>Bring Your Own Storage (BYOS)</strong>.</p>
+</li>
+<li>
+<p>Click your BYOS option.</p>
+</li>
+<li>
+<p>Enter the information you previously gathered for your BYOS option.</p>
+</li>
+<li>
+<p>Click <strong>Test Connection</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Review your configuration, and then click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="signing-up-with-a-netapp-sso-account">Signing up with a NetApp SSO account</h4>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Enter the SaaS Backup for Office 365 URL into your web browser:<br>
+<a href="https://saasbackup.netapp.com" class="bare">https://saasbackup.netapp.com</a></p>
+</li>
+<li>
+<p>Click Sign up at the bottom of the landing page.</p>
+</li>
+<li>
+<p>Accept the End-User License Agreement.</p>
+</li>
+<li>
+<p>Click <strong>Sign Up with NetApp SSO</strong>.<br>
+<span class="image"><img src="./media/sign_up_sso.jpg" alt="Screenshot of button clicked to sign for SaaS Backup for Office 365 using a NetApp SSO account"></span></p>
+</li>
+<li>
+<p>Enter your NetApp SSO and password, and then click <strong>LOGIN</strong>.</p>
+</li>
+<li>
+<p>Enter the requested user information, and then click <strong>Sign Up</strong>.<br>
+The activation code you received in email is required.</p>
+</li>
+<li>
+<p>Click the <strong>Services</strong> icon.<br>
+<span class="image"><img src="./media/bluecircle_icon.jpg" alt="Screenshot of SaaS Backup for Office 365 services icon"></span></p>
+</li>
+<li>
+<p>Click the Microsoft Office 365 icon to select the SaaS service.<br>
+<span class="image"><img src="./media/O365_icon.jpg" alt="MS Office 365 icon"></span></p>
+</li>
+<li>
+<p>Click <strong>Add Microsoft Office 365 Account</strong>.</p>
+</li>
+<li>
+<p>Enter the email address and password for your Microsoft Office 365 test or trial account, and then click <strong>Sign in</strong>.<br>
+A list of the permissions requested by SaaS Backup for Office 365 is displayed.</p>
+</li>
+<li>
+<p>Click <strong>Accept</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.<br>
+A list of the available Microsoft Office 365 services is displayed.</p>
+</li>
+<li>
+<p>Select the Microsoft Office 365 services that you want to activate.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Free Trial</strong> for the subscription type.<br>
+Enter the activation code provided by your channel partner or sales representative, or obtained from a marketing representative through email.</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="16">
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select your backup storage option.<br>
+You can use storage provided by SaaS Backup or the Bring Your Own Storage (BYOS) option.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>If you are using storage provided by SaaS Backup:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Click <strong>SaaS Backup Provided Storage</strong>.</p>
+</li>
+<li>
+<p>Select the <strong>Amazon S3</strong> or <strong>Azure Blob</strong> storage option.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Review your configuration, and then click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If you are using the BYOS option:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Click <strong>Bring Your Own Storage (BYOS)</strong>.</p>
+</li>
+<li>
+<p>Click your BYOS option.</p>
+</li>
+<li>
+<p>Enter the information you previously gathered for your BYOS option.</p>
+</li>
+<li>
+<p>Click <strong>Test Connection</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Review your configuration, and then click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
 
                 </article>
                 <!-- Page Container -->
@@ -421,18 +748,5 @@
     <script type="text/javascript" src='/saasbackupO365/us-en/js/bundle.js'></script>
   </body>
 
-  
-  <script>
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(params.get('q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-  </script>
   
 </html>
