@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
@@ -256,12 +255,12 @@
       <!-- Content -->
       <main role="main" id="n-main-content" class="n-main-content">
         <div class="n-container">
-          <div class="n-row">
-            <div class="n-doc n-doc__component-list">
-              <!-- Sidebar Column -->
-              
-              <div class="col-md-3" >
-                  
+  <div class="n-row">
+    <div class="n-doc n-doc__component-list">
+      <!-- Sidebar Column -->
+      
+      <div class="col-md-3" >
+          
 
 <ul id="mysidebar" class="nav">
   
@@ -291,7 +290,7 @@
   
 
   
-    <li class="active"><a href="task_viewing_data.html">Viewing Data for SaaS Backup for Office 365</a></li>
+    <li class="active"><a href="task_viewing_data.html">Viewing data for SaaS Backup for Office 365</a></li>
   
 
   
@@ -324,13 +323,13 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
-              </div>
-              
+      </div>
+      
 
-              <div class="n-doc__component-detail-content n-doc__component-detail-content--show-code">
-                <!-- Begin of page container -->
-                <article class="page-content">
-                  
+      <div class="n-doc__component-detail-content n-doc__component-detail-content--show-code">
+        <!-- Begin of page container -->
+        <article class="page-content">
+          
 
 <div class="n-doc__component-detail-heading-wrap">
   <h1 class="n-doc__component-detail-heading">Viewing data with NetApp SaaS Backup for Office 365
@@ -373,28 +372,26 @@
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the Dashboard, select the service that you want to view.</p>
-</li>
-<li>
-<p>Click <strong>view</strong> next to the number of protected or unprotected mailboxes, MySites, or sites.<br>
-The currently applied filters are listed under the <strong>Filter</strong> icon.</p>
+<p>From the Dashboard, click the number above <strong>PROTECTED</strong> or <strong>UNPROTECTED</strong> in the box of the service for which you want to create a filter.<br>
+The number above PROTECTED indicates the number of mailboxes, MySites, or groups that are currently protected by a backup policy.  The number above UNPROTECTED indicates the number of mailboxes, MySites, or groups that are not protected by a backup policy.<br>
+<span class="image"><img src="./media/number_protected_unprotected.jpg" alt="number protected unprotected"></span></p>
 </li>
 <li>
 <p>Click <strong>Filter</strong>.<br>
 <span class="image"><img src="./media/filter.jpg" alt="Screenshot of filter dropdown menu button"></span></p>
 </li>
 <li>
-<p>In the first drop-down menu, select the filter of your choice.<br>
+<p>Click the <strong>Select</strong> drop-down menu, and select the filter of your choice.<br>
 For Microsoft SharePoint Online, you can filter by Template ID.  You can enter the Template ID to search for it, or select it from the dropdown menu.<br>
-For all other services, you can filter by group, country, office, department, or title.  The second drop-down menu is populated with selections based on the filter you select. For example, if you select Group as your first filter, you can select one of the backup policy group tiers as your secondary filter.<br>
-<span class="image"><img src="./media/select_filter.jpg" alt="Screenshot of first set of filter options"></span></p>
+For all other services, you can filter by group, country, office, department, title, domain or country.  The second drop-down menu is populated with selections based on the filter you select. For example, if you select Group as your first filter, you can select one of the backup policy group tiers as your secondary filter.<br>
+<span class="image"><img src="./media/select_filter.jpg" alt="Screenshot of first set of filter options"></span><br>
+A search field appears.</p>
 </li>
 <li>
-<p>In the second drop down menu, select the secondary filter of your choice.<br>
-<span class="image"><img src="./media/select_filter2.jpg" alt="Screenshot of second set of filter options"></span></p>
+<p>Enter your search criteria.</p>
 </li>
 <li>
-<p>If you want to add more filters, click <strong>Add Filter</strong>.</p>
+<p>If you want to add more filters, click <strong>Add Filter</strong> and make your selection.</p>
 </li>
 <li>
 <p>Click <strong>Apply Filter</strong>.<br>
@@ -414,20 +411,36 @@ Filter results are displayed.</p>
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the Dashboard, click <strong>Microsoft Exchange Online</strong>.</p>
+<p>From the Dashboard, click the number above <strong>PROTECTED</strong> or <strong>UNPROTECTED</strong> in Exchange box.<br>
+<span class="image"><img src="./media/number_protected_unprotected.jpg" alt="number protected unprotected"></span></p>
 </li>
 <li>
-<p>Click <strong>view</strong> next to the number of protected mailboxes.</p>
+<p>If you are searching <strong>PROTECTED</strong> mailboxes, click the email address for which you need to perform the search.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select the category (Mail, Tasks, Contacts, Calendar, or Other) that you need to search.</p>
 </li>
 <li>
-<p>Double-click the email address for which you need to perform the search.</p>
-</li>
-<li>
-<p>Click the category (Mail, Tasks, Contacts, Calendar, or Other) that you need to search.</p>
+<p>Select <strong>file</strong> or <strong>folder</strong> from dropdown menu next to the search field to indicate if you are searching for a file or folder.</p>
 </li>
 <li>
 <p>Type a search string in the search field.<br>
 The search is automatically performed and results are displayed after the search string is entered.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If you are searching <strong>UNPROTECTED</strong> mailboxes, select the mailbox you want to search.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Type a search string in the search field.<br>
+The search is automatically performed and results are displayed after the search string is entered.</p>
+</li>
+</ol>
+</div>
 </li>
 </ol>
 </div>
@@ -443,10 +456,7 @@ The search is automatically performed and results are displayed after the search
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the Dashboard, click <strong>Microsoft OneDrive for Business</strong>.</p>
-</li>
-<li>
-<p>Click <strong>view</strong> next to the number of protected MySites.</p>
+<p>From the Dashboard, click the number above <strong>PROTECTED</strong> in OneDrive box.</p>
 </li>
 <li>
 <p>Click the MySite in which you need to perform the search.</p>
@@ -472,10 +482,7 @@ The search is automatically performed and results are displayed after the search
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the Dashboard, click <strong>Microsoft SharePoint Online</strong>.</p>
-</li>
-<li>
-<p>Click <strong>view</strong> next to the number of protected sites.</p>
+<p>From the Dashboard, click the number above <strong>PROTECTED</strong> in SharePoint box.</p>
 </li>
 <li>
 <p>Click the site in which you need to perform the search.</p>
@@ -502,21 +509,18 @@ The search is automatically performed and results are displayed after the search
 <ol class="arabic">
 <li>
 <p>Click <strong>Reporting</strong> on the left navigation pane.<br>
-<span class="image"><img src="./media/reporting.jpg" alt="Screenshot of reporting button"></span></p>
-</li>
-<li>
-<p>Click the <strong>Job History</strong> tab.<br>
-A list of all SaaS Backup jobs is displayed.</p>
+<span class="image"><img src="./media/reporting.jpg" alt="Screenshot of reporting button"></span><br>
+A list of all SaaS Backup jobs is displayed under the <strong>Job History</strong> tab.</p>
 </li>
 <li>
 <p>To filter the results, click <strong>Filter</strong>.</p>
 </li>
 <li>
-<p>In the first drop-down menu, select a filter.<br>
-You can filter by policy, service, or type.  If you select policy, the second drop-down menu is populated with backup tiers.  If you select service, the second drop-down menu is populated with SaaS Backup for Office 365 services.  If you select type, the second drop-down menu is populated with SaaS Backup for Office 365 job types, such as restore and backup.</p>
+<p>Click the <strong>Select</strong> drop-down menu, and select a filter.<br>
+You can filter by policy, service, or type. After you select a filter, a search field appears.</p>
 </li>
 <li>
-<p>In the second drop-down menu, select the specific policy, service, or type you for which you want to see related activity.</p>
+<p>Enter your search criteria.</p>
 </li>
 <li>
 <p>If you want to add more filters, click <strong>Add Filter</strong>.</p>
@@ -554,11 +558,11 @@ A list of all SaaS Backup for Office 365 activity is displayed.</p>
 <p>To filter the results, click <strong>Filter</strong>.</p>
 </li>
 <li>
-<p>In the first drop-down menu, select a filter.<br>
-You can filter by service or event.  If you select service, the second drop-down menu is populated with SaaS Backup for Office 365 services.  If you select event, the second drop-down menu is populated with SaaS Backup for Office 365 events, such as restore and backup.</p>
+<p>Click the <strong>Select</strong> drop-down menu, and select a filter.<br>
+You can filter by service or event.  After you select a filter, a search field appears.</p>
 </li>
 <li>
-<p>In the second drop-down menu, select the specific service or event you for which you want to see related activity.</p>
+<p>Enter your search criteria.</p>
 </li>
 <li>
 <p>If you want to add more filters, click <strong>Add Filter</strong>.</p>
@@ -591,6 +595,7 @@ A list of all SaaS Backup for Office 365 activity is displayed.</p>
 </li>
 <li>
 <p>Click download.<br>
+<span class="image"><img src="./media/download_activitylog.jpg" alt="Screenshoot of download button right corner of the Activity Log"></span><br>
 The activity log is downloaded as a .csv file.</p>
 </li>
 </ol>
@@ -619,7 +624,6 @@ The activity log is downloaded as a .csv file.</p>
 </li>
 <li>
 <p>Click <strong>Download</strong> in the top right.<br>
-<span class="image"><img src="./media/download.jpg" alt="Screenshot of download screen"></span><br>
 The log is downloaded</p>
 </li>
 </ol>
@@ -627,12 +631,13 @@ The log is downloaded</p>
 </div>
 </div>
 
-                </article>
-                <!-- Page Container -->
-              </div>
-            </div>
-          </div>
-        </div>
+        </article>
+        <!-- Page Container -->
+      </div>
+    </div>
+  </div>
+</div>
+
       </main>
 
       <!-- Footer -->
@@ -708,7 +713,9 @@ The log is downloaded</p>
     <script type="text/javascript" src="/saasbackupO365/js/responsive.js"></script>
 
     <!-- Elasticsearch JS -->
+    
     <script type="text/javascript" src='/saasbackupO365/js/bundle.js'></script>
+    
   </body>
 
   

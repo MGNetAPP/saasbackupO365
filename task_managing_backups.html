@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
@@ -256,12 +255,12 @@
       <!-- Content -->
       <main role="main" id="n-main-content" class="n-main-content">
         <div class="n-container">
-          <div class="n-row">
-            <div class="n-doc n-doc__component-list">
-              <!-- Sidebar Column -->
-              
-              <div class="col-md-3" >
-                  
+  <div class="n-row">
+    <div class="n-doc n-doc__component-list">
+      <!-- Sidebar Column -->
+      
+      <div class="col-md-3" >
+          
 
 <ul id="mysidebar" class="nav">
   
@@ -291,7 +290,7 @@
   
 
   
-    <li><a href="task_viewing_data.html">Viewing Data for SaaS Backup for Office 365</a></li>
+    <li><a href="task_viewing_data.html">Viewing data for SaaS Backup for Office 365</a></li>
   
 
   
@@ -324,13 +323,13 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
-              </div>
-              
+      </div>
+      
 
-              <div class="n-doc__component-detail-content n-doc__component-detail-content--show-code">
-                <!-- Begin of page container -->
-                <article class="page-content">
-                  
+      <div class="n-doc__component-detail-content n-doc__component-detail-content--show-code">
+        <!-- Begin of page container -->
+        <article class="page-content">
+          
 
 <div class="n-doc__component-detail-heading-wrap">
   <h1 class="n-doc__component-detail-heading">Managing backups with NetApp SaaS Backup for Office 365
@@ -430,24 +429,24 @@
 <tr>
 <th class="tableblock halign-left valign-top">Backup policy</th>
 <th class="tableblock halign-left valign-top">Backup frequency</th>
-<th class="tableblock halign-left valign-top">Data retention period</th>
+<th class="tableblock halign-left valign-top">Default data retention period</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tier 1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Once every 12 hours</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">365 days</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 years</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tier 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Once every 18 hours</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">365 days</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 years</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tier 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Once every 24 hours</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">365 days</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 years</p></td>
 </tr>
 </tbody>
 </table>
@@ -464,30 +463,27 @@
 <tr>
 <th class="tableblock halign-left valign-top">Backup policy</th>
 <th class="tableblock halign-left valign-top">Backup frequency</th>
-<th class="tableblock halign-left valign-top">Data retention period</th>
+<th class="tableblock halign-left valign-top">Default data retention period</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tier 1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Once every 12 hours</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unlimited</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Forever</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tier 2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Once every 18 hours</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unlimited</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Forever</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tier 3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Once every 24 hours</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unlimited</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Forever</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Backup policies with an <strong>Active</strong> status are policies to which items have been assigned for backup.  Backup policies with an <strong>Inactive</strong> status do not have items assigned for backup.</p>
-</div>
 </div>
 </div>
 </div>
@@ -501,10 +497,9 @@
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the Dashboard, select the service that you want to change.</p>
-</li>
-<li>
-<p>Click <strong>view</strong> next to the number of protected mailboxes, MySites, sites, or groups.</p>
+<p>From the Dashboard, click the number above <strong>PROTECTED</strong> or <strong>UNPROTECTED</strong> in the box of the service you want to change.<br>
+The number above PROTECTED indicates the number of mailboxes, MySites, or groups that are currently protected by a backup policy.  The number above UNPROTECTED indicates the number of mailboxes, MySites, or groups that are not protected by a backup policy.<br>
+<span class="image"><img src="./media/number_protected_unprotected.jpg" alt="number protected unprotected"></span></p>
 </li>
 <li>
 <p>Select the items for which you want to change the backup policy.</p>
@@ -609,12 +604,11 @@ Microsoft Office 365 Groups</p></td>
 <span class="image"><img src="./media/services.jpg" alt="services"></span></p>
 </li>
 <li>
-<p>Click the Microsoft Office 365 settings icon.<br>
-<span class="image"><img src="./media/configure_icon.jpg" alt="configure icon"></span></p>
+<p>Click Microsoft Office 365.<br>
+<span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 settings"></span></p>
 </li>
 <li>
-<p>Click <strong>Settings</strong> next to the service that you need to update.<br>
-<span class="image"><img src="./media/settings.jpg" alt="settings"></span><br>
+<p>Under <strong>Manage Services</strong>, click the backup settings icon <span class="image"><img src="./media/configure_icon.jpg" alt="configure icon"></span> next to the service that you need to update.<br>
 A list of your backup settings available for the selected service is displayed.</p>
 </li>
 <li>
@@ -637,10 +631,7 @@ A list of your backup settings available for the selected service is displayed.<
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the Dashboard, select the service for which you want to perform an immediate backup.</p>
-</li>
-<li>
-<p>Click <strong>view</strong> next to the number of protected mailboxes, MySites, sites, or groups.</p>
+<p>From the Dashboard, click the number above <strong>PROTECTED</strong> in the box of the service for which you want to perform an immediate backup.</p>
 </li>
 <li>
 <p>Select the items that you want to back up.</p>
@@ -648,7 +639,7 @@ A list of your backup settings available for the selected service is displayed.<
 <li>
 <p>Click <strong>Backup Now</strong>.<br>
 <span class="image"><img src="./media/backup_now.jpg" alt="backup now"></span><br>
-A message is displayed indicating that the selected services will be placed in the job queue for immediate backup.</p>
+A message is displayed indicating that the selected services will be placed in the job queue for backup.</p>
 </li>
 <li>
 <p>Click <strong>Confirm</strong>.<br>
@@ -665,7 +656,7 @@ A message is displayed indicating that the backup job was created.</p>
 <h2 id="canceling-a-job">Canceling a job</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you have initiated an immediate backup or an immediate restore but need to cancel it before it is completed, you can do so.</p>
+<p>If you have initiated an immediate backup or an immediate restore, but need to cancel it before it is completed, you can do so.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
@@ -673,9 +664,6 @@ A message is displayed indicating that the backup job was created.</p>
 <li>
 <p>Click <strong>Jobs</strong> from the left navigation pane.<br>
 <span class="image"><img src="./media/jobs_button.jpg" alt="jobs button"></span></p>
-</li>
-<li>
-<p>Select the <strong>Most Recent</strong> tab.</p>
 </li>
 <li>
 <p>Under <strong>Recent Running Jobs</strong>, click the job that you want to cancel.</p>
@@ -689,12 +677,13 @@ The progress of the cancelled job is displayed under <strong>Recent Completed Jo
 </div>
 </div>
 
-                </article>
-                <!-- Page Container -->
-              </div>
-            </div>
-          </div>
-        </div>
+        </article>
+        <!-- Page Container -->
+      </div>
+    </div>
+  </div>
+</div>
+
       </main>
 
       <!-- Footer -->
@@ -770,7 +759,9 @@ The progress of the cancelled job is displayed under <strong>Recent Completed Jo
     <script type="text/javascript" src="/saasbackupO365/js/responsive.js"></script>
 
     <!-- Elasticsearch JS -->
+    
     <script type="text/javascript" src='/saasbackupO365/js/bundle.js'></script>
+    
   </body>
 
   
