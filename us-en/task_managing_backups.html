@@ -44,12 +44,16 @@
   <!-- NetApp CSS controls the technical content -->
   <link rel='stylesheet' href='/saasbackupO365/us-en/css/netapp.css' type='text/css'>
 
+  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   <!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
   
     <script src='/saasbackupO365/us-en/js/na-search.js'></script>
+  
+
   
 
   <script src='/saasbackupO365/us-en/js/clouddocs.js'></script>
@@ -317,6 +321,10 @@
     <li><a href="concept_get_help_find_info.html">Where to get help and find more information</a></li>
   
 
+  
+    <li><a href="legal_notices.html">Legal Notices</a></li>
+  
+
 
 </ul>
 
@@ -353,6 +361,7 @@
 <li><a href="#supported-templates-for-microsoft-sharepoint-online">Supported templates for Microsoft SharePoint Online</a></li>
 <li><a href="#backup-policies">Backup policies</a></li>
 <li><a href="#changing-backup-policies">Changing backup policies</a></li>
+<li><a href="#updating-the-backup-retention-period">Updating the backup retention period</a></li>
 <li><a href="#updating-backup-settings">Updating backup settings</a></li>
 <li><a href="#performing-an-immediate-backup-of-a-service">Performing an immediate backup of a service</a></li>
 <li><a href="#canceling-a-job">Canceling a job</a></li>
@@ -506,7 +515,7 @@ The number above PROTECTED indicates the number of mailboxes, MySites, or groups
 </li>
 <li>
 <p>Click the <strong>Groups</strong> menu.<br>
-<span class="image"><img src="./media/groups_menu.jpg" alt="groups menu"></span></p>
+<span class="image"><img src="./media/groups_menu.jpg" alt="Groups Menu"></span></p>
 </li>
 <li>
 <p>Select the new policy tier for the backup.<br>
@@ -516,6 +525,94 @@ The number above PROTECTED indicates the number of mailboxes, MySites, or groups
 <p>Click <strong>Apply</strong>.</p>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="updating-the-backup-retention-period">Updating the backup retention period</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can update the length of time, in number of years, that data is retained for individual tiers, mailboxes, sites, and MySites to 7 years, 10 years or forever.  If all your backup tiers have the same retention period, you can perform a global update to simultaneously change the retention period for all tenants.</p>
+</div>
+<div class="sect2">
+<h3 id="updating-the-backup-retention-period-for-a-specific-tier">Updating the backup retention period for a specific tier</h3>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>From the <strong>Dashboard</strong>, click any service.</p>
+</li>
+<li>
+<p>Under <strong>Backup Policies</strong>, click the dropdown menu next to <strong>RETENTION PERIOD</strong> for the tier you want to change.</p>
+</li>
+<li>
+<p>Select the desired retention period from the pre-defined list.</p>
+</li>
+<li>
+<p>Click <strong>UPDATE RETENTION PERIOD</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="updating-the-backup-retention-period-for-tenants">Updating the backup retention period for tenants</h3>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Click the configuration icon <span class="image"><img src="./media/configure_Icon.jpg" alt="Configuration Icon"></span> next to your SaaS Backup userid in the top left corner.</p>
+</li>
+<li>
+<p>Click <strong>ACCOUNT SETTINGS</strong>.</p>
+</li>
+<li>
+<p>Click <strong>RETAIN AND PURGE</strong>.</p>
+</li>
+<li>
+<p>To update the data retention policy for a specific user in a specific service, do the following:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Under <strong>Data Retention Policies</strong>, click the dropdown menu next to <strong>RETENTION PERIOD</strong> and select the period you want from the list of preset times.</p>
+</li>
+<li>
+<p>Click the dropdown menu next to <strong>TYPE OF SERVICE</strong> and select the service you are updating.</p>
+</li>
+<li>
+<p>In the search box, begin entering the user, site, or MySite you want to update.</p>
+</li>
+<li>
+<p>Select the user, site, or MySite you want from the matching results.</p>
+</li>
+<li>
+<p>Click <span class="image"><img src="./media/bluecircle_icon.jpg" alt="Plus sign"></span>.</p>
+</li>
+<li>
+<p>Continue to search for and add individual mailboxes, sites, or MySites as needed.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>.<br>
+The individual mailboxes, sites, or MySites you selected are updated to the selected retention period.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>To update the data retention policy at the tenant level, do the following:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Under <strong>Tenant Level Data Retention Policies</strong>, click dropdown menu next to <strong>RETENTION PERIOD</strong> and select the period you want from the list of preset times.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>.<br>
+All backup policy tiers are updated to the retention period you selected.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>
@@ -680,6 +777,9 @@ The progress of the cancelled job is displayed under <strong>Recent Completed Jo
         </article>
         <!-- Page Container -->
       </div>
+
+      
+
     </div>
   </div>
 </div>
