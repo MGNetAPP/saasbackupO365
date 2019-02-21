@@ -15,7 +15,7 @@
   
 
   <meta name="description" content="Managing backups for NetApp SaaS for Office 365 includes various tasks such as changing your backup policies, updating your backup settings, and canceling jobs.">
-  <meta name="keywords" content=" netapp, saas backup, office 365, backup policies, changing backup policies, canceling job, immediate backup, SharePoint Online templates,">
+  <meta name="keywords" content=" netapp, saas backup, office 365, backup policies, changing backup policies, canceling job, immediate backup, SharePoint Online templates, shared mailboxes, archived mailboxes, archived, archive, shared, mailboxes">
 
   <!-- Icons -->
   <link rel="icon" href="/saasbackupO365/images/favicon.ico" type="image/x-icon">
@@ -310,6 +310,14 @@
   
 
   
+    <li><a href="task_managing_permissions.html">Managing permissions</a></li>
+  
+
+  
+    <li><a href="task_managing_accounts.html">Managing accounts</a></li>
+  
+
+  
     <li><a href="task_managing_role_based_account_access.html">Managing role-based account access</a></li>
   
 
@@ -356,7 +364,7 @@
 
 <p class="page-details">
 
-<time datetime="2018-11-20 16:28:44 +0000">11/20/2018</time>
+<time datetime="2019-02-12 18:07:20 +0000">02/12/2019</time>
 
 
 <span>Contributors
@@ -389,61 +397,13 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#supported-templates-for-microsoft-sharepoint-online">Supported templates for Microsoft SharePoint Online</a></li>
 <li><a href="#backup-policies">Backup policies</a></li>
-<li><a href="#changing-backup-policies">Changing backup policies</a></li>
+<li><a href="#scheduling-a-backup-or-changing-backup-frequency">Scheduling a backup or changing backup frequency</a></li>
+<li><a href="#performing-an-immediate-backup-of-a-service">Performing an immediate backup of a service</a></li>
 <li><a href="#updating-the-backup-retention-period">Updating the backup retention period</a></li>
 <li><a href="#updating-backup-settings">Updating backup settings</a></li>
-<li><a href="#performing-an-immediate-backup-of-a-service">Performing an immediate backup of a service</a></li>
-<li><a href="#canceling-a-job">Canceling a job</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="supported-templates-for-microsoft-sharepoint-online">Supported templates for Microsoft SharePoint Online</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Only the following templates are supported for Microsoft SharePoint Online backups.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>STS#0 (Team Site)</p>
-</li>
-<li>
-<p>BLOG#0 (Blog Site)</p>
-</li>
-<li>
-<p>DEV#0 (Developer Site)</p>
-</li>
-<li>
-<p>PROJECTSITE#0 (Project Site)</p>
-</li>
-<li>
-<p>COMMUNITY#0 (Community Site)</p>
-</li>
-<li>
-<p>BDR#0 (Document Center)</p>
-</li>
-<li>
-<p>COMMUNITYPORTAL#0 (Community Portal)</p>
-</li>
-<li>
-<p>ENTERWIKI#0 (Enterprise WIKI)</p>
-</li>
-<li>
-<p>EHS#1 (Root site)</p>
-</li>
-<li>
-<p>EHS#0 (Root site)</p>
-</li>
-<li>
-<p>SITEPAGEPUBLISHING#0 (Communication site)</p>
-</li>
-<li>
-<p>GROUP (Group site collection prefix)</p>
-</li>
+<li><a href="#supported-templates-for-microsoft-sharepoint-online">Supported templates for Microsoft SharePoint Online</a></li>
+<li><a href="#supported-apps-for-microsoft-sharepoint-online">Supported apps for Microsoft SharePoint Online</a></li>
 </ul>
 </div>
 </div>
@@ -528,21 +488,27 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="changing-backup-policies">Changing backup policies</h2>
+<h2 id="scheduling-a-backup-or-changing-backup-frequency">Scheduling a backup or changing backup frequency</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you want to change the backup frequency of your data, you can assign the data to a different backup policy tier.</p>
+<p>You can back up your unprotected data by assigning it to a backup policy. When unprotected data is assigned to a backup policy, it moves to a <strong>PENDING</strong> state until the next scheduled backup for the assigned policy occurs, after which it is moved to a <strong>PROTECTED</strong> state.<br>
+If you want to change the backup frequency of protected data, you can assign the data to a different backup policy tier.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
 <p>From the Dashboard, click the number above <strong>PROTECTED</strong> or <strong>UNPROTECTED</strong> in the box of the service you want to change.<br>
-The number above PROTECTED indicates the number of mailboxes, MySites, or groups that are currently protected by a backup policy.  The number above UNPROTECTED indicates the number of mailboxes, MySites, or groups that are not protected by a backup policy.<br>
+If you want to change the backup frequency of protected data, click <strong>PROTECTED</strong>. If you want to backup newly discovered mailboxes, sites, or MySites, select <strong>UNPROTECTED</strong>.<br>
 <span class="image"><img src="./media/number_protected_unprotected.jpg" alt="number protected unprotected"></span></p>
 </li>
 <li>
-<p>Select the items for which you want to change the backup policy.</p>
+<p>If you are backing up or changing the backup policy for shared mailboxes, click the <strong>SHARED</strong> tab.<br>
+If you are backing up or changing the backup policy for archived mailboxes, click the <strong>ARCHIVED</strong> tab.<br>
+If you are backing up or changing regular mailboxes, remain on the <strong>USER</strong> tab.</p>
+</li>
+<li>
+<p>Select the items you want to backup.</p>
 </li>
 <li>
 <p>Click the <strong>Groups</strong> menu.<br>
@@ -550,10 +516,46 @@ The number above PROTECTED indicates the number of mailboxes, MySites, or groups
 </li>
 <li>
 <p>Select the new policy tier for the backup.<br>
-<strong>Note</strong>:  Only the tier 3 policy is available for Microsoft Office 365 groups.</p>
+<strong>Note</strong>:  Microsoft Office 365 groups and archived mailboxes can only be moved to the tier 3 policy.</p>
 </li>
 <li>
 <p>Click <strong>Apply</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="performing-an-immediate-backup-of-a-service">Performing an immediate backup of a service</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As needed, you can perform an immediate backup of any Microsoft Office 365 service.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>From the Dashboard, click the number above <strong>PROTECTED</strong> in the box of the service for which you want to perform an immediate backup.</p>
+</li>
+<li>
+<p>If you are backing up shared mailboxes, click the <strong>SHARED</strong> tab.<br>
+If you are backing up archived mailboxes, click the <strong>ARCHIVED</strong> tab.<br>
+If you are backing up regular mailboxes, remain on the <strong>USER</strong> tab.</p>
+</li>
+<li>
+<p>Select the items that you want to back up.</p>
+</li>
+<li>
+<p>Click <strong>Backup Now</strong>.<br>
+<span class="image"><img src="./media/backup_now.jpg" alt="backup now"></span><br>
+A message is displayed indicating that the selected services will be placed in the job queue for backup.</p>
+</li>
+<li>
+<p>Click <strong>Confirm</strong>.<br>
+A message is displayed indicating that the backup job was created.</p>
+</li>
+<li>
+<p>Click <strong>View the job progress</strong> to monitor the progress of the backup.</p>
 </li>
 </ol>
 </div>
@@ -750,57 +752,176 @@ A list of your backup settings available for the selected service is displayed.<
 </div>
 </div>
 <div class="sect1">
-<h2 id="performing-an-immediate-backup-of-a-service">Performing an immediate backup of a service</h2>
+<h2 id="supported-templates-for-microsoft-sharepoint-online">Supported templates for Microsoft SharePoint Online</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>As needed, you can perform an immediate backup of any Microsoft Office 365 service.</p>
+<p>Only the following templates are supported for Microsoft SharePoint Online backups.</p>
 </div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
-<p>From the Dashboard, click the number above <strong>PROTECTED</strong> in the box of the service for which you want to perform an immediate backup.</p>
+<p>STS#0 (Team Site)</p>
 </li>
 <li>
-<p>Select the items that you want to back up.</p>
+<p>BLOG#0 (Blog Site)</p>
 </li>
 <li>
-<p>Click <strong>Backup Now</strong>.<br>
-<span class="image"><img src="./media/backup_now.jpg" alt="backup now"></span><br>
-A message is displayed indicating that the selected services will be placed in the job queue for backup.</p>
+<p>DEV#0 (Developer Site)</p>
 </li>
 <li>
-<p>Click <strong>Confirm</strong>.<br>
-A message is displayed indicating that the backup job was created.</p>
+<p>PROJECTSITE#0 (Project Site)</p>
 </li>
 <li>
-<p>Click <strong>View the job progress</strong> to monitor the progress of the backup.</p>
+<p>COMMUNITY#0 (Community Site)</p>
 </li>
-</ol>
+<li>
+<p>BDR#0 (Document Center)</p>
+</li>
+<li>
+<p>COMMUNITYPORTAL#0 (Community Portal)</p>
+</li>
+<li>
+<p>ENTERWIKI#0 (Enterprise WIKI)</p>
+</li>
+<li>
+<p>EHS#1 (Root Site)</p>
+</li>
+<li>
+<p>EHS#0 (Root Site)</p>
+</li>
+<li>
+<p>SITEPAGEPUBLISHING#0 (Communication Site)</p>
+</li>
+<li>
+<p>GROUP#0 (Group Site Collection Prefix)</p>
+</li>
+<li>
+<p>STS#1 (Blank Site)</p>
+</li>
+<li>
+<p>STS#2 (Document Workspace)</p>
+</li>
+<li>
+<p>STS#3 (Modern Team Site)</p>
+</li>
+<li>
+<p>APP#0 (App Template)</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="canceling-a-job">Canceling a job</h2>
+<h2 id="supported-apps-for-microsoft-sharepoint-online">Supported apps for Microsoft SharePoint Online</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you have initiated an immediate backup or an immediate restore, but need to cancel it before it is completed, you can do so.</p>
+<p>The following apps are supported for Microsoft SharePoint Online backups.</p>
 </div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
-<p>Click <strong>Jobs</strong> from the left navigation pane.<br>
-<span class="image"><img src="./media/jobs_button.jpg" alt="jobs button"></span></p>
+<p>Custom List</p>
 </li>
 <li>
-<p>Under <strong>Recent Running Jobs</strong>, click the job that you want to cancel.</p>
+<p>Badge (Community Site)</p>
 </li>
 <li>
-<p>Click <strong>Cancel</strong>.<br>
-The progress of the cancelled job is displayed under <strong>Recent Completed Jobs</strong>.</p>
+<p>Document Library</p>
 </li>
-</ol>
+<li>
+<p>Style Library</p>
+</li>
+<li>
+<p>Survey</p>
+</li>
+<li>
+<p>Link</p>
+</li>
+<li>
+<p>Announcement</p>
+</li>
+<li>
+<p>Contact</p>
+</li>
+<li>
+<p>Calendar</p>
+</li>
+<li>
+<p>Discussion Board</p>
+</li>
+<li>
+<p>Photos</p>
+</li>
+<li>
+<p>Picture Library</p>
+</li>
+<li>
+<p>Content Web Parts</p>
+</li>
+<li>
+<p>List Template Gallery</p>
+</li>
+<li>
+<p>Master Page Gallery</p>
+</li>
+<li>
+<p>Site Pages</p>
+</li>
+<li>
+<p>Custom List in Dataset View</p>
+</li>
+<li>
+<p>Solution Gallery</p>
+</li>
+<li>
+<p>Theme Gallery</p>
+</li>
+<li>
+<p>Composed Looks</p>
+</li>
+<li>
+<p>Promoted Links</p>
+</li>
+<li>
+<p>Tasks</p>
+</li>
+<li>
+<p>Posts (Blog Site)</p>
+</li>
+<li>
+<p>Comments (Blog Site)</p>
+</li>
+<li>
+<p>Community Discussions (Community Site)</p>
+</li>
+<li>
+<p>Categories (Blog Site)</p>
+</li>
+<li>
+<p>Community Categories (Community Site)</p>
+</li>
+<li>
+<p>Report</p>
+</li>
+<li>
+<p>Wiki Pages</p>
+</li>
+<li>
+<p>Site Collection Images</p>
+</li>
+<li>
+<p>Community Members (Community Site)</p>
+</li>
+<li>
+<p>Issue Tracking</p>
+</li>
+<li>
+<p>Record Library</p>
+</li>
+<li>
+<p>Sharing Links</p>
+</li>
+</ul>
 </div>
 </div>
 </div>

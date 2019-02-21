@@ -2,7 +2,7 @@
 <!--[if IE 9]>         <html class="ie9"> <![endif]-->
 <!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
   <head>
-  <title>What&#8217;s new in NetApp SaaS Backup (formerly "NetApp Cloud Control") for Office 365 | NetApp Cloud Docs</title>
+  <title> | NetApp Cloud Docs</title>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +14,8 @@
 
   
 
-  <meta name="description" content="SaaS Backup for Office 365 regularly introduces a new release to bring you new features, enhancements, and bug fixes.">
-  <meta name="keywords" content=" what's new, features, new, release notes, bugs, limitations, known issues, enhancements">
+  <meta name="description" content="Within NetApp SaaS Backup for Office 365 you can manage your service accounts, discover newly added accounts, and set account notifications.">
+  <meta name="keywords" content=" netapp, saas backup, office 365, synchronizing, autosync, discovering, user accounts, sites, groups, enabling, shared mailboxes, archived mailboxes, site collection, office 365 group">
 
   <!-- Icons -->
   <link rel="icon" href="/saasbackupO365/images/favicon.ico" type="image/x-icon">
@@ -278,7 +278,7 @@
   
 
   
-    <li class="active"><a href="reference_new_saasbackupO365.html">What's new in SaaS Backup for Office 365</a></li>
+    <li><a href="reference_new_saasbackupO365.html">What's new in SaaS Backup for Office 365</a></li>
   
 
   
@@ -314,7 +314,7 @@
   
 
   
-    <li><a href="task_managing_accounts.html">Managing accounts</a></li>
+    <li class="active"><a href="task_managing_accounts.html">Managing accounts</a></li>
   
 
   
@@ -352,11 +352,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">What&#8217;s new in NetApp SaaS Backup (formerly "NetApp Cloud Control") for Office 365
+  <h1 class="n-doc__component-detail-heading">
     <span>
       
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/reference_new_saasbackupO365.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[What&#8217;s new in NetApp SaaS Backup (formerly "NetApp Cloud Control") for Office 365](https://docs.netapp.com/zz/saasbackupO365/reference_new_saasbackupO365.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_managing_accounts.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[](https://docs.netapp.com/zz/saasbackupO365/task_managing_accounts.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -364,7 +364,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-02-21 21:35:00 +0000">02/21/2019</time>
+<time datetime="2019-01-10 15:36:48 +0000">01/10/2019</time>
 
 
 <span>Contributors
@@ -377,209 +377,123 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/akseldavis">
-    <img  class="avatar avatar-small"
-          alt="akseldavis"
-          width="20" height="20"
-          src="https://avatars2.githubusercontent.com/u/33839009?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
 </span>
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
+<div class="paragraph lead">
+<p>You can manage your service accounts, discover newly added accounts, and set account notifications.</p>
+</div>
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#new-features-and-updates">New features and updates</a>
-<ul class="sectlevel2">
-<li><a href="#february-2019">February 2019</a></li>
-<li><a href="#december-2018">December 2018</a></li>
-<li><a href="#august-2018">August 2018</a></li>
-<li><a href="#may-2018">May 2018</a></li>
-<li><a href="#april-2018">April 2018</a></li>
-<li><a href="#march-2018">March 2018</a></li>
-<li><a href="#february-2018">February 2018</a></li>
-<li><a href="#january-2018">January 2018</a></li>
-<li><a href="#november-2017">November 2017</a></li>
-<li><a href="#october-2017">October 2017</a></li>
+<li><a href="#managing-service-accounts">Managing service accounts</a></li>
+<li><a href="#discovering-new-mailboxes-sites-and-groups">Discovering new mailboxes, sites, and groups</a></li>
+<li><a href="#setting-account-notifications">Setting account notifications</a></li>
 </ul>
+</div>
+<div class="sect1">
+<h2 id="managing-service-accounts">Managing service accounts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If needed, you can add permissions to a service account user. Service accounts are used to perform concurrent backups efficiently.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Click Services from the left navigation pane.<br>
+<span class="image"><img src="./media/services.jpg" alt="Screenshot of services button"></span></p>
 </li>
-<li><a href="#known-problems-and-limitations">Known problems and limitations</a></li>
-</ul>
+<li>
+<p>Click the Microsoft Office 365 link.<br>
+<span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 settings"></span></p>
+</li>
+<li>
+<p>Click the <strong>+</strong> icon next to <strong>Manage Service Accounts</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Confirm</strong> to be redirected to the Microsoft Office 365 sign-in page to grant permissions.</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="new-features-and-updates">New features and updates</h2>
+<h2 id="discovering-new-mailboxes-sites-and-groups">Discovering new mailboxes, sites, and groups</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The following new features and updates have been added to this release of NetApp SaaS Backup for Office 365</p>
+<p>A synchronization must occur between SaaS Backup and your Microsoft Office 365 account for new mailboxes (including shared and archived mailboxes), sites, and groups to be discovered by SaaS Backup.  By default, synchronization automatically occurs once every 24 hours.  However, if you make changes and you want discovery to occur before the next scheduled <strong>Auto Sync</strong>, you can initiate an immediate synchronization.</p>
 </div>
-<div class="sect2">
-<h3 id="february-2019">February 2019</h3>
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
 <li>
-<p>SaaS Backup for Office 365 now supports the following:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Backup and restore of archived mailboxes.</p>
+<p>Click Services from the left navigation pane.<br>
+<span class="image"><img src="./media/services.jpg" alt="Screenshot of services button"></span></p>
 </li>
 <li>
-<p>Enhanced backup and restore statistics across Microsoft Office Exchange Online, SharePoint, and OneDrive for Business.</p>
+<p>Click the Microsoft Office 365 settings icon.<br>
+<span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 settings"></span></p>
+</li>
+<li>
+<p>Click <strong>Sync Now</strong> next to the service that you want to synchronize.<br>
+<span class="image"><img src="./media/sync_now.png" alt="sync now"></span><br>
+New users, shared mailboxes, and archived mailboxes are discovered and added in an unprotected state.  If you want newly discovered users, shared mailboxes, or archived mailboxes to be backed up, you must change the backup policy of the users from unprotected to one of the predefined tier groups.</p>
+</li>
+<li>
+<p>Click <strong>Confirm</strong>.</p>
+</li>
+<li>
+<p>Click <strong>View the job progress</strong> to monitor the progress.<br>
+When the job is complete, you can click the job under <strong>Recent Completed Jobs</strong> to view the number of users that were added or removed during the synchronization. Changes to user accounts are indicated as follows:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Rediscovered</strong> users indicates the number of unchanged user accounts.</p>
+</li>
+<li>
+<p><strong>Deactivated</strong> users indicates the number of deleted user accounts.</p>
+</li>
+<li>
+<p><strong>Newly added</strong> users indicates the number of new user accounts.</p>
 </li>
 </ul>
 </div>
 </li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="december-2018">December 2018</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>SaaS Backup for Office 365 can now be purchased through the AppDirect Marketplace and the CANCOM Marketplace.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="august-2018">August 2018</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>The user interface has been redesigned for improved user experience and efficiency.</p>
-</li>
-<li>
-<p>Data retention polices have been updated to allow data to be retained for 3 years.<br>
-<a href="task_managing_backups.html#backup_policies">Backup policies</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="may-2018">May 2018</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>NetApp Cloud Control has been renamed to NetApp SaaS Backup for Office 365.</p>
-</li>
-<li>
-<p>You can now purge users, site collections, and Office 365 groups, completely removing all associated data from SaaS Backup for Office 365.<br>
-<a href="task_managing_services.html#purging-a-user-site-collection-or-office-365-group">Purging a user, site collection, or Office 365 group</a></p>
-</li>
-<li>
-<p>SaaS Backup now discovers both public and private groups for Office 365 groups.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="april-2018">April 2018</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>SaaS Backup for Office 365 now supports shared mailboxes for Microsoft Office Exchange Online.<br>
-Shared mailboxes are discovered through the use of an automatically created service account.  If you have not activated service for Microsoft Office Exchange Online prior to this update, the automatic service account for shared mailboxes is created by SaaS Backup when you activate Microsoft Office Exchange Online. If your service for Microsoft Office Exchange Online is already activated, you must grant SaaS Backup permission to create the automatic service account, so that your shared mailboxes can be discovered and backed up.  <a href="task_managing_permissions.html#granting-permissions-to-enable-shared-mailboxes">Granting permissions to enable shared mailboxes</a><br>
-After your automatic service account is created, your shared mailboxes will be automatically discovered during the next scheduled synchronization of your user account.  If you want your shared mailboxes discovered immediately, you can <a href="task_managing_services.html#synchronizing-user-accounts-sites-and-groups">synchronize your user accounts immediately</a>.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="march-2018">March 2018</h3>
-<div class="paragraph">
-<p>The location in which you enter an activation code for a free trial was moved to the Add a Service Provider wizard:</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/subscription_types_free_trial.jpg" alt="Screenshot that shows where you enter an activation code in the Subscription page when Free Trial is selected."></span></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="february-2018">February 2018</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Filtering based on Template ID is now available for Microsoft SharePoint Online.<br>
-<a href="task_viewing_data.html#creating-a-user-defined-filer">Creating a user defined filter</a></p>
-</li>
-<li>
-<p>You can now download the SaaS Backup for Office 365 user account activity log to a .csv file.<br>
-<a href="task_viewing_data.html#downloading-the-activity-log">Downloading the activity log</a></p>
-</li>
-<li>
-<p>Synchronization of user accounts, sites, and groups between SaaS Backup for Office 365 and your service is now enabled by default.</p>
-</li>
-<li>
-<p>Inclusion of backup version history is now enabled by default. The default number of versions is 20.<br>
-<a href="task_managing_backups.html#updating-backup-settings">Updating Backup Settings</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="january-2018">January 2018</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>The activity log now displays the name of the user ID associated with each action performed inside SaaS Backup for Office 365.</p>
-</li>
-<li>
-<p>You can now manually synchronize your user permissions with Azure Active Directory from within SaaS Backup for Office 365.</p>
-</li>
-<li>
-<p>Microsoft Exchange Online now supports export to PST for restore at the folder level.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="november-2017">November 2017</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>SaaS Backup for Office 365 now supports Azure Blob as an option for SaaS Backup provided storage.</p>
-</li>
-<li>
-<p>SaaS Backup for Office 365 now supports Microsoft Office 365 Groups for backup and restore.<br>
-Microsoft Exchange Online or Microsoft SharePoint Online must be activated before you can activate Microsoft Office 365 Groups. Microsoft Office 365 Groups can only be protected by the tier 3 backup policy.</p>
-</li>
-<li>
-<p>Microsoft Exchange Online now supports export to PST for restore at the mailbox level.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="october-2017">October 2017</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Rules can be created that allow you to automatically move users to a preselected backup tier based on predefined criteria.<br>
-You can create rules for Microsoft Exchange Online and Microsoft OneDrive for Business.  You cannot create rules for Microsoft SharePoint Online.<br>
-<a href="task_managing_creating_rules.html#creating-rules">Creating Rules</a></p>
-</li>
-</ul>
-</div>
+</ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="known-problems-and-limitations">Known problems and limitations</h2>
+<h2 id="setting-account-notifications">Setting account notifications</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
+<div class="paragraph">
+<p>You can add users to account notifications and then select the specific notifications you wan each user to receive.  For example, you can select to have a user receive an email notification each time there is a restore failure.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
 <li>
-<p>Partially failed job status for restore of site collection group<br>
-If an entire site collection group is deleted, the restore of private groups in the collection fails, resulting in a restore job status of “partially failed.”  If this happens, the site is not accessible from the GUI.</p>
+<p>Click <strong>ACCOUNT SETTINGS</strong>.</p>
 </li>
-</ul>
+<li>
+<p>Click <strong>NOTIFICATION MANAGEMENT</strong>.</p>
+</li>
+<li>
+<p>Enter the email address of the account you want to receive notifications.</p>
+</li>
+<li>
+<p>Click <strong>Add Notifications</strong>.<br>
+The user is added under the list of accounts for notifications.</p>
+</li>
+<li>
+<p>Select the specific notifications you want the user to receive.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
