@@ -307,7 +307,7 @@
   
 
   
-    <li><a href="task_managing_restores.html">Mananging restores with SaaS Backup for Office 365</a></li>
+    <li><a href="task_managing_restores.html">Managing restores with SaaS Backup for Office 365</a></li>
   
 
   
@@ -377,7 +377,7 @@
 
 <p class="page-details">
 
-<time datetime="2018-10-16 20:41:26 +0000">10/16/2018</time>
+<time datetime="2019-03-27 12:57:03 +0000">03/27/2019</time>
 
 
 <span>Contributors
@@ -414,6 +414,7 @@
 <li><a href="#gathering-information-about-your-saas-backup-for-office-365-storage-platform">Gathering information about your SaaS Backup for Office 365 storage platform</a></li>
 <li><a href="#creating-a-new-ms-office-365-service-account-with-global-administrator-permissions">Creating a new MS Office 365 service account with global administrator permissions</a></li>
 <li><a href="#assigning-user-permissions-to-your-ms-office-365-service-account">Assigning user permissions to your MS Office 365 service account</a></li>
+<li><a href="#signing-up-for-saas-backup-for-office-365">Signing up for SaaS Backup for Office 365</a></li>
 <li><a href="#moving-unprotected-data-to-a-protected-state">Moving unprotected data to a protected state</a></li>
 <li><a href="#performing-an-immediate-backup-of-a-specific-backup-policy">Performing an immediate backup of a specific backup policy</a></li>
 </ul>
@@ -496,6 +497,9 @@ The open port should be 8082 or 443, whichever is configured.</p>
 </li>
 <li>
 <p>Access key</p>
+</li>
+<li>
+<p>Region</p>
 </li>
 </ul>
 </div>
@@ -636,6 +640,134 @@ A new window appears</p>
 </li>
 </ol>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="signing-up-for-saas-backup-for-office-365">Signing up for SaaS Backup for Office 365</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can sign up for SaaS Backup for Office 365 with your Microsoft Office 365 service account or with your NetApp SSO account.</p>
+</div>
+<div class="sect3">
+<h4 id="signing-up-with-a-microsoft-office-365-service-account">Signing up with a Microsoft Office 365 service account</h4>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Enter the SaaS Backup for Office 365 URL into your web browser:<br>
+<a href="https://saasbackup.netapp.com" class="bare">https://saasbackup.netapp.com</a></p>
+</li>
+<li>
+<p>Select your region.<br>
+Your tenancy is created in the selected region.  Your data will be stored in that datacenter location and cannot be changed later.</p>
+</li>
+<li>
+<p>Click <strong>Sign up</strong> at the bottom of the landing page.</p>
+</li>
+<li>
+<p>Accept the End-User License Agreement.</p>
+</li>
+<li>
+<p>Click <strong>Sign Up with Office 365</strong>.<br>
+<span class="image"><img src="./media/sign_up_0365.jpg" alt="Screenshot of button clicked to sign for SaaS Backup for Office 365 using an Office 365 service account"></span></p>
+</li>
+<li>
+<p>Enter the email address and password for your Microsoft Office 365 global administrator service account, and then click <strong>Sign in</strong>.<br>
+A list of the permissions requested by SaaS Backup for Office 365 is displayed.</p>
+</li>
+<li>
+<p>Click <strong>Accept</strong>.</p>
+</li>
+<li>
+<p>Enter the requested user information.</p>
+</li>
+<li>
+<p>Click <strong>Sign up</strong>.<br>
+Your user name and a list of permissions given to SaaS Backup for Office 365 is displayed.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.<br>
+A list of the available Microsoft Office 365 services is displayed.</p>
+</li>
+<li>
+<p>Select the Microsoft Office 365 services that you want to activate.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select the subscription type.<br>
+For the <strong>Free Trial</strong>, enter the activation code provided by your channel partner or sales representative, or obtained from a marketing representative through email.<br>
+For a <strong>Licensed</strong> subscription, you must enter the requested information, and then validate the subscription.</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="14">
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select your backup storage option.<br>
+You can use storage provided by SaaS Backup or the Bring Your Own Storage (BYOS) option.<br>
+<span class="image"><img src="./media/setting_up_backup.jpg" alt="Workflow diagram of setup process for SaaS Backup for Office 365"></span></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>If you are using storage provided by SaaS Backup:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Click <strong>SaaS Backup Provided Storage</strong>.</p>
+</li>
+<li>
+<p>Select the <strong>Amazon S3</strong> or <strong>Azure Blob</strong> storage option.</p>
+</li>
+<li>
+<p>Select the <strong>AWS S3</strong> or <strong>Azure Blob</strong> region for your backup.<br>
+You should select the region that is the closest to the physical location of the data you are backing up.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Review your configuration, and then click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If you are using the BYOS option:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Click <strong>Bring Your Own Storage (BYOS)</strong>.</p>
+</li>
+<li>
+<p>Click your BYOS option.</p>
+</li>
+<li>
+<p>Enter the information you previously gathered for your BYOS option.</p>
+</li>
+<li>
+<p>Click <strong>Test Connection</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Review your configuration, and then click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
 <div class="sect3">
 <h4 id="signing-up-with-a-netapp-sso-account">Signing up with a NetApp SSO account</h4>
 <div class="olist arabic">
@@ -717,6 +849,10 @@ You can use storage provided by SaaS Backup or the Bring Your Own Storage (BYOS)
 <p>Select the <strong>Amazon S3</strong> or <strong>Azure Blob</strong> storage option.</p>
 </li>
 <li>
+<p>Select the <strong>AWS S3</strong> or <strong>Azure Blob</strong> region for your backup.<br>
+You should select the region that is the closest to the physical location of the data you are backing up.</p>
+</li>
+<li>
 <p>Click <strong>Next</strong>.</p>
 </li>
 <li>
@@ -758,7 +894,6 @@ You can use storage provided by SaaS Backup or the Bring Your Own Storage (BYOS)
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
 <h2 id="moving-unprotected-data-to-a-protected-state">Moving unprotected data to a protected state</h2>
 <div class="sectionbody">
@@ -783,7 +918,7 @@ You can use storage provided by SaaS Backup or the Bring Your Own Storage (BYOS)
 </li>
 <li>
 <p>Select the <strong>tier</strong> for the backup policy that you want to assign.<br>
-See   <a href="task_gettomg_started.html#moving-unprotected-data-to-a-protected-state">Moving unprotected data to a protected state</a> for a description of the backup policy tiers.</p>
+See   <a href="task_managing_backups.html#backup-policies">Backup Policies</a> for a description of the backup policy tiers.</p>
 </li>
 <li>
 <p>Click <strong>Apply</strong>.</p>
