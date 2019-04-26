@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title> | NetApp Cloud Docs</title>
+  <title>Managing licenses | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content=" | NetApp Cloud Docs" />
+  <meta property="og:title" content="Managing licenses | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/task_managing_accounts.html" />
-	<meta property="og:description" content="Within NetApp SaaS Backup for Office 365 you can manage your service accounts, discover newly added accounts, and set account notifications." />
-  <meta property="og:image" content="https://docs.netapp.com/saasbackupO365/images/logo-tophat-social.png" />
+	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/us-en/task_managing_licenses.html" />
+	<meta property="og:description" content="You can add or release a license." />
+  <meta property="og:image" content="https://docs.netapp.com/saasbackupO365/us-en/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -17,16 +17,16 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="Within NetApp SaaS Backup for Office 365 you can manage your service accounts, discover newly added accounts, and set account notifications.">
-  <meta name="keywords" content=" netapp, saas backup, office 365, synchronizing, autosync, discovering, user accounts, sites, groups, enabling, shared mailboxes, archive mailboxes, site collection, office 365 group">
+  <meta name="description" content="You can add or release a license.">
+  <meta name="keywords" content=" netapp, saas backup, adding, license, deleting, removing, releasing">
   
 
   <!-- Icons -->
-  <link rel="icon" href="/saasbackupO365/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/saasbackupO365/us-en/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed -->
   
-  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/saasbackupO365/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/saasbackupO365/us-en/feed.xml">
   
 
   <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -35,23 +35,23 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
   <!-- LUCI CSS Content -->
-  <link rel="stylesheet" href="/saasbackupO365/common/css/esb.min.css">
-  <link rel="stylesheet" href="/saasbackupO365/common/css/netapp-library.min.css">
-  <link rel="stylesheet" href="/saasbackupO365/common/css/doc.css">
-  <link rel="stylesheet" href="/saasbackupO365/common/css/doc-components.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/common/css/esb.min.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/common/css/netapp-library.min.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/common/css/doc.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/common/css/doc-components.css">
 
-  <link rel="stylesheet" href='/saasbackupO365/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/saasbackupO365/css/na-search.css' type='text/css'>
-  <link rel='stylesheet' href='/saasbackupO365/css/clouddocs.css' type='text/css'>
+  <link rel="stylesheet" href='/saasbackupO365/us-en/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/na-search.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/clouddocs.css' type='text/css'>
 
   <!-- Font awesome seems to affect our GitHub Icon and generic "arrow box" for external links. -->
-  <link rel="stylesheet" type="text/css" href="/saasbackupO365/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="/saasbackupO365/css/customstyles.css"> -->
+  <link rel="stylesheet" type="text/css" href="/saasbackupO365/us-en/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/saasbackupO365/us-en/css/customstyles.css"> -->
   <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/saasbackupO365/css/boxshadowproperties.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/css/boxshadowproperties.css">
 
   <!-- NetApp CSS controls the technical content -->
-  <link rel='stylesheet' href='/saasbackupO365/css/netapp.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/netapp.css' type='text/css'>
 
   
 
@@ -60,23 +60,23 @@
   <!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
   
-    <script src='/saasbackupO365/js/na-search.js'></script>
+    <script src='/saasbackupO365/us-en/js/na-search.js'></script>
   
 
   
-  <link rel='stylesheet' href='/saasbackupO365/css/na-pagenav.css' type='text/css' id="pagenav-css">
-  <script src='/saasbackupO365/js/na-pagenav.js'></script>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/na-pagenav.css' type='text/css' id="pagenav-css">
+  <script src='/saasbackupO365/us-en/js/na-pagenav.js'></script>
   
 
-  <link rel='stylesheet' href='/saasbackupO365/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/saasbackupO365/css/prism-netapp.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/prism-netapp.css' type='text/css'>
 
-  <script src='/saasbackupO365/js/clouddocs.js'></script>
-  <script src='/saasbackupO365/js/s_code_impl.js'></script>
-  <script src='/saasbackupO365/js/jquery.navgoco.min.js'></script>
+  <script src='/saasbackupO365/us-en/js/clouddocs.js'></script>
+  <script src='/saasbackupO365/us-en/js/s_code_impl.js'></script>
+  <script src='/saasbackupO365/us-en/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src='/saasbackupO365/js/toc.js'></script>
-  <script src='/saasbackupO365/js/customscripts.js'></script>
+  <script src='/saasbackupO365/us-en/js/toc.js'></script>
+  <script src='/saasbackupO365/us-en/js/customscripts.js'></script>
 
   <script>
       $(document).ready(function() {
@@ -193,7 +193,7 @@
       <div class="n-property-bar__menu-toggle">
         <a href="#" class="n-property-bar__menu-toggle-link"><span class="n-property-bar__menu-toggle-text">Menu</span><svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
           <title>bars</title>
-          <use xlink:href="/saasbackupO365/common/svg/sprite.svg#bars"></use>
+          <use xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#bars"></use>
         </svg></a>
       </div>
       <div class="n-property-bar__property-mark n-property-bar__property-mark--has-property-name">
@@ -201,11 +201,11 @@
           <div class="n-property-bar__logo">
             <svg class="n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
               <title>netapp-mark</title>
-              <use xlink:href="/saasbackupO365/common/svg/sprite.svg#netapp-mark"></use>
+              <use xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#netapp-mark"></use>
             </svg>
             <svg class="n-property-bar__logo-svg" aria-labelledby="title">
               <title>NetApp</title>
-              <use xlink:href="/saasbackupO365/common/svg/sprite.svg#netapp-logo"></use>
+              <use xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#netapp-logo"></use>
             </svg>
           </div>
           <h2 class="n-property-bar__property-name">Cloud Docs</h2>
@@ -226,7 +226,7 @@
               <span>globe</span>
             </a>
             <svg class="n-icon-globe n-globe__icon" aria-labelledby="title" style="pointer-events: none;">
-              <use xlink:href="/saasbackupO365/common/svg/sprite.svg#globe"></use>
+              <use xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#globe"></use>
             </svg>
           </li>
         </ul>
@@ -323,11 +323,11 @@
   
 
   
-    <li><a href="task_managing_licenses.html">Managing licenses</a></li>
+    <li class="active"><a href="task_managing_licenses.html">Managing licenses</a></li>
   
 
   
-    <li class="active"><a href="task_managing_accounts.html">Managing accounts</a></li>
+    <li><a href="task_managing_accounts.html">Managing accounts</a></li>
   
 
   
@@ -365,11 +365,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">
+  <h1 class="n-doc__component-detail-heading">Managing licenses
     <span>
       
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_managing_accounts.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[](https://docs.netapp.com/us-en/saasbackupO365/task_managing_accounts.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_managing_licenses.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[Managing licenses](https://docs.netapp.com/us-en/saasbackupO365/task_managing_licenses.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -377,7 +377,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-27 18:41:04 +0000">03/27/2019</time>
+<time datetime="2019-04-19 17:41:02 +0000">04/19/2019</time>
 
 
 <span>Contributors
@@ -394,119 +394,98 @@
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>You can manage your service accounts, discover newly added accounts, and set account notifications.</p>
+<p>Any regular user mailbox, whether protected or unprotected, consumes a license.  Shared mailboxes do not consume a license.</p>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#managing-service-accounts">Managing service accounts</a></li>
-<li><a href="#discovering-new-mailboxes-sites-and-groups">Discovering new mailboxes, sites, and groups</a></li>
-<li><a href="#setting-account-notifications">Setting account notifications</a></li>
+<li><a href="#adding-a-license">Adding a license</a></li>
+<li><a href="#releasing-a-license">Releasing a license</a></li>
 </ul>
 </div>
+</div>
+</div>
 <div class="sect1">
-<h2 id="managing-service-accounts">Managing service accounts</h2>
+<h2 id="adding-a-license">Adding a license</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If needed, you can add permissions to a service account user. Service accounts are used to perform concurrent backups efficiently.</p>
+<p>If you have just received a license for a paid subscription, please go to <a href="task_getting_started.html#Getting-started-with-SaaS-Backup-for-Office-365">Getting Started with a Paid Subscription</a> and follow the sign up instructions.  You will enter your license key as part of the sign up process.</p>
+</div>
+<div class="paragraph">
+<p>If you are already using SaaS Backup, you can follow these steps to add additional licenses.</p>
+</div>
+<div class="paragraph">
+<p>Education domains can have a license for faculty and a separate license for students.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>Click Services from the left navigation pane.<br>
+<p>Click <strong>Services</strong> from the left navigation pane.<br>
 <span class="image"><img src="./media/services.jpg" alt="Screenshot of services button"></span></p>
 </li>
 <li>
-<p>Click the Microsoft Office 365 link.<br>
-<span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 settings"></span></p>
+<p>Click <span class="image"><img src="./media/bluecircle_icon.jpg" alt="bluecircle icon"></span> icon in the right corner.</p>
 </li>
 <li>
-<p>Click the <strong>+</strong> icon next to <strong>Manage Service Accounts</strong>.</p>
+<p>Enter the license information.</p>
 </li>
 <li>
-<p>Click <strong>Confirm</strong> to be redirected to the Microsoft Office 365 sign-in page to grant permissions.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="discovering-new-mailboxes-sites-and-groups">Discovering new mailboxes, sites, and groups</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>A synchronization must occur between SaaS Backup and your Microsoft Office 365 account for new mailboxes (including shared and archive mailboxes), sites, and groups to be discovered by SaaS Backup.  By default, synchronization automatically occurs once every 24 hours.  However, if you make changes and you want discovery to occur before the next scheduled <strong>Auto Sync</strong>, you can initiate an immediate synchronization.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>Click Services from the left navigation pane.<br>
-<span class="image"><img src="./media/services.jpg" alt="Screenshot of services button"></span></p>
+<p>Click <strong>Validate Subscription</strong>.</p>
 </li>
 <li>
-<p>Click the Microsoft Office 365 settings icon.<br>
-<span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 settings"></span></p>
-</li>
-<li>
-<p>Click <strong>Sync Now</strong> next to the service that you want to synchronize.<br>
-<span class="image"><img src="./media/sync_now.png" alt="sync now"></span><br>
-New users, shared mailboxes, and archive mailboxes are discovered and added in an unprotected state.  If you want newly discovered users, shared mailboxes, or archive mailboxes to be backed up, you must change the backup policy of the users from unprotected to one of the predefined tier groups.</p>
-</li>
-<li>
-<p>Click <strong>Confirm</strong>.</p>
-</li>
-<li>
-<p>Click <strong>View the job progress</strong> to monitor the progress.<br>
-When the job is complete, you can click the job under <strong>Recent Completed Jobs</strong> to view the number of users that were added or removed during the synchronization. Changes to user accounts are indicated as follows:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Rediscovered</strong> users indicates the number of unchanged user accounts.</p>
-</li>
-<li>
-<p><strong>Deactivated</strong> users indicates the number of deleted user accounts.</p>
-</li>
-<li>
-<p><strong>Newly added</strong> users indicates the number of new user accounts.</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="setting-account-notifications">Setting account notifications</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>You can add users to account notifications and then select the specific notifications you want each user to receive.  For example, you can select to have a user receive an email notification each time there is a restore failure.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>Click <strong>ACCOUNT SETTINGS</strong>.</p>
-</li>
-<li>
-<p>Click <strong>NOTIFICATION MANAGEMENT</strong>.</p>
-</li>
-<li>
-<p>Enter the email address of the account you want to receive notifications.</p>
-</li>
-<li>
-<p>Click <strong>Add Notifications</strong>.<br>
-The user is added under the list of accounts for notifications.</p>
-</li>
-<li>
-<p>Select the specific notifications you want the user to receive.</p>
+<p>Click <strong>Next</strong>.</p>
 </li>
 <li>
 <p>Click <strong>Save</strong>.</p>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="releasing-a-license">Releasing a license</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When a user license is released, the user is moved to the unprotected tier and backups for that user are discontinued.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Click the configuration icon <span class="image"><img src="./media/configure_Icon.jpg" alt="configure Icon"></span> next to your SaaS Backup userid in the top left corner.</p>
+</li>
+<li>
+<p>Select <strong>ACCOUNT SERVICE</strong>.</p>
+</li>
+<li>
+<p>Click <strong>RETAIN AND PURGE</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Release License</strong>, begin typing the account name for the user whose license you want to release.</p>
+</li>
+<li>
+<p>When the account is found, select it from the auto-populated list and click <span class="image"><img src="./media/bluecircle_icon.jpg" alt="bluecircle icon"></span>.</p>
+</li>
+<li>
+<p>Add additional accounts, if needed.</p>
+</li>
+<li>
+<p>Click <strong>Release</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Yes, please release license(s)</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Confirm</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> If you need to restore data for a user whose license has been released, you must contact the SaaS Backup Support team.</p>
 </div>
 </div>
 </div>
@@ -552,7 +531,7 @@ The user is added under the list of accounts for notifications.</p>
                       <span class="n-footer__social-link-text">blog</span>
                       <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
                         <title>blog@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/common/svg/sprite.svg#blog"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#blog"></use>
                       </svg>
                     </a>
                   </li>
@@ -561,7 +540,7 @@ The user is added under the list of accounts for notifications.</p>
                       <span class="n-footer__social-link-text">community</span>
                       <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                         <title>community@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/common/svg/sprite.svg#comments"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#comments"></use>
                       </svg>
                     </a>
                   </li>
@@ -571,7 +550,7 @@ The user is added under the list of accounts for notifications.</p>
                       <span class="n-footer__social-link-text">twitter</span>
                       <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                         <title>twitter@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/common/svg/sprite.svg#twitter"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -580,7 +559,7 @@ The user is added under the list of accounts for notifications.</p>
                       <span class="n-footer__social-link-text">youtube</span>
                       <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
                         <title>youtube@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/common/svg/sprite.svg#youtube"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#youtube"></use>
                       </svg>
                     </a>
                   </li>
@@ -601,15 +580,15 @@ The user is added under the list of accounts for notifications.</p>
 
     </div>
 
-    <script src="/saasbackupO365/common/js/components.js"></script>
-    <script src="/saasbackupO365/common/js/doc-components.js"></script>
+    <script src="/saasbackupO365/us-en/common/js/components.js"></script>
+    <script src="/saasbackupO365/us-en/common/js/doc-components.js"></script>
 
     <!-- Elasticsearch JS -->
-    <script type="text/javascript" src='/saasbackupO365/js/bundle.js'></script>
+    <script type="text/javascript" src='/saasbackupO365/us-en/js/bundle.js'></script>
 
     <!-- Syntax Highlighting -->
-    <script type="text/javascript" src='/saasbackupO365/js/prism.js'></script>
-    <script type="text/javascript" src='/saasbackupO365/js/prism-curl.js'></script>
+    <script type="text/javascript" src='/saasbackupO365/us-en/js/prism.js'></script>
+    <script type="text/javascript" src='/saasbackupO365/us-en/js/prism-curl.js'></script>
 
   </body>
 

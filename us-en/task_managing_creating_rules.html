@@ -18,7 +18,7 @@
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
   <meta name="description" content="You can create and manage rules for Microsoft Exchange Online and Microsoft OneDrive for Business inside SaaS Backup for Office 365.">
-  <meta name="keywords" content=" netapp, saas backup, office 365, creating rules, managing rules, preselected backup tier">
+  <meta name="keywords" content=" netapp, saas backup, office 365, creating rules, managing, deleting, removing, adding, applying">
   
 
   <!-- Icons -->
@@ -315,7 +315,15 @@
   
 
   
+    <li><a href="task_managing_security_groups.html">Managing security groups</a></li>
+  
+
+  
     <li><a href="task_managing_permissions.html">Managing permissions</a></li>
+  
+
+  
+    <li><a href="task_managing_licenses.html">Managing licenses</a></li>
   
 
   
@@ -369,24 +377,24 @@
 
 <p class="page-details">
 
-<time datetime="2018-08-06 14:10:04 +0000">08/06/2018</time>
+<time datetime="2019-04-19 17:41:02 +0000">04/19/2019</time>
 
 
 <span>Contributors
-  
-  <a target="_blank" href="https://github.com/akseldavis">
-    <img  class="avatar avatar-small"
-          alt="akseldavis"
-          width="20" height="20"
-          src="https://avatars2.githubusercontent.com/u/33839009?v=4"
-          style="border-radius: 50%;"/>
-  </a>
   
   <a target="_blank" href="https://github.com/netapp-aherbin">
     <img  class="avatar avatar-small"
           alt="netapp-aherbin"
           width="20" height="20"
           src="https://avatars0.githubusercontent.com/u/38955266?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/akseldavis">
+    <img  class="avatar avatar-small"
+          alt="akseldavis"
+          width="20" height="20"
+          src="https://avatars2.githubusercontent.com/u/33839009?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -402,14 +410,15 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#creating-rules">Creating rules</a></li>
-<li><a href="#managing-rules">Managing rules</a></li>
+<li><a href="#creating-new-rules">Creating new rules</a></li>
+<li><a href="#applying-existing-rules">Applying existing rules</a></li>
+<li><a href="#deleting-rules">Deleting rules</a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="creating-rules">Creating rules</h2>
+<h2 id="creating-new-rules">Creating new rules</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You can create rules for Microsoft Exchange Online and Microsoft OneDrive for Business.  Rules for Microsoft Exchange Online are applied before rules for Microsoft OneDrive for Business.  You cannot create rules for Microsoft SharePoint Online.</p>
@@ -464,7 +473,7 @@ You can click the <span class="image"><img src="./media/up_down_rules_icon.jpg" 
 </div>
 </div>
 <div class="sect1">
-<h2 id="managing-rules">Managing rules</h2>
+<h2 id="applying-existing-rules">Applying existing rules</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You can apply existing rules to unprotected items, change the order in which rules are applied, and delete rules.</p>
@@ -486,6 +495,31 @@ The existing rules are displayed.</p>
 </li>
 <li>
 <p>Click <strong>Apply Now</strong> to apply the rule to existing unprotected items.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deleting-rules">Deleting rules</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you no longer need a existing rule, you can delete it.  Also, if you need to delete a security group that is used in a rule, you must delete the rule using the security group before the security group can be removed.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>From the Dashboard, click the number above <strong>UNPROTECTED</strong> in the box of the service for which you want to create rules.<br>
+<span class="image"><img src="./media/number_protected_unprotected.jpg" alt="number protected unprotected"></span></p>
+</li>
+<li>
+<p>Click <strong>Filter</strong>.<br>
+<span class="image"><img src="./media/filter.jpg" alt="Screenshot of filter dropdown menu button"></span></p>
+</li>
+<li>
+<p>Click <strong>Rules</strong>.<br>
+The existing rules are displayed.</p>
 </li>
 <li>
 <p>Click the trash can <span class="image"><img src="./media/delete.jpg" alt="Screenshot of delete icon"></span> to delete the rule.<br>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title> | NetApp Cloud Docs</title>
+  <title>Managing security groups | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content=" | NetApp Cloud Docs" />
+  <meta property="og:title" content="Managing security groups | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/task_managing_accounts.html" />
-	<meta property="og:description" content="Within NetApp SaaS Backup for Office 365 you can manage your service accounts, discover newly added accounts, and set account notifications." />
+	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/task_managing_security_groups.html" />
+	<meta property="og:description" content="You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, an..." />
   <meta property="og:image" content="https://docs.netapp.com/saasbackupO365/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +17,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="Within NetApp SaaS Backup for Office 365 you can manage your service accounts, discover newly added accounts, and set account notifications.">
-  <meta name="keywords" content=" netapp, saas backup, office 365, synchronizing, autosync, discovering, user accounts, sites, groups, enabling, shared mailboxes, archive mailboxes, site collection, office 365 group">
+  <meta name="description" content="You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, an...">
+  <meta name="keywords" content=" netapp, saas backup, office 365, security, groups">
   
 
   <!-- Icons -->
@@ -315,7 +315,7 @@
   
 
   
-    <li><a href="task_managing_security_groups.html">Managing security groups</a></li>
+    <li class="active"><a href="task_managing_security_groups.html">Managing security groups</a></li>
   
 
   
@@ -327,7 +327,7 @@
   
 
   
-    <li class="active"><a href="task_managing_accounts.html">Managing accounts</a></li>
+    <li><a href="task_managing_accounts.html">Managing accounts</a></li>
   
 
   
@@ -365,11 +365,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">
+  <h1 class="n-doc__component-detail-heading">Managing security groups
     <span>
       
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_managing_accounts.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[](https://docs.netapp.com/us-en/saasbackupO365/task_managing_accounts.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_managing_security_groups.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[Managing security groups](https://docs.netapp.com/us-en/saasbackupO365/task_managing_security_groups.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -377,7 +377,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-27 18:41:04 +0000">03/27/2019</time>
+<time datetime="2019-04-19 17:41:02 +0000">04/19/2019</time>
 
 
 <span>Contributors
@@ -394,95 +394,29 @@
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>You can manage your service accounts, discover newly added accounts, and set account notifications.</p>
+<p>Security groups can be used as filtering options to view your data and to create rules.</p>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#managing-service-accounts">Managing service accounts</a></li>
-<li><a href="#discovering-new-mailboxes-sites-and-groups">Discovering new mailboxes, sites, and groups</a></li>
-<li><a href="#setting-account-notifications">Setting account notifications</a></li>
+<li><a href="#adding-security-groups">Adding security groups</a></li>
+<li><a href="#deleting-security-groups">Deleting security groups</a></li>
 </ul>
 </div>
-<div class="sect1">
-<h2 id="managing-service-accounts">Managing service accounts</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>If needed, you can add permissions to a service account user. Service accounts are used to perform concurrent backups efficiently.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>Click Services from the left navigation pane.<br>
-<span class="image"><img src="./media/services.jpg" alt="Screenshot of services button"></span></p>
-</li>
-<li>
-<p>Click the Microsoft Office 365 link.<br>
-<span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 settings"></span></p>
-</li>
-<li>
-<p>Click the <strong>+</strong> icon next to <strong>Manage Service Accounts</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Confirm</strong> to be redirected to the Microsoft Office 365 sign-in page to grant permissions.</p>
-</li>
-</ol>
-</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="discovering-new-mailboxes-sites-and-groups">Discovering new mailboxes, sites, and groups</h2>
+<h2 id="adding-security-groups">Adding security groups</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A synchronization must occur between SaaS Backup and your Microsoft Office 365 account for new mailboxes (including shared and archive mailboxes), sites, and groups to be discovered by SaaS Backup.  By default, synchronization automatically occurs once every 24 hours.  However, if you make changes and you want discovery to occur before the next scheduled <strong>Auto Sync</strong>, you can initiate an immediate synchronization.</p>
+<p>You can add up to 3 security groups.  You can then use your security groups as filtering options in SaaS Backup.</p>
 </div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>Click Services from the left navigation pane.<br>
-<span class="image"><img src="./media/services.jpg" alt="Screenshot of services button"></span></p>
-</li>
-<li>
-<p>Click the Microsoft Office 365 settings icon.<br>
-<span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 settings"></span></p>
-</li>
-<li>
-<p>Click <strong>Sync Now</strong> next to the service that you want to synchronize.<br>
-<span class="image"><img src="./media/sync_now.png" alt="sync now"></span><br>
-New users, shared mailboxes, and archive mailboxes are discovered and added in an unprotected state.  If you want newly discovered users, shared mailboxes, or archive mailboxes to be backed up, you must change the backup policy of the users from unprotected to one of the predefined tier groups.</p>
-</li>
-<li>
-<p>Click <strong>Confirm</strong>.</p>
-</li>
-<li>
-<p>Click <strong>View the job progress</strong> to monitor the progress.<br>
-When the job is complete, you can click the job under <strong>Recent Completed Jobs</strong> to view the number of users that were added or removed during the synchronization. Changes to user accounts are indicated as follows:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Rediscovered</strong> users indicates the number of unchanged user accounts.</p>
-</li>
-<li>
-<p><strong>Deactivated</strong> users indicates the number of deleted user accounts.</p>
-</li>
-<li>
-<p><strong>Newly added</strong> users indicates the number of new user accounts.</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="setting-account-notifications">Setting account notifications</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>You can add users to account notifications and then select the specific notifications you want each user to receive.  For example, you can select to have a user receive an email notification each time there is a restore failure.</p>
+<p>New security groups must be discovered through an AutoSync or a manual synchronization before they can be added.<br>
+<a href="https://docs.microsoft.com/en-us/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide">Create, edit, or delete a security group in the Admin Center</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
@@ -491,20 +425,36 @@ When the job is complete, you can click the job under <strong>Recent Completed J
 <p>Click <strong>ACCOUNT SETTINGS</strong>.</p>
 </li>
 <li>
-<p>Click <strong>NOTIFICATION MANAGEMENT</strong>.</p>
+<p>Click <strong>SECURITY GROUPS</strong>.</p>
 </li>
 <li>
-<p>Enter the email address of the account you want to receive notifications.</p>
+<p>In the search field, enter the name of the security group you want to add.</p>
 </li>
 <li>
-<p>Click <strong>Add Notifications</strong>.<br>
-The user is added under the list of accounts for notifications.</p>
+<p>Click <strong>Add</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deleting-security-groups">Deleting security groups</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If a security group is being utilized in a user-defined rule, it cannot be deleted.  You must remove the user-defined rule, then delete the security group.<br>
+<a href="task_managing_creating_rules.html#deleting-rules">Deleting rules</a></p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>ACCOUNT SETTINGS</strong>.</p>
 </li>
 <li>
-<p>Select the specific notifications you want the user to receive.</p>
+<p>Click <strong>SECURITY GROUPS</strong>.</p>
 </li>
 <li>
-<p>Click <strong>Save</strong>.</p>
+<p>Click the delete icon next to the group you want to remove.</p>
 </li>
 </ol>
 </div>

@@ -6,7 +6,7 @@
   <meta property="og:title" content="Managing services | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/task_managing_services.html" />
-	<meta property="og:description" content="You can manage your service in various ways within NetApp SaaS Backup (formerly named "NetApp Cloud Control") including activating a new services, deactivati..." />
+	<meta property="og:description" content="You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, an..." />
   <meta property="og:image" content="https://docs.netapp.com/saasbackupO365/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +17,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="You can manage your service in various ways within NetApp SaaS Backup (formerly named "NetApp Cloud Control") including activating a new services, deactivati...">
-  <meta name="keywords" content=" netapp, saas backup, office 365, activating service, deactivating, adding, license, security, groups, purge, purging, site collection, office 365 group, cancelling, jobs">
+  <meta name="description" content="You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, an...">
+  <meta name="keywords" content=" netapp, saas backup, office 365, activating service, deactivating, purge, purging, site collection, office 365 group, cancelling, jobs">
   
 
   <!-- Icons -->
@@ -315,7 +315,15 @@
   
 
   
+    <li><a href="task_managing_security_groups.html">Managing security groups</a></li>
+  
+
+  
     <li><a href="task_managing_permissions.html">Managing permissions</a></li>
+  
+
+  
+    <li><a href="task_managing_licenses.html">Managing licenses</a></li>
   
 
   
@@ -369,7 +377,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-03-13 21:13:16 +0000">03/13/2019</time>
+<time datetime="2019-04-19 17:41:02 +0000">04/19/2019</time>
 
 
 <span>Contributors
@@ -389,15 +397,13 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>You can manage your service in various ways within NetApp SaaS Backup (formerly named "NetApp Cloud Control") including activating a new services, deactivating a existing services, purging data, and canceling a job.</p>
+<p>You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, and canceling a job.</p>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#activating-a-service">Activating a service</a></li>
 <li><a href="#deactivating-a-service">Deactivating a service</a></li>
-<li><a href="#adding-a-license">Adding a license</a></li>
-<li><a href="#adding-security-groups">Adding security groups</a></li>
 <li><a href="#purging-a-user-site-collection-or-office-365-group">Purging a user, site collection, or Office 365 group</a></li>
 <li><a href="#canceling-a-job">Canceling a job</a></li>
 </ul>
@@ -453,67 +459,6 @@
 </li>
 <li>
 <p>Click <strong>Confirm</strong>.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="adding-a-license">Adding a license</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Education domains can have a license for faculty and a separate license for students.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>Click <strong>Services</strong> from the left navigation pane.<br>
-<span class="image"><img src="./media/services.jpg" alt="Screenshot of services button"></span></p>
-</li>
-<li>
-<p>Click <span class="image"><img src="./media/bluecircle_icon.jpg" alt="bluecircle icon"></span> icon in the right corner.</p>
-</li>
-<li>
-<p>Enter the license information.</p>
-</li>
-<li>
-<p>Click <strong>Validate Subscription</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Next</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Save</strong>.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="adding-security-groups">Adding security groups</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>You can add up to 3 security groups.  You can then use your security groups as filtering options in SaaS Backup.  After you add a security group, it cannot be deleted.</p>
-</div>
-<div class="paragraph">
-<p>New security groups must be discovered through an AutoSync or a manual synchronization before they can be added.<br>
-<a href="https://docs.microsoft.com/en-us/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide">Create, edit, or delete a security group in the Admin Center</a>.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>Click <strong>ACCOUNT SETTINGS</strong>.</p>
-</li>
-<li>
-<p>Click <strong>SECURITY GROUPS</strong>.</p>
-</li>
-<li>
-<p>In the search field, enter the name of the security group you want to add.</p>
-</li>
-<li>
-<p>Click <strong>Add</strong>.</p>
 </li>
 </ol>
 </div>

@@ -15,21 +15,21 @@
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/concept_get_help_find_info.html</loc>
       
-        <lastmod>2018-07-09T18:42:46+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/concept_overview.html</loc>
       
-        <lastmod>2018-07-09T18:42:46+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/</loc>
       
-        <lastmod>2019-03-27T22:17:55+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
@@ -43,28 +43,28 @@
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/reference_new_saasbackupO365.html</loc>
       
-        <lastmod>2019-03-25T16:57:14+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365//search.html</loc>
       
-        <lastmod>2019-04-24T14:52:40+00:00</lastmod>
+        <lastmod>2019-04-26T02:58:06+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/task_getting_started.html</loc>
       
-        <lastmod>2019-03-27T12:57:03+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/task_getting_started_free_trial.html</loc>
       
-        <lastmod>2018-11-20T15:27:45+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
@@ -78,14 +78,21 @@
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/task_managing_backups.html</loc>
       
-        <lastmod>2019-03-13T21:13:16+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/task_managing_creating_rules.html</loc>
       
-        <lastmod>2018-08-06T14:10:04+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/saasbackupO365/task_managing_licenses.html</loc>
+      
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
@@ -99,7 +106,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/task_managing_restores.html</loc>
       
-        <lastmod>2019-03-13T21:13:16+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
@@ -111,9 +118,16 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/saasbackupO365/task_managing_security_groups.html</loc>
+      
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/task_managing_services.html</loc>
       
-        <lastmod>2019-03-13T21:13:16+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
@@ -134,7 +148,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/saasbackupO365/task_viewing_data.html</loc>
       
-        <lastmod>2018-08-06T14:10:04+00:00</lastmod>
+        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
       
     </url>
   
