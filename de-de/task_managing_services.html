@@ -1,45 +1,129 @@
-<!DOCTYPE html><html lang="de"><head><title> Dienste verwalten | NetApp Cloud-Dokumente </title><meta charset="utf-8"><meta property="og:title" content="Managing services | NetApp Cloud Docs" /><meta property="og:type" content="website" /><meta property="og:url" content="https://docs.netapp.com/saasbackupO365/de-de/task_managing_services.html" /><meta property="og:description" content="You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, an..." /><meta property="og:image" content="https://docs.netapp.com/saasbackupO365/de-de/images/logo-tophat-social.png" /><meta property="og:image:alt" content="NetApp Logo" /><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"><meta http-equiv="encoding" content="utf-8"><meta http-equiv="nss-type" content="Product Documentation"/><meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, an..."><meta name="keywords" content=" netapp, saas backup, office 365, activating service, deactivating, purge, purging, site collection, office 365 group, cancelling, jobs"><!-- Icons --><link rel="icon" href="/saasbackupO365/de-de/images/favicon.ico" type="image/x-icon"><!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Cloud-Dokumente" href="/saasbackupO365/de-de/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css --><!-- Elastic Search --><link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css"><!-- LUCI CSS Content --><link rel="stylesheet" href="/saasbackupO365/de-de/common/css/esb.min.css"><link rel="stylesheet" href="/saasbackupO365/de-de/common/css/netapp-library.min.css"><link rel="stylesheet" href="/saasbackupO365/de-de/common/css/doc.css"><link rel="stylesheet" href="/saasbackupO365/de-de/common/css/doc-components.css"><link rel="stylesheet" href="/saasbackupO365/de-de/css/na-sidebar.css" type="text/css"><link rel="stylesheet" href="/saasbackupO365/de-de/css/na-search.css" type="text/css"><link rel="stylesheet" href="/saasbackupO365/de-de/css/clouddocs.css" type="text/css"><!-- Font awesome seems to affect our GitHub Icon and generic "arrow box" for external links. --><link rel="stylesheet" type="text/css" href="/saasbackupO365/de-de/css/font-awesome.min.css"><!-- <link rel="stylesheet" href="/saasbackupO365/de-de/css/customstyles.css"> --><!-- Controls the shadow effect for search dropdown menu --><link rel="stylesheet" href="/saasbackupO365/de-de/css/boxshadowproperties.css"><!-- NetApp CSS controls the technical content --><link rel="stylesheet" href="/saasbackupO365/de-de/css/netapp.css" type="text/css"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script><!-- Used to import Promise for IE. Required for SearchKit --><script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src="/saasbackupO365/de-de/js/na-search.js"></script><link rel="stylesheet" href="/saasbackupO365/de-de/css/na-pagenav.css" type="text/css" id="pagenav-css"><script src="/saasbackupO365/de-de/js/na-pagenav.js"></script><link rel="stylesheet" href="/saasbackupO365/de-de/css/prism.css" type="text/css"><link rel="stylesheet" href="/saasbackupO365/de-de/css/prism-netapp.css" type="text/css"><script src="/saasbackupO365/de-de/js/clouddocs.js"></script><script src="/saasbackupO365/de-de/js/s_code_impl.js"></script><script src="/saasbackupO365/de-de/js/jquery.navgoco.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script src="/saasbackupO365/de-de/js/toc.js"></script><script src="/saasbackupO365/de-de/js/customscripts.js"></script><script>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+  <title>Managing services | NetApp Cloud Docs</title>
+  <meta charset="utf-8">
+  <meta property="og:title" content="Managing services | NetApp Cloud Docs" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/de-de/task_managing_services.html" />
+	<meta property="og:description" content="You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, an..." />
+  <meta property="og:image" content="https://docs.netapp.com/saasbackupO365/de-de/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, an...">
+  <meta name="keywords" content=" netapp, saas backup, office 365, activating service, deactivating, purge, purging, site collection, office 365 group, cancelling, jobs">
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/saasbackupO365/de-de/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/saasbackupO365/de-de/feed.xml">
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- LUCI CSS Content -->
+  <link rel="stylesheet" href="/saasbackupO365/de-de/common/css/esb.min.css">
+  <link rel="stylesheet" href="/saasbackupO365/de-de/common/css/netapp-library.min.css">
+  <link rel="stylesheet" href="/saasbackupO365/de-de/common/css/doc.css">
+  <link rel="stylesheet" href="/saasbackupO365/de-de/common/css/doc-components.css">
+
+  <link rel="stylesheet" href='/saasbackupO365/de-de/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/de-de/css/na-search.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/de-de/css/clouddocs.css' type='text/css'>
+
+  <!-- Font awesome seems to affect our GitHub Icon and generic "arrow box" for external links. -->
+  <link rel="stylesheet" type="text/css" href="/saasbackupO365/de-de/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/saasbackupO365/de-de/css/customstyles.css"> -->
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/saasbackupO365/de-de/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel='stylesheet' href='/saasbackupO365/de-de/css/netapp.css' type='text/css'>
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/saasbackupO365/de-de/js/na-search.js'></script>
+  
+
+  
+  <link rel='stylesheet' href='/saasbackupO365/de-de/css/na-pagenav.css' type='text/css' id="pagenav-css">
+  <script src='/saasbackupO365/de-de/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/saasbackupO365/de-de/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/de-de/css/prism-netapp.css' type='text/css'>
+
+  <script src='/saasbackupO365/de-de/js/clouddocs.js'></script>
+  <script src='/saasbackupO365/de-de/js/s_code_impl.js'></script>
+  <script src='/saasbackupO365/de-de/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/saasbackupO365/de-de/js/toc.js'></script>
+  <script src='/saasbackupO365/de-de/js/customscripts.js'></script>
+
+  <script>
       $(document).ready(function() {
           // Initialize navgoco with default options
           $("#mysidebar").navgoco({
-              caretHtml: "",
+              caretHtml: '',
               accordion: true,
-              openClass: "active", // open
-              save: false, // leave false or nav highlighting doesn"t work right
+              openClass: 'active', // open
+              save: false, // leave false or nav highlighting doesn't work right
               cookie: {
-                  name: "navgoco",
+                  name: 'navgoco',
                   expires: false,
-                  path: "/"
+                  path: '/'
               },
               slide: {
                   duration: 400,
-                  easing: "swing"
+                  easing: 'swing'
               }
           });
 
           $("#collapseAll").click(function(e) {
               e.preventDefault();
-              $("#mysidebar").navgoco("toggle", false);
+              $("#mysidebar").navgoco('toggle', false);
           });
 
           $("#expandAll").click(function(e) {
               e.preventDefault();
-              $("#mysidebar").navgoco("toggle", true);
+              $("#mysidebar").navgoco('toggle', true);
           });
 
       });
 
-  </script><script>
+  </script>
+  <script>
       $(document).ready(function() {
           $("#tg-sb-link").click(function() {
               $("#tg-sb-sidebar").toggle();
-              $("#tg-sb-content").toggleClass("col-md-9");
-              $("#tg-sb-content").toggleClass("col-md-12");
-              $("#tg-sb-icon").toggleClass("fa-toggle-on");
-              $("#tg-sb-icon").toggleClass("fa-toggle-off");
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><!-- Controls the i18n Browser Redirection --><script>
+  </script>
+
+  <!-- Controls the i18n Browser Redirection -->
+  <script>
     var siteLocales = [];
     
       siteLocales.push("us-en");
@@ -50,15 +134,515 @@
     
 
     standardizeUrl(siteLocales, "clouddocs.netapp.com", "https://docs.netapp.com");
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script><script>
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
   if (document.location.hostname === "docs.netapp.com") {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag("config", "UA-81697994-3");
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
   }
-  </script></head><body class="n-doc__component-detail"> <a href="#n-main-content" class="visually-hidden">Springe zum Hauptinhalt</a> <div class="n-off-canvas-menu"><div class="n-off-canvas-menu__menu"><div class="n-off-canvas-menu__menu-inner"><div class="n-off-canvas-menu__property-title"> NetApp Cloud-Dokumente </div><ul class="n-off-canvas-menu__property-navigation-list"><li class="n-off-canvas-menu__property-navigation-list-item "> <a href="https://docs.netapp.com/de-de/" class="n-off-canvas-menu__property-navigation-link">Zuhause</a> <div class="n-off-canvas-menu__child-menu"><ul class="n-menu__list"></ul></div></li></ul><ul class="n-off-canvas-menu__global-navigation-list"><li class="n-off-canvas-menu__global-navigation-list-header"> Mehr von NetApp </li><li class="n-off-canvas-menu__global-navigation-list-item"> <a href="#" class="n-off-canvas-menu__global-navigation-link">Netapp.com</a> </li></ul></div></div></div><div class="n-off-canvas-menu__content-wrap"><!-- Header --><header><!-- Top Hat --><div class="n-top-hat"><div class="n-container"><div class="n-top-hat__cross-property-nav"><ul class="n-top-hat__list"><li class="n-top-hat__list-item"> <a href="http://www.netapp.com" class="n-top-hat__link">NetApp.com</a> </li></ul></div></div></div><!-- Property Bar --><div class="n-property-bar n-property-bar--v3"><div class="n-property-bar__inner-wrap"><div class="n-property-bar__menu-toggle"> <a href="#" class="n-property-bar__menu-toggle-link"><span class="n-property-bar__menu-toggle-text">Speisekarte</span></a> <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title"><use xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#bars"></use></svg></div><div class="n-property-bar__property-mark n-property-bar__property-mark--has-property-name"><div class="n-property-bar__logo"><svg class="n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title"><use xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#netapp-mark"></use></svg><svg class="n-property-bar__logo-svg" aria-labelledby="title"><use xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#netapp-logo"></use></svg></div><h2 class="n-property-bar__property-name"> Cloud-Dokumente </h2></div><div id="search-demo-container" class="n-property-bar__search"><div id="react-search"></div></div><div id="ie-i18n-menu" class="n-property-bar__utils"><ul class="n-property-navigation-bar__utils-list"><li class="n-property-navigation-bar__utils-list-item ie-i18n-container"> <a href="#" class="n-property-navigation-bar__utils-link n-property-navigation-bar__nav-link n-property-navigation-bar__language-selector-toggle ie-i18n-link" data-menu-id="n-property-navigation-bar__menu--language-selector"><span class="ie-i18n-lang">Deutsche</span></a> <svg class="ie-i18n-icon-container" class="n-property-bar__logo-svg" aria-labelledby="title"><use xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#globe" class="n-icon-globe n-globe__icon"></use></svg></li></ul></div></div><div class="n-property-bar__menus"><div id="n-property-navigation-bar__menu--language-selector" class="n-menu n-menu--v3"><div class="n-language-selector-menu"><div class="n-language-selector-menu__header"> <span class="n-language-selector-menu__title">Wähle deine Sprache</span> </div><ul class="n-menu__list"><li class="n-menu__list-column"><ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1"> <a href="/saasbackupO365/us-en/" class="n-menu__header-text">Englisch</a> </li><li class="n-menu__list-item n-menu__list-item--level-1"> <a href="/saasbackupO365/ja-jp/" class="n-menu__header-text">japanisch</a> </li><li class="n-menu__list-item n-menu__list-item--level-1"> <a href="/saasbackupO365/de-de/" class="n-menu__header-text">Deutsche</a> </li></ul></li></ul><div class="menu__footer"><p> Aktuelle Sprache: Deutsch </p></div></div></div></div></div></header><!-- Content --><main role="main" id="n-main-content" class="n-main-content"><div class="n-container"><div class="n-row"><div class="n-doc n-doc__component-list"><!-- Sidebar Column --><div class="col-md-3" ><ul id="mysidebar" class="nav"><li> <a href="index.html">NetApp SaaS Backup für Office 365</a> </li><li> <a href="reference_new_saasbackupO365.html">Was ist neu in SaaS Backup für Office 365?</a> </li><li> <a href="concept_overview.html">SaaS-Backup für Office 365 - Übersicht</a> </li><li> <a href="task_getting_started_free_trial.html">Erste Schritte mit einer kostenlosen Testversion</a> </li><li> <a href="task_getting_started.html">Erste Schritte mit einem kostenpflichtigen Abonnement</a> </li><li> <a href="task_managing_backups.html">Verwalten von Sicherungen mit SaaS Backup für Office 365</a> </li><li> <a href="task_managing_restores.html">Verwalten von Wiederherstellungen mit SaaS Backup für Office 365</a> </li><li> <a href="task_viewing_data.html">Anzeigen von Daten für SaaS Backup für Office 365</a> </li><li> <a href="task_managing_creating_rules.html">Regeln erstellen und verwalten</a> </li><li class="active"> <a href="task_managing_services.html">Dienste verwalten</a> </li><li> <a href="task_managing_security_groups.html">Sicherheitsgruppen verwalten</a> </li><li> <a href="task_managing_permissions.html">Berechtigungen verwalten</a> </li><li> <a href="task_managing_licenses.html">Lizenzen verwalten</a> </li><li> <a href="task_managing_accounts.html">Konten verwalten</a> </li><li> <a href="task_managing_role_based_account_access.html">Verwalten des rollenbasierten Kontenzugriffs</a> </li><li> <a href="task_upgrading_from_trial.html">Upgrade von einem Testabonnement</a> </li><li> <a href="task_providing_feedback.html">Feedback geben</a> </li><li> <a href="concept_get_help_find_info.html">Wo Sie Hilfe bekommen und weitere Informationen erhalten</a> </li><li> <a href="reference_legal_notices.html">Rechtliche Hinweise</a> </li></ul><!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you"re viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.--><script>$("li.active").parents("li").toggleClass("active");</script></div><div class="n-doc__component-detail-content n-doc__component-detail-content--show-code"><!-- Begin of page container --><article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> Dienste verwalten <span><a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_managing_services.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Bearbeiten Sie auf GitHub</a> <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[Managing services](https://docs.netapp.com/de-de/saasbackupO365/task_managing_services.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Dokumentänderungen anfordern</a></span> </h1></div><p class="page-details"><time datetime="2019-04-19 17:41:02 +0000"> 19.04.2013 </time> <span>Mitwirkende <a target="_blank" href="https://github.com/netapp-aherbin"><img  class="avatar avatar-small"
+  </script>
+</head>
+
+
+  <body class="n-doc__component-detail">
+    <a href="#n-main-content" class="visually-hidden">Skip to main content</a>
+<div class="n-off-canvas-menu">
+  <div class="n-off-canvas-menu__menu">
+    <div class="n-off-canvas-menu__menu-inner">
+      <div class="n-off-canvas-menu__property-title">NetApp Cloud Docs</div>
+      <ul class="n-off-canvas-menu__property-navigation-list">
+        <li class="n-off-canvas-menu__property-navigation-list-item ">
+          <a href="https://docs.netapp.com/de-de/" class="n-off-canvas-menu__property-navigation-link">
+            Home
+          </a>
+          <div class="n-off-canvas-menu__child-menu">
+            <ul class="n-menu__list">
+
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="n-off-canvas-menu__global-navigation-list">
+         <li class="n-off-canvas-menu__global-navigation-list-header">More From NetApp</li>
+         <li class="n-off-canvas-menu__global-navigation-list-item"><a href="#" class="n-off-canvas-menu__global-navigation-link">Netapp.com</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="n-off-canvas-menu__content-wrap">
+      <!-- Header -->
+      <header>
+  <!-- Top Hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+            <li class="n-top-hat__list-item">
+              <a href="http://www.netapp.com" class="n-top-hat__link">NetApp.com</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property Bar -->
+  <div class="n-property-bar n-property-bar--v3">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link"><span class="n-property-bar__menu-toggle-text">Menu</span><svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+          <title>bars</title>
+          <use xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#bars"></use>
+        </svg></a>
+      </div>
+      <div class="n-property-bar__property-mark n-property-bar__property-mark--has-property-name">
+        <a class="n-property-bar__property-link" href="https://docs.netapp.com/de-de/">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-property-bar__logo-svg" aria-labelledby="title">
+              <title>NetApp</title>
+              <use xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+          <h2 class="n-property-bar__property-name">Cloud Docs</h2>
+        </a>
+      </div>
+
+      
+      <div id="search-demo-container" class="n-property-bar__search">
+        <div id="react-search"></div>
+      </div>
+      
+
+      <div id="ie-i18n-menu" class="n-property-bar__utils">
+        <ul class="n-property-navigation-bar__utils-list">
+          <li class="n-property-navigation-bar__utils-list-item ie-i18n-container">
+            <a href="#" class="n-property-navigation-bar__utils-link n-property-navigation-bar__nav-link n-property-navigation-bar__language-selector-toggle ie-i18n-link" data-menu-id="n-property-navigation-bar__menu--language-selector">
+              <span class="ie-i18n-lang">German</span>
+              <svg class="ie-i18n-icon-container" class="n-property-bar__logo-svg" aria-labelledby="title">
+                <title>globe</title>
+                <use xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#globe" class="n-icon-globe n-globe__icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="n-property-bar__menus">
+      <div id="n-property-navigation-bar__menu--language-selector" class="n-menu n-menu--v3">
+        <div class="n-language-selector-menu">
+          <div class="n-language-selector-menu__header">
+            <span class="n-language-selector-menu__title">Select Your Language</span>
+          </div>
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list">
+
+
+                
+                <li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="/saasbackupO365/us-en/" class="n-menu__header-text">English</a>
+                </li>
+                
+                <li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="/saasbackupO365/ja-jp/" class="n-menu__header-text">Japanese</a>
+                </li>
+                
+                <li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="/saasbackupO365/de-de/" class="n-menu__header-text">German</a>
+                </li>
+                
+              </ul>
+            </li>
+          </ul>
+          <div class="menu__footer">
+            <p>Current Language: German
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <!-- Content -->
+      <main role="main" id="n-main-content" class="n-main-content">
+        <div class="n-container">
+  <div class="n-row">
+    <div class="n-doc n-doc__component-list">
+      <!-- Sidebar Column -->
+      
+      <div class="col-md-3" >
+          
+
+<ul id="mysidebar" class="nav">
+  
+
+  
+    <li><a href="index.html">NetApp SaaS Backup for Office 365</a></li>
+  
+
+  
+    <li><a href="reference_new_saasbackupO365.html">What's new in SaaS Backup for Office 365</a></li>
+  
+
+  
+    <li><a href="concept_overview.html">SaaS Backup for Office 365 Overview</a></li>
+  
+
+  
+    <li><a href="task_getting_started_free_trial.html">Getting Started with a Free Trial</a></li>
+  
+
+  
+    <li><a href="task_getting_started.html">Getting Started with a Paid Subscription</a></li>
+  
+
+  
+    <li><a href="task_managing_backups.html">Managing backups with SaaS Backup for Office 365</a></li>
+  
+
+  
+    <li><a href="task_managing_restores.html">Managing restores with SaaS Backup for Office 365</a></li>
+  
+
+  
+    <li><a href="task_viewing_data.html">Viewing data for SaaS Backup for Office 365</a></li>
+  
+
+  
+    <li><a href="task_managing_creating_rules.html">Creating and managing rules</a></li>
+  
+
+  
+    <li class="active"><a href="task_managing_services.html">Managing services</a></li>
+  
+
+  
+    <li><a href="task_managing_security_groups.html">Managing security groups</a></li>
+  
+
+  
+    <li><a href="task_managing_permissions.html">Managing permissions</a></li>
+  
+
+  
+    <li><a href="task_managing_licenses.html">Managing licenses</a></li>
+  
+
+  
+    <li><a href="task_managing_accounts.html">Managing accounts</a></li>
+  
+
+  
+    <li><a href="task_managing_role_based_account_access.html">Managing role-based account access</a></li>
+  
+
+  
+    <li><a href="task_upgrading_from_trial.html">Upgrading from a trial subscription</a></li>
+  
+
+  
+    <li><a href="task_providing_feedback.html">Providing feedback</a></li>
+  
+
+  
+    <li><a href="concept_get_help_find_info.html">Where to get help and find more information</a></li>
+  
+
+  
+    <li><a href="reference_legal_notices.html">Legal Notices</a></li>
+  
+
+
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+      </div>
+      
+
+      <div class="n-doc__component-detail-content n-doc__component-detail-content--show-code">
+        <!-- Begin of page container -->
+        <article class="page-content">
+          
+
+<div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Managing services
+    <span>
+      
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_managing_services.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[Managing services](https://docs.netapp.com/de-de/saasbackupO365/task_managing_services.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+      
+    </span>
+  </h1>
+</div>
+
+<p class="page-details">
+
+<time datetime="2019-04-19 17:41:02 +0000">04/19/2019</time>
+
+
+<span>Contributors
+  
+  <a target="_blank" href="https://github.com/netapp-aherbin">
+    <img  class="avatar avatar-small"
           alt="netapp-aherbin"
           width="20" height="20"
           src="https://avatars0.githubusercontent.com/u/38955266?v=4"
-          style="border-radius: 50%;"/></a></span> </p><div id="preamble"><div class="sectionbody"><div class="paragraph lead"><p> Sie können Ihren Dienst auf verschiedene Arten in NetApp SaaS Backup verwalten, z. B. das Aktivieren neuer Dienste, das Deaktivieren vorhandener Dienste, das Löschen von Daten und das Abbrechen eines Jobs. </p></div><div id="toc" class="toc"><div id="toctitle" class="title"> Inhaltsverzeichnis </div><ul class="sectlevel1"><li> <a href="#activating-a-service">Dienst aktivieren</a> </li><li> <a href="#deactivating-a-service">Dienst deaktivieren</a> </li><li> <a href="#purging-a-user-site-collection-or-office-365-group">Bereinigen eines Benutzers, einer Websitesammlung oder einer Office 365-Gruppe</a> </li><li> <a href="#canceling-a-job">Einen Job abbrechen</a> </li></ul></div></div></div><div class="sect1"><h2 id="activating-a-service"> Dienst aktivieren </h2><div class="sectionbody"><div class="paragraph"><p> Bei Bedarf können Sie einen oder mehrere SaaS Backup für Office 365-Dienste aktivieren. Microsoft Exchange Online oder Microsoft SharePoint Online müssen aktiviert sein, bevor Sie Microsoft Office 365-Gruppen aktivieren können. </p></div><div class="olist arabic"><div class="title"> Schritte </div><ol class="arabic"><li><p> Klicken Sie im linken Navigationsbereich auf <strong>Dienste</strong> . <br> <span class="image"><img src="./media/services.jpg" alt="Screenshot der Schaltfläche &quot;Dienste&quot;"></span> </p></li><li><p> Klicken Sie auf den Link Microsoft Office 365. <br> <span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 einstellungen"></span> </p></li><li><p> Klicken Sie auf <strong>Aktivieren</strong> neben dem Dienst, den Sie aktivieren möchten. </p></li><li><p> Klicken Sie auf <strong>Bestätigen</strong> . </p></li></ol></div></div></div><div class="sect1"><h2 id="deactivating-a-service"> Dienst deaktivieren </h2><div class="sectionbody"><div class="paragraph"><p> Bei Bedarf können Sie einen oder mehrere Ihrer SaaS Backup for Office 365-Dienste deaktivieren. Wenn Sie einen Dienst deaktivieren, werden alle diesem Dienst zugeordneten Zeitpläne entfernt, und es wird keine weitere Sicherung durchgeführt. Sie können immer noch die letzte vor der Deaktivierung durchgeführte Sicherung anzeigen und Wiederherstellungen durchführen. </p></div><div class="olist arabic"><div class="title"> Schritte </div><ol class="arabic"><li><p> Klicken Sie im linken Navigationsbereich auf <strong>Dienste</strong> . <br> <span class="image"><img src="./media/services.jpg" alt="Screenshot der Schaltfläche &quot;Dienste&quot;"></span> </p></li><li><p> Klicken Sie auf den Link Microsoft Office 365. <br> <span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 einstellungen"></span> </p></li><li><p> Klicken Sie auf <strong>Deaktivieren</strong> neben dem Dienst, den Sie deaktivieren möchten. </p></li><li><p> Klicken Sie auf <strong>Bestätigen</strong> . </p></li></ol></div></div></div><div class="sect1"><h2 id="purging-a-user-site-collection-or-office-365-group"> Bereinigen eines Benutzers, einer Websitesammlung oder einer Office 365-Gruppe </h2><div class="sectionbody"><div class="paragraph"><p> Sie können alle Daten, die einem Benutzer, einer Websitesammlung oder einer Office 365-Gruppe zugeordnet sind, vollständig entfernen. Bereinigte Daten können für sieben Tage wiederhergestellt werden. Nach sieben Tagen werden die Daten endgültig gelöscht. </p></div><div class="olist arabic"><div class="title"> Schritte </div><ol class="arabic"><li><p> Klicken Sie auf das Konfigurationssymbol <span class="image"><img src="./media/configure_Icon.jpg" alt="Symbol konfigurieren"></span> neben Ihrer SaaS Backup-Benutzer-ID in der oberen linken Ecke. </p></li><li><p> Wählen Sie <strong>ACCOUNT SERVICE</strong> . </p></li><li><p> Klicken Sie auf <strong>RETAIN AND PURGE</strong> . </p></li><li><p> <strong>Wählen Sie unter Daten</strong> bereinigen die <strong>Art des Dienstes</strong> (Exchange, OneDrive oder SharePoint) aus dem Dropdown-Menü aus. </p></li><li><p> Suchen Sie nach dem Benutzer, der Websitesammlung oder der Office 365-Gruppe, die Sie löschen möchten. <br> Geben Sie für Microsoft Exchange Online oder OneDrive for Business den Namen des Benutzers oder Office 365-Gruppe ein. Geben Sie für SharePoint Online den Namen der Websitesammlung ein. <br> Hinweis: Wenn Sie als Benutzer ein Archivpostfach haben, wird dem Benutzernamen des Archivpostfachs das Präfix &quot;Direktarchiv&quot; vorangestellt. </p></li><li><p> Wenn das Suchergebnis zurückgegeben wird, klicken Sie auf die Schaltfläche <span class="image"><img src="./media/bluecircle_icon.jpg" alt="Bluecircle-Symbol"></span> Benutzer, Websitesammlung oder Office 365-Gruppe auswählen. </p></li><li><p> Klicken Sie auf <strong>Speichern</strong> . </p></li><li><p> Klicken Sie auf <strong>Ja</strong> , um zu bestätigen, dass Sie die Daten löschen möchten. </p></li></ol></div></div></div><div class="sect1"><h2 id="canceling-a-job"> Einen Job abbrechen </h2><div class="sectionbody"><div class="paragraph"><p> Wenn Sie eine sofortige Sicherung oder sofortige Wiederherstellung eingeleitet haben, die Sicherung jedoch vor deren Abschluss abgebrochen werden muss, können Sie dies tun. </p></div><div class="olist arabic"><div class="title"> Schritte </div><ol class="arabic"><li><p> Klicken Sie im linken Navigationsbereich auf <strong>Jobs</strong> . <br> <span class="image"><img src="./media/jobs_button.jpg" alt="Schaltfläche &quot;Jobs&quot;"></span> </p></li><li><p> Klicken Sie unter <strong>Zuletzt ausgeführte Jobs</strong> auf den Job, den Sie abbrechen möchten. </p></li><li><p> Klicken Sie auf <strong>Abbrechen</strong> . <br> Der Fortschritt des abgebrochenen Jobs wird unter <strong>Zuletzt abgeschlossene Jobs</strong> angezeigt. </p></li></ol></div></div></div></article><!-- Page Container --></div><div class="page-nav-container"><nav class="page-nav-fixed"><div class="page-nav-title"> Auf dieser Seite: </div><ul class="page-nav-inner" id="page-menu"></ul></nav></div></div></div></div></main><!-- Footer --><footer class="n-footer n-footer--v1" style="border-top: solid 10px #DFDFDF;"><div class="n-footer__bottom"><div class="n-container"><div class="n-footer__bottom-left"><div class="n-footer__copyright"> <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2019 NetApp, Inc.</a> </div><div class="n-footer__copyright"> <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2848669" class="n-footer__copyright-link">Beachten</a> </div><div class="n-footer__copyright"> <a href="//www.netapp.com/us/legal/index.aspx" class="n-footer__copyright-link">Rechtliches</a> </div><div class="n-footer__social-links n-footer__copyright"><ul class="n-footer__social-link-list"><li class="n-footer__social-link-list-item"> <a class="n-footer__social-link" data-ntap-social="follow-blog" href="http://blog.netapp.com" target="_blank" title="Blog" alt="blog"><span class="n-footer__social-link-text">Blog</span></a> <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#blog"></use></svg></li><li class="n-footer__social-link-list-item"> <a class="n-footer__social-link" data-ntap-social="follow-community" href="http://community.netapp.com/" target="_blank" title="Gemeinschaft" alt="community"><span class="n-footer__social-link-text">Gemeinschaft</span></a> <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#comments"></use></svg></li><li class="n-footer__social-link-list-item"> <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netappdoc" target="_blank" title="Twitter" alt="twitter"><span class="n-footer__social-link-text">Twitter</span></a> <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#twitter"></use></svg></li><li class="n-footer__social-link-list-item"> <a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTechCommTV/" target="_blank" title="Youtube" alt="youtube"><span class="n-footer__social-link-text">Youtube</span></a> <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#youtube"></use></svg></li></ul></div></div><div class="n-footer__bottom-right"><div class="n-footer__copyright"> <a href="https://docs.netapp.com/de-de/contribute/" class="n-footer__copyright-link">Beitragen</a> </div><div class="n-footer__copyright"> <a target="_self" class="n-footer__copyright-link" href="javascript:netapp_mailto()">E-Mail dein Feedback</a> </div></div></div></div></footer></div><script src="/saasbackupO365/de-de/common/js/components.js"></script><script src="/saasbackupO365/de-de/common/js/doc-components.js"></script><!-- Elasticsearch JS --><script type="text/javascript" src="/saasbackupO365/de-de/js/bundle.js"></script><!-- Syntax Highlighting --><script type="text/javascript" src="/saasbackupO365/de-de/js/prism.js"></script><script type="text/javascript" src="/saasbackupO365/de-de/js/prism-curl.js"></script></body></html>
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>You can manage your service in various ways within NetApp SaaS Backup including activating a new services, deactivating a existing services, purging data, and canceling a job.</p>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#activating-a-service">Activating a service</a></li>
+<li><a href="#deactivating-a-service">Deactivating a service</a></li>
+<li><a href="#purging-a-user-site-collection-or-office-365-group">Purging a user, site collection, or Office 365 group</a></li>
+<li><a href="#canceling-a-job">Canceling a job</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="activating-a-service">Activating a service</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If needed, you can activate one or more SaaS Backup for Office 365 services. Microsoft Exchange Online or Microsoft SharePoint Online must be activated before you can activate Microsoft Office 365 Groups.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Services</strong> from the left navigation pane.<br>
+<span class="image"><img src="./media/services.jpg" alt="Screenshot of services button"></span></p>
+</li>
+<li>
+<p>Click the Microsoft Office 365 link.<br>
+<span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 settings"></span></p>
+</li>
+<li>
+<p>Click <strong>Activate</strong> next to the service that you want to activate.</p>
+</li>
+<li>
+<p>Click <strong>Confirm</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deactivating-a-service">Deactivating a service</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If needed, you can deactivate one or more of your SaaS Backup for Office 365 services.  If you deactivate a service, all of the schedules associated with that service are removed and no further backup is performed.  You can still view the last backup that occurred before deactivation and you can still perform restores.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Services</strong> from the left navigation pane.<br>
+<span class="image"><img src="./media/services.jpg" alt="Screenshot of services button"></span></p>
+</li>
+<li>
+<p>Click the Microsoft Office 365 link.<br>
+<span class="image"><img src="./media/mso365_settings.jpg" alt="mso365 settings"></span></p>
+</li>
+<li>
+<p>Click <strong>Deactivate</strong> next to the service that you want to deactivate.</p>
+</li>
+<li>
+<p>Click <strong>Confirm</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="purging-a-user-site-collection-or-office-365-group">Purging a user, site collection, or Office 365 group</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can completely remove all the data associated with a user, site collection, or Office 365 group. Purged data is recoverable for seven days.  After seven days, the data is permanently deleted.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Click the configuration icon <span class="image"><img src="./media/configure_Icon.jpg" alt="configure Icon"></span> next to your SaaS Backup userid in the top left corner.</p>
+</li>
+<li>
+<p>Select <strong>ACCOUNT SERVICE</strong>.</p>
+</li>
+<li>
+<p>Click <strong>RETAIN AND PURGE</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Purge Data</strong>, select the <strong>Type of Service</strong> (Exchange, OneDrive, or SharePoint) from the dropdown menu.</p>
+</li>
+<li>
+<p>Search for the user, site collection, or Office 365 group that you want to purge.<br>
+For Microsoft Exchange Online or OneDrive for Business, enter the user or Office 365 group name.  For SharePoint Online, enter the site collection name.<br>
+Note:  If you the user has an archive mailbox, the username of the archive mailbox is prefixed by "In-Place Archive".</p>
+</li>
+<li>
+<p>When the search result returns, click the <span class="image"><img src="./media/bluecircle_icon.jpg" alt="bluecircle icon"></span> to select the user, site collection, or Office 365 group.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Yes</strong> to confirm that you want purge the data.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="canceling-a-job">Canceling a job</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you have initiated an immediate backup or an immediate restore, but need to cancel it before it is completed, you can do so.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Jobs</strong> from the left navigation pane.<br>
+<span class="image"><img src="./media/jobs_button.jpg" alt="jobs button"></span></p>
+</li>
+<li>
+<p>Under <strong>Recent Running Jobs</strong>, click the job that you want to cancel.</p>
+</li>
+<li>
+<p>Click <strong>Cancel</strong>.<br>
+The progress of the cancelled job is displayed under <strong>Recent Completed Jobs</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+        </article>
+        <!-- Page Container -->
+      </div>
+
+      
+      <div class="page-nav-container">
+        <nav class="page-nav-fixed">
+          <div class="page-nav-title">On this page:</div>
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </nav>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+      </main>
+
+      <!-- Footer -->
+      
+      <footer class="n-footer n-footer--v1" style="border-top: solid 10px #DFDFDF;">
+        <div class="n-footer__bottom">
+          <div class="n-container">
+            <div class="n-footer__bottom-left">
+              <div class="n-footer__copyright">
+                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2019 NetApp, Inc.</a>
+              </div>
+              <div class="n-footer__copyright">
+                <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2848669" class="n-footer__copyright-link">Notice</a>
+              </div>
+              <div class="n-footer__copyright">
+                <a href="//www.netapp.com/us/legal/index.aspx" class="n-footer__copyright-link">Legal</a>
+              </div>
+              <div class="n-footer__social-links n-footer__copyright">
+                <ul class="n-footer__social-link-list">
+                  <li class="n-footer__social-link-list-item">
+                    <a class="n-footer__social-link" data-ntap-social="follow-blog" href="http://blog.netapp.com" target="_blank" title="blog" alt="blog">
+                      <span class="n-footer__social-link-text">blog</span>
+                      <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                        <title>blog@</title>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#blog"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="n-footer__social-link-list-item">
+                    <a class="n-footer__social-link" data-ntap-social="follow-community" href="http://community.netapp.com/" target="_blank" title="community" alt="community">
+                      <span class="n-footer__social-link-text">community</span>
+                      <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                        <title>community@</title>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#comments"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="n-footer__social-link-list-item">
+                    <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netappdoc" target="_blank" title="twitter" alt="twitter">
+                      <span class="n-footer__social-link-text">twitter</span>
+                      <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                        <title>twitter@</title>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="n-footer__social-link-list-item">
+                    <a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTechCommTV/" target="_blank" title="youtube" alt="youtube">
+                      <span class="n-footer__social-link-text">youtube</span>
+                      <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                        <title>youtube@</title>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/de-de/common/svg/sprite.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="n-footer__bottom-right">
+              <div class="n-footer__copyright">
+                <a href="https://docs.netapp.com/de-de/contribute/" class="n-footer__copyright-link">Contribute</a>
+              </div>
+              <div class="n-footer__copyright">
+                <a target="_self" class="n-footer__copyright-link" href="javascript:netapp_mailto()">Email your feedback</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="/saasbackupO365/de-de/common/js/components.js"></script>
+    <script src="/saasbackupO365/de-de/common/js/doc-components.js"></script>
+
+    <!-- Elasticsearch JS -->
+    <script type="text/javascript" src='/saasbackupO365/de-de/js/bundle.js'></script>
+
+    <!-- Syntax Highlighting -->
+    <script type="text/javascript" src='/saasbackupO365/de-de/js/prism.js'></script>
+    <script type="text/javascript" src='/saasbackupO365/de-de/js/prism-curl.js'></script>
+
+  </body>
+
+  
+</html>
