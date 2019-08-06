@@ -13,6 +13,90 @@
   
   
     <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_backups.html</loc>
+      
+        <lastmod>2019-07-23T17:31:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_creating_rules.html</loc>
+      
+        <lastmod>2019-07-23T19:21:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_licenses.html</loc>
+      
+        <lastmod>2019-07-23T17:31:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_permissions.html</loc>
+      
+        <lastmod>2019-07-23T17:31:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_restores.html</loc>
+      
+        <lastmod>2019-07-23T17:31:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_role_based_account_access.html</loc>
+      
+        <lastmod>2019-07-23T19:21:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_services.html</loc>
+      
+        <lastmod>2019-07-23T19:21:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_viewing_data.html</loc>
+      
+        <lastmod>2019-07-23T17:31:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_backup_policies.html</loc>
+      
+        <lastmod>2019-07-23T13:49:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_backup_settings.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_free_trial_restrictions.html</loc>
+      
+        <lastmod>2019-07-18T15:04:55+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_free_trial_workflow.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_get_help_find_info.html</loc>
       
         <lastmod>2019-04-19T17:41:02+00:00</lastmod>
@@ -20,16 +104,58 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_information_to_gather_for_byos.html</loc>
+      
+        <lastmod>2019-07-18T20:19:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_overview.html</loc>
       
-        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
+        <lastmod>2019-07-23T20:10:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_paid_subscription_workflow.html</loc>
+      
+        <lastmod>2019-07-18T20:51:38+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_storage_types.html</loc>
+      
+        <lastmod>2019-07-18T20:19:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_supported_templates_and_apps.html</loc>
+      
+        <lastmod>2019-07-23T13:49:34+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/</loc>
       
-        <lastmod>2019-04-26T02:58:26+00:00</lastmod>
+        <lastmod>2019-07-24T17:24:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/reference_free_trial_data.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/reference_kpls.html</loc>
+      
+        <lastmod>2019-07-23T19:21:23+00:00</lastmod>
       
     </url>
   
@@ -43,77 +169,161 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/reference_new_saasbackupO365.html</loc>
       
-        <lastmod>2019-05-06T16:00:00+00:00</lastmod>
+        <lastmod>2019-08-06T17:48:16+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365//search.html</loc>
       
-        <lastmod>2019-08-05T18:48:23+00:00</lastmod>
+        <lastmod>2019-08-06T18:27:07+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_getting_started.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_activating_a_service.html</loc>
       
-        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_getting_started_free_trial.html</loc>
-      
-        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_accounts.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_activating_an_add_on_license.html</loc>
       
-        <lastmod>2019-03-27T18:41:04+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_backups.html</loc>
-      
-        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
+        <lastmod>2019-07-23T20:32:32+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_creating_rules.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_adding_a_license.html</loc>
       
-        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_licenses.html</loc>
-      
-        <lastmod>2019-05-06T15:55:48+00:00</lastmod>
+        <lastmod>2019-07-23T20:32:32+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_permissions.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_adding_permissions.html</loc>
       
-        <lastmod>2019-01-10T15:36:48+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_restores.html</loc>
-      
-        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
+        <lastmod>2019-07-23T16:11:32+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_role_based_account_access.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_adding_permissions_to_service_accounts.html</loc>
       
-        <lastmod>2018-08-06T14:10:04+00:00</lastmod>
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_adding_security_groups.html</loc>
+      
+        <lastmod>2019-07-23T19:21:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_applying_rules.html</loc>
+      
+        <lastmod>2019-07-23T20:10:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_assigning_admin_roles_to_user_accounts.html</loc>
+      
+        <lastmod>2019-07-23T19:21:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_canceling_job.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_configuring_impersonation.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_creating_msservice_account_with_global_permissions.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_creating_rules.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_creating_user_defined_filter.html</loc>
+      
+        <lastmod>2019-07-23T16:11:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_deactivating_a_service.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_deleting_admin_roles_from_a_user_account.html</loc>
+      
+        <lastmod>2019-07-23T19:21:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_deleting_rules.html</loc>
+      
+        <lastmod>2019-07-23T19:21:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_deleting_security_groups.html</loc>
+      
+        <lastmod>2019-07-23T20:10:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_discovering_new.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_downloading_data.html</loc>
+      
+        <lastmod>2019-08-06T18:01:01+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_getting_started_paid_subscription.html</loc>
+      
+        <lastmod>2019-07-23T13:49:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_granting_permissions_to_enable_shared_mailboxes.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
       
     </url>
   
@@ -125,30 +335,156 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_managing_services.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_performing_granular_level_restore.html</loc>
       
-        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
+        <lastmod>2019-08-06T18:20:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_performing_high_level_restore.html</loc>
+      
+        <lastmod>2019-07-23T20:10:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_performing_immediate_backup_of_policy.html</loc>
+      
+        <lastmod>2019-07-23T20:10:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_performing_immediate_backup_of_service.html</loc>
+      
+        <lastmod>2019-07-23T20:10:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_performing_search.html</loc>
+      
+        <lastmod>2019-07-23T17:31:56+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_providing_feedback.html</loc>
       
-        <lastmod>2018-09-10T18:14:47+00:00</lastmod>
+        <lastmod>2019-07-23T20:46:38+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_purging.html</loc>
+      
+        <lastmod>2019-07-23T20:10:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_registering_for_free_trial_activation_code.html</loc>
+      
+        <lastmod>2019-07-18T14:46:51+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_releasing_a_user_license.html</loc>
+      
+        <lastmod>2019-07-23T20:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_restoring_from_previous_backup.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_scheduling_backup_or_changing_frequency.html</loc>
+      
+        <lastmod>2019-07-23T20:10:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_scheduling_first_backup.html</loc>
+      
+        <lastmod>2019-07-24T17:24:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_setting_account_notifications.html</loc>
+      
+        <lastmod>2019-07-23T20:58:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_signing_up_for_o365_free_trial.html</loc>
+      
+        <lastmod>2019-07-18T14:46:51+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_signing_up_for_saasbkup_free_trial.html</loc>
+      
+        <lastmod>2019-08-06T18:20:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_signing_up_for_saasbkup_paid_subscription.html</loc>
+      
+        <lastmod>2019-07-23T13:49:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_syncing_user_permissions_with_azure.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_updating_admin_roles_assigned_to_user_accounts.html</loc>
+      
+        <lastmod>2019-07-23T19:21:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_updating_backup_retention_period.html</loc>
+      
+        <lastmod>2019-07-23T17:31:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_updating_backup_settings.html</loc>
+      
+        <lastmod>2019-08-06T16:56:17+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_upgrading_from_trial.html</loc>
       
-        <lastmod>2019-03-27T12:57:03+00:00</lastmod>
+        <lastmod>2019-07-24T17:24:37+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_viewing_data.html</loc>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_viewing_history_and_activity.html</loc>
       
-        <lastmod>2019-04-19T17:41:02+00:00</lastmod>
+        <lastmod>2019-08-06T18:01:01+00:00</lastmod>
       
     </url>
   
