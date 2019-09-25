@@ -113,14 +113,21 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/reference_new_saasbackupO365.html</loc>
       
-        <lastmod>2019-08-12T15:13:57+00:00</lastmod>
+        <lastmod>2019-09-17T15:44:04+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365//search.html</loc>
       
-        <lastmod>2019-08-19T14:35:52+00:00</lastmod>
+        <lastmod>2019-09-25T15:03:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_activate_support.html</loc>
+      
+        <lastmod>2019-09-17T18:19:17+00:00</lastmod>
       
     </url>
   
@@ -184,6 +191,20 @@
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_canceling_job.html</loc>
       
         <lastmod>2019-08-06T19:32:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_completing_signing_up_ipa.html</loc>
+      
+        <lastmod>2019-09-20T15:17:48+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_completing_signing_up_marketplace.html</loc>
+      
+        <lastmod>2019-09-20T15:17:48+00:00</lastmod>
       
     </url>
   
@@ -372,7 +393,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_signing_up_for_saasbkup_paid_subscription.html</loc>
       
-        <lastmod>2019-08-06T19:32:02+00:00</lastmod>
+        <lastmod>2019-09-20T15:24:12+00:00</lastmod>
       
     </url>
   
@@ -407,7 +428,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_upgrading_from_trial.html</loc>
       
-        <lastmod>2019-07-24T17:24:37+00:00</lastmod>
+        <lastmod>2019-09-20T15:17:48+00:00</lastmod>
       
     </url>
   

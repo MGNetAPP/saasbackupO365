@@ -20,6 +20,7 @@
   <meta name="description" content="You can sign up for SaaS Backup for Office 365 with your Microsoft Office 365 service account or with your NetApp SSO account.">
   <meta name="keywords" content=" netapp, saas backup, office 365, getting started, signing up, paid, subscription, licensed, version">
   
+  
 
   <!-- Icons -->
   <link rel="icon" href="/saasbackupO365/images/favicon.ico" type="image/x-icon">
@@ -129,8 +130,6 @@
       siteLocales.push("us-en");
     
       siteLocales.push("ja-jp");
-    
-      siteLocales.push("de-de");
     
 
     standardizeUrl(siteLocales, "clouddocs.netapp.com", "https://docs.netapp.com");
@@ -258,12 +257,6 @@
                 
                 <li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="/saasbackupO365/ja-jp/" class="n-menu__header-text">Japanese</a>
-                </li>
-                
-                
-                
-                <li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="/saasbackupO365/de-de/" class="n-menu__header-text">German</a>
                 </li>
                 
                 
@@ -397,7 +390,23 @@
   
 
   
-    <li><a href="task_upgrading_from_trial.html">Upgrading from a trial subscription</a></li>
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Upgrading from a trial subscription</a>
+      <ul>
+        
+
+  
+    <li><a href="task_upgrading_from_trial.html">Upgrade</a></li>
+  
+
+  
+    <li><a href="task_activate_support.html">Activate support after upgrade</a></li>
+  
+
+
+      </ul>
+    </li>
   
 
   
@@ -613,6 +622,10 @@
   
 
   
+    <li><a href="task_activate_support.html">Activate support</a></li>
+  
+
+  
     <li><a href="task_canceling_job.html">Canceling a job</a></li>
   
 
@@ -749,7 +762,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-08-06 19:32:02 +0000">08/06/2019</time>
+<time datetime="2019-09-20 15:24:12 +0000">09/20/2019</time>
 
 
 <span>Contributors
@@ -822,69 +835,12 @@ A list of the available Microsoft Office 365 services is displayed.</p>
 <p>Click <strong>Next</strong>.</p>
 </li>
 <li>
-<p>Select <strong>Licensed</strong> for the subscription type.</p>
+<p>If you have purchased an IPA license the subscription types are displayed.<br>
+Click <a href="task_completing_signing_up_ipa.html">here</a> for additional steps.</p>
 </li>
 <li>
-<p>Enter the requested information, and then validate the subscription.</p>
-</li>
-<li>
-<p>Click <strong>Next</strong>.</p>
-</li>
-<li>
-<p>Select your backup storage option.<br>
-You can use storage provided by SaaS Backup or the Bring Your Own Storage (BYOS) option.</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>If you are using storage provided by SaaS Backup do the following:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Click <strong>SaaS Backup Provided Storage</strong>.</p>
-</li>
-<li>
-<p>Select the <strong>Amazon S3</strong> or <strong>Azure Blob</strong> storage option.</p>
-</li>
-<li>
-<p>Select the <strong>AWS S3</strong> or <strong>Azure Blob</strong> region for your backup.<br>
-You should select the region that is the closest to the physical location of the data you are backing up.</p>
-</li>
-<li>
-<p>Click <strong>Next</strong>.</p>
-</li>
-<li>
-<p>Review your configuration, and then click <strong>Save</strong>.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>If you are using a BYOS option do the following:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Click <strong>Bring Your Own Storage (BYOS)</strong>.</p>
-</li>
-<li>
-<p>Click your BYOS option.</p>
-</li>
-<li>
-<p>Enter the information you previously gathered for your BYOS option.</p>
-</li>
-<li>
-<p>Click <strong>Test Connection</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Next</strong>.</p>
-</li>
-<li>
-<p>Review your configuration, and then click <strong>Save</strong>.</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
+<p>If you purchased your license through a Marketplace your license information is displayed.<br>
+Click <a href="task_completing_signing_up_marketplace.html">here</a> for additional steps.</p>
 </li>
 </ol>
 </div>
