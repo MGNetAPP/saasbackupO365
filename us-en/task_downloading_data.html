@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Viewing and downloading data | NetApp Cloud Docs</title>
+  <title>Downloading logs | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content="Viewing and downloading data | NetApp Cloud Docs" />
+  <meta property="og:title" content="Downloading logs | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/us-en/task_downloading_data.html" />
 	<meta property="og:description" content="You can view or download a log of the SaaS Backup activities and job history." />
@@ -81,22 +81,29 @@
 
   <script>
       $(document).ready(function() {
-          // Initialize navgoco with default options
-          $("#mysidebar").navgoco({
-              caretHtml: '',
-              accordion: true,
-              openClass: 'active', // open
-              save: false, // leave false or nav highlighting doesn't work right
-              cookie: {
-                  name: 'navgoco',
-                  expires: false,
-                  path: '/'
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
               },
-              slide: {
-                  duration: 400,
-                  easing: 'swing'
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
               }
-          });
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
 
           $("#collapseAll").click(function(e) {
               e.preventDefault();
@@ -549,6 +556,10 @@
   
 
   
+    <li><a href="task_enabling_onenote_backups.html">Enabling backups for OneNote</a></li>
+  
+
+  
     <li><a href="task_updating_backup_settings.html">Updating backup settings</a></li>
   
 
@@ -573,11 +584,35 @@
   
 
   
-    <li><a href="task_performing_granular_level_restore.html">Performing a granular-level restore</a></li>
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Performing a granular-level restore</a>
+      <ul>
+        
+
+  
+    <li><a href="task_performing_granular_level_restore_exchange.html">For Exchange</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_sharepoint.html">For SharePoint</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_onedrive.html">For OneDrive</a></li>
+  
+
+
+      </ul>
+    </li>
   
 
   
     <li><a href="task_restoring_from_previous_backup.html">Restoring from a previous backup</a></li>
+  
+
+  
+    <li><a href="task_viewing_restore_file_locations.html">Finding restored files</a></li>
   
 
 
@@ -766,6 +801,10 @@
   
 
   
+    <li><a href="task_viewing_deprovisioned.html">Viewing deprovisioned items</a></li>
+  
+
+  
     <li class="active"><a href="task_downloading_data.html">Downloading data</a></li>
   
 
@@ -801,11 +840,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Viewing and downloading data
+  <h1 class="n-doc__component-detail-heading">Downloading logs
     <span>
       
         <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_downloading_data.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[Viewing and downloading data](https://docs.netapp.com/us-en/saasbackupO365/task_downloading_data.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[Downloading logs](https://docs.netapp.com/us-en/saasbackupO365/task_downloading_data.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -813,7 +852,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-08-06 19:32:02 +0000">08/06/2019</time>
+<time datetime="2019-12-13 19:20:23 +0000">12/13/2019</time>
 
 
 <span>Contributors
@@ -920,7 +959,7 @@ The log is downloaded</p>
           <div class="n-container">
             <div class="n-footer__bottom-left">
               <div class="n-footer__copyright">
-                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2019 NetApp, Inc.</a>
+                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2020 NetApp, Inc.</a>
               </div>
               <div class="n-footer__copyright">
                 <a href="//www.netapp.com/us/legal/index.aspx" class="n-footer__copyright-link">Legal</a>
@@ -973,6 +1012,9 @@ The log is downloaded</p>
               </div>
               <div class="n-footer__copyright">
                 <a target="_self" class="n-footer__copyright-link" href="javascript:netapp_mailto()">Email your feedback</a>
+              </div>
+              <div class="n-footer__copyright">
+                <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright-link">Announcements</a>
               </div>
             </div>
           </div>

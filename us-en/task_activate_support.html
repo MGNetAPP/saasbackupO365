@@ -6,7 +6,7 @@
   <meta property="og:title" content="Activating support | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/us-en/task_activate_support.html" />
-	<meta property="og:description" content="After purchasing a licensed version of SaaS Backup, you can activate support which enables you to access technical support over online chat, web ticketing sy..." />
+	<meta property="og:description" content="Activating support enables you to access technical support over the phone, online chat, or web ticketing system." />
   <meta property="og:image" content="https://docs.netapp.com/saasbackupO365/us-en/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +17,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="After purchasing a licensed version of SaaS Backup, you can activate support which enables you to access technical support over online chat, web ticketing sy...">
-  <meta name="keywords" content=" netapp, saas backup, office 365, activating, activate, support, entitlement">
+  <meta name="description" content="Activating support enables you to access technical support over the phone, online chat, or web ticketing system.">
+  <meta name="keywords" content=" netapp, saas backup, office 365, activating, activate, support, entitlement, marketplace">
   
   
 
@@ -81,22 +81,29 @@
 
   <script>
       $(document).ready(function() {
-          // Initialize navgoco with default options
-          $("#mysidebar").navgoco({
-              caretHtml: '',
-              accordion: true,
-              openClass: 'active', // open
-              save: false, // leave false or nav highlighting doesn't work right
-              cookie: {
-                  name: 'navgoco',
-                  expires: false,
-                  path: '/'
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
               },
-              slide: {
-                  duration: 400,
-                  easing: 'swing'
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
               }
-          });
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
 
           $("#collapseAll").click(function(e) {
               e.preventDefault();
@@ -549,6 +556,10 @@
   
 
   
+    <li><a href="task_enabling_onenote_backups.html">Enabling backups for OneNote</a></li>
+  
+
+  
     <li><a href="task_updating_backup_settings.html">Updating backup settings</a></li>
   
 
@@ -573,11 +584,35 @@
   
 
   
-    <li><a href="task_performing_granular_level_restore.html">Performing a granular-level restore</a></li>
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Performing a granular-level restore</a>
+      <ul>
+        
+
+  
+    <li><a href="task_performing_granular_level_restore_exchange.html">For Exchange</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_sharepoint.html">For SharePoint</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_onedrive.html">For OneDrive</a></li>
+  
+
+
+      </ul>
+    </li>
   
 
   
     <li><a href="task_restoring_from_previous_backup.html">Restoring from a previous backup</a></li>
+  
+
+  
+    <li><a href="task_viewing_restore_file_locations.html">Finding restored files</a></li>
   
 
 
@@ -766,6 +801,10 @@
   
 
   
+    <li><a href="task_viewing_deprovisioned.html">Viewing deprovisioned items</a></li>
+  
+
+  
     <li><a href="task_downloading_data.html">Downloading data</a></li>
   
 
@@ -813,7 +852,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-09-17 18:19:17 +0000">09/17/2019</time>
+<time datetime="2019-12-19 20:02:02 +0000">12/19/2019</time>
 
 
 <span>Contributors
@@ -831,7 +870,7 @@
 </p>
 
 <div class="paragraph lead">
-<p>Once you have purchased a licensed version of SaaS Backup, you can activate support.  Activating support enables you to access technical support over the phone, online chat, or web ticketing system.</p>
+<p>If you purchased SaaS Backup through NetApp, support is activated by default.  If you purchased SaaS Backup through a Cloud Marketplace such as AWA, you must activate support.  Activating support enables you to access technical support over the phone, online chat, or web ticketing system.</p>
 </div>
 <div class="paragraph">
 <p>If you are upgrading from a trial version of SaaS Backup, you can activate support either before or after you complete the upgrade process.</p>
@@ -890,7 +929,7 @@
           <div class="n-container">
             <div class="n-footer__bottom-left">
               <div class="n-footer__copyright">
-                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2019 NetApp, Inc.</a>
+                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2020 NetApp, Inc.</a>
               </div>
               <div class="n-footer__copyright">
                 <a href="//www.netapp.com/us/legal/index.aspx" class="n-footer__copyright-link">Legal</a>
@@ -943,6 +982,9 @@
               </div>
               <div class="n-footer__copyright">
                 <a target="_self" class="n-footer__copyright-link" href="javascript:netapp_mailto()">Email your feedback</a>
+              </div>
+              <div class="n-footer__copyright">
+                <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright-link">Announcements</a>
               </div>
             </div>
           </div>

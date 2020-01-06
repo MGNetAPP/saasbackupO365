@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title> | NetApp Cloud Docs</title>
+  <title>New features and updates | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content=" | NetApp Cloud Docs" />
+  <meta property="og:title" content="New features and updates | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/us-en/reference_new_saasbackupO365.html" />
 	<meta property="og:description" content="SaaS Backup for Office 365 regularly introduces a new release to bring you new features, enhancements, and bug fixes." />
@@ -81,22 +81,29 @@
 
   <script>
       $(document).ready(function() {
-          // Initialize navgoco with default options
-          $("#mysidebar").navgoco({
-              caretHtml: '',
-              accordion: true,
-              openClass: 'active', // open
-              save: false, // leave false or nav highlighting doesn't work right
-              cookie: {
-                  name: 'navgoco',
-                  expires: false,
-                  path: '/'
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
               },
-              slide: {
-                  duration: 400,
-                  easing: 'swing'
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
               }
-          });
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
 
           $("#collapseAll").click(function(e) {
               e.preventDefault();
@@ -549,6 +556,10 @@
   
 
   
+    <li><a href="task_enabling_onenote_backups.html">Enabling backups for OneNote</a></li>
+  
+
+  
     <li><a href="task_updating_backup_settings.html">Updating backup settings</a></li>
   
 
@@ -573,11 +584,35 @@
   
 
   
-    <li><a href="task_performing_granular_level_restore.html">Performing a granular-level restore</a></li>
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Performing a granular-level restore</a>
+      <ul>
+        
+
+  
+    <li><a href="task_performing_granular_level_restore_exchange.html">For Exchange</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_sharepoint.html">For SharePoint</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_onedrive.html">For OneDrive</a></li>
+  
+
+
+      </ul>
+    </li>
   
 
   
     <li><a href="task_restoring_from_previous_backup.html">Restoring from a previous backup</a></li>
+  
+
+  
+    <li><a href="task_viewing_restore_file_locations.html">Finding restored files</a></li>
   
 
 
@@ -766,6 +801,10 @@
   
 
   
+    <li><a href="task_viewing_deprovisioned.html">Viewing deprovisioned items</a></li>
+  
+
+  
     <li><a href="task_downloading_data.html">Downloading data</a></li>
   
 
@@ -801,11 +840,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">
+  <h1 class="n-doc__component-detail-heading">New features and updates
     <span>
       
         <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/reference_new_saasbackupO365.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[](https://docs.netapp.com/us-en/saasbackupO365/reference_new_saasbackupO365.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[New features and updates](https://docs.netapp.com/us-en/saasbackupO365/reference_new_saasbackupO365.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -813,7 +852,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-09-17 15:44:04 +0000">09/17/2019</time>
+<time datetime="2020-01-06 16:14:44 +0000">01/06/2020</time>
 
 
 <span>Contributors
@@ -840,14 +879,37 @@
 
 <p><a target="_blank" href="/saasbackupO365/us-en/feed.xml" class="button rss" role="button"><img width="20" height="20" src="/saasbackupO365/us-en/images/rss.png"/><span>  RSS Subscribe<span></a></p>
 
-<div class="sect1">
-<h2 id="new-features-and-updates">New features and updates</h2>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>The following new features and updates have been added to this release of NetApp SaaS Backup for Office 365.</p>
 </div>
-<div class="sect2">
-<h3 id="september-2019">September 2019</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="january-2020">January 2020</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>You can now view mailboxes, sites, mysites, groups, or accounts that have been deprovisioned.<br>
+<a href="task_viewing_deprovisioned.html">Viewing deprovisioned items</a></p>
+</li>
+<li>
+<p>User licenses are now automatically release seven days after the accounts are purged. You can view a list of items scheduled to be purged within seven days and list of items that have already been purged.<br>
+<a href="task_viewing_deprovisioned.html">Viewing a list of purged data</a></p>
+</li>
+<li>
+<p>Backup for Microsoft OneNote notebooks is now supported for Microsoft SharePoint Online and OneDrive for Business.<br>
+<a href="task_enabling_onenote_backups.html">Enabling backups for OneNote</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="september-2019">September 2019</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
@@ -860,8 +922,10 @@ Activating support enables you to access technical support over the phone, onlin
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="june-2019">June 2019</h3>
+</div>
+<div class="sect1">
+<h2 id="june-2019">June 2019</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
@@ -871,7 +935,6 @@ Activating support enables you to access technical support over the phone, onlin
 <p>Enhancements have been made to include additional details in the restore statistics including restore size, restore location, and additional comments.</p>
 </li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -956,153 +1019,10 @@ Activating support enables you to access technical support over the phone, onlin
 </div>
 </div>
 <div class="sect1">
-<h2 id="december-2018">December 2018</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>SaaS Backup for Office 365 can now be purchased through the AppDirect Marketplace and the CANCOM Marketplace.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="august-2018">August 2018</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>The user interface has been redesigned for improved user experience and efficiency.</p>
-</li>
-<li>
-<p>Data retention polices have been updated to allow data to be retained for 3 years.<br>
-<a href="concept_backup_policies.html#backup_policies">Backup policies</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="may-2018">May 2018</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>NetApp Cloud Control has been renamed to NetApp SaaS Backup for Office 365.</p>
-</li>
-<li>
-<p>You can now purge users, site collections, and Office 365 groups, completely removing all associated data from SaaS Backup for Office 365.<br>
-<a href="task_purging.html#purging-a-user-site-collection-or-office-365-group">Purging a user, site collection, or Office 365 group</a></p>
-</li>
-<li>
-<p>SaaS Backup now discovers both public and private groups for Office 365 groups.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="april-2018">April 2018</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>SaaS Backup for Office 365 now supports shared mailboxes for Microsoft Office Exchange Online.</p>
-<div class="paragraph">
-<p>Shared mailboxes are discovered through the use of an automatically created service account.  If you have not activated service for Microsoft Office Exchange Online prior to this update, the automatic service account for shared mailboxes is created by SaaS Backup when you activate Microsoft Office Exchange Online. If your service for Microsoft Office Exchange Online is already activated, you must grant SaaS Backup permission to create the automatic service account, so that your shared mailboxes can be discovered and backed up.  <a href="task_granting_permissions_to_enable_shared_mailboxes.html#granting-permissions-to-enable-shared-mailboxes">Granting permissions to enable shared mailboxes</a></p>
-</div>
-<div class="paragraph">
-<p>After your automatic service account is created, your shared mailboxes will be automatically discovered during the next scheduled synchronization of your user account.  If you want your shared mailboxes discovered immediately, you can <a href="task_discovering_new.html#sdiscovering-new-mailboxes-sites-and-groups">discover your user accounts immediately</a>.</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="march-2018">March 2018</h2>
+<h2 id="archived">Archived</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The location in which you enter an activation code for a free trial was moved to the Add a Service Provider wizard:</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/subscription_types_free_trial.jpg" alt="Screenshot that shows where you enter an activation code in the Subscription page when Free Trial is selected."></span></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="february-2018">February 2018</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Filtering based on Template ID is now available for Microsoft SharePoint Online.<br>
-<a href="task_creating_user_defined_filter.html#creating-a-user-defined-filer">Creating a user defined filter</a></p>
-</li>
-<li>
-<p>You can now download the SaaS Backup for Office 365 user account activity log to a .csv file.<br>
-<a href="task_viewing_and_downloading_data.html#downloading-the-activity-log">Downloading the activity log</a></p>
-</li>
-<li>
-<p>Synchronization of user accounts, sites, and groups between SaaS Backup for Office 365 and your service is now enabled by default.</p>
-</li>
-<li>
-<p>Inclusion of backup version history is now enabled by default. The default number of versions is 20.<br>
-<a href="task_updating_backup_settings.html#updating-backup-settings">Updating Backup Settings</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="january-2018">January 2018</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>The activity log now displays the name of the user ID associated with each action performed inside SaaS Backup for Office 365.</p>
-</li>
-<li>
-<p>You can now manually synchronize your user permissions with Azure Active Directory from within SaaS Backup for Office 365.</p>
-</li>
-<li>
-<p>Microsoft Exchange Online now supports export to PST for restore at the folder level.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="november-2017">November 2017</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>SaaS Backup for Office 365 now supports Azure Blob as an option for SaaS Backup provided storage.</p>
-</li>
-<li>
-<p>SaaS Backup for Office 365 now supports Microsoft Office 365 Groups for backup and restore.<br>
-Microsoft Exchange Online or Microsoft SharePoint Online must be activated before you can activate Microsoft Office 365 Groups. Microsoft Office 365 Groups can only be protected by the tier 3 backup policy.</p>
-</li>
-<li>
-<p>Microsoft Exchange Online now supports export to PST for restore at the mailbox level.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="october-2017">October 2017</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Rules can be created that allow you to automatically move users to a preselected backup tier based on predefined criteria.<br>
-You can create rules for Microsoft Exchange Online and Microsoft OneDrive for Business.  You cannot create rules for Microsoft SharePoint Online.<br>
-<a href="task_creating_rules.html#creating-rules">Creating Rules</a></p>
-</li>
-</ul>
+<p>Click <a href="reference_new_archive.html">here</a> for the archived list of new features</p>
 </div>
 </div>
 </div>
@@ -1133,7 +1053,7 @@ You can create rules for Microsoft Exchange Online and Microsoft OneDrive for Bu
           <div class="n-container">
             <div class="n-footer__bottom-left">
               <div class="n-footer__copyright">
-                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2019 NetApp, Inc.</a>
+                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2020 NetApp, Inc.</a>
               </div>
               <div class="n-footer__copyright">
                 <a href="//www.netapp.com/us/legal/index.aspx" class="n-footer__copyright-link">Legal</a>
@@ -1186,6 +1106,9 @@ You can create rules for Microsoft Exchange Online and Microsoft OneDrive for Bu
               </div>
               <div class="n-footer__copyright">
                 <a target="_self" class="n-footer__copyright-link" href="javascript:netapp_mailto()">Email your feedback</a>
+              </div>
+              <div class="n-footer__copyright">
+                <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright-link">Announcements</a>
               </div>
             </div>
           </div>

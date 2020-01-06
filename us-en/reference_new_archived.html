@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Performing a granular-level restore | NetApp Cloud Docs</title>
+  <title>New features and updates - Archived | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content="Performing a granular-level restore | NetApp Cloud Docs" />
+  <meta property="og:title" content="New features and updates - Archived | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/task_performing_granular_level_restore.html" />
-	<meta property="og:description" content="You can use SaaS Backup for Office 365 to perform high-level and granular level restores for Microsoft Office 365." />
-  <meta property="og:image" content="https://docs.netapp.com/saasbackupO365/images/logo-tophat-social.png" />
+	<meta property="og:url" content="https://docs.netapp.com/saasbackupO365/us-en/reference_new_archived.html" />
+	<meta property="og:description" content="SaaS Backup for Office 365 regularly introduces a new release to bring you new features, enhancements, and bug fixes." />
+  <meta property="og:image" content="https://docs.netapp.com/saasbackupO365/us-en/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -17,17 +17,17 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="You can use SaaS Backup for Office 365 to perform high-level and granular level restores for Microsoft Office 365.">
-  <meta name="keywords" content=" netapp, saas restores, office 365, high-level restores, granular restores, Microsoft Exchange Online, Microsoft OneDrive for Business, Microsoft SharePoint Online, archive, archive, shared, mailboxes">
+  <meta name="description" content="SaaS Backup for Office 365 regularly introduces a new release to bring you new features, enhancements, and bug fixes.">
+  <meta name="keywords" content=" what's new, features, new, release notes, enhancements">
   
   
 
   <!-- Icons -->
-  <link rel="icon" href="/saasbackupO365/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/saasbackupO365/us-en/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed -->
   
-  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/saasbackupO365/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/saasbackupO365/us-en/feed.xml">
   
 
   <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -36,23 +36,23 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
   <!-- LUCI CSS Content -->
-  <link rel="stylesheet" href="/saasbackupO365/common/css/esb.min.css">
-  <link rel="stylesheet" href="/saasbackupO365/common/css/netapp-library.min.css">
-  <link rel="stylesheet" href="/saasbackupO365/common/css/doc.css">
-  <link rel="stylesheet" href="/saasbackupO365/common/css/doc-components.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/common/css/esb.min.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/common/css/netapp-library.min.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/common/css/doc.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/common/css/doc-components.css">
 
-  <link rel="stylesheet" href='/saasbackupO365/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/saasbackupO365/css/na-search.css' type='text/css'>
-  <link rel='stylesheet' href='/saasbackupO365/css/clouddocs.css' type='text/css'>
+  <link rel="stylesheet" href='/saasbackupO365/us-en/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/na-search.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/clouddocs.css' type='text/css'>
 
   <!-- Font awesome seems to affect our GitHub Icon and generic "arrow box" for external links. -->
-  <link rel="stylesheet" type="text/css" href="/saasbackupO365/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="/saasbackupO365/css/customstyles.css"> -->
+  <link rel="stylesheet" type="text/css" href="/saasbackupO365/us-en/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/saasbackupO365/us-en/css/customstyles.css"> -->
   <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/saasbackupO365/css/boxshadowproperties.css">
+  <link rel="stylesheet" href="/saasbackupO365/us-en/css/boxshadowproperties.css">
 
   <!-- NetApp CSS controls the technical content -->
-  <link rel='stylesheet' href='/saasbackupO365/css/netapp.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/netapp.css' type='text/css'>
 
   
 
@@ -61,42 +61,49 @@
   <!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
   
-    <script src='/saasbackupO365/js/na-search.js'></script>
+    <script src='/saasbackupO365/us-en/js/na-search.js'></script>
   
 
   
-  <link rel='stylesheet' href='/saasbackupO365/css/na-pagenav.css' type='text/css' id="pagenav-css">
-  <script src='/saasbackupO365/js/na-pagenav.js'></script>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/na-pagenav.css' type='text/css' id="pagenav-css">
+  <script src='/saasbackupO365/us-en/js/na-pagenav.js'></script>
   
 
-  <link rel='stylesheet' href='/saasbackupO365/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/saasbackupO365/css/prism-netapp.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/saasbackupO365/us-en/css/prism-netapp.css' type='text/css'>
 
-  <script src='/saasbackupO365/js/clouddocs.js'></script>
-  <script src='/saasbackupO365/js/s_code_impl.js'></script>
-  <script src='/saasbackupO365/js/jquery.navgoco.min.js'></script>
+  <script src='/saasbackupO365/us-en/js/clouddocs.js'></script>
+  <script src='/saasbackupO365/us-en/js/s_code_impl.js'></script>
+  <script src='/saasbackupO365/us-en/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src='/saasbackupO365/js/toc.js'></script>
-  <script src='/saasbackupO365/js/customscripts.js'></script>
+  <script src='/saasbackupO365/us-en/js/toc.js'></script>
+  <script src='/saasbackupO365/us-en/js/customscripts.js'></script>
 
   <script>
       $(document).ready(function() {
-          // Initialize navgoco with default options
-          $("#mysidebar").navgoco({
-              caretHtml: '',
-              accordion: true,
-              openClass: 'active', // open
-              save: false, // leave false or nav highlighting doesn't work right
-              cookie: {
-                  name: 'navgoco',
-                  expires: false,
-                  path: '/'
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
               },
-              slide: {
-                  duration: 400,
-                  easing: 'swing'
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
               }
-          });
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
 
           $("#collapseAll").click(function(e) {
               e.preventDefault();
@@ -198,7 +205,7 @@
       <div class="n-property-bar__menu-toggle">
         <a href="#" class="n-property-bar__menu-toggle-link"><span class="n-property-bar__menu-toggle-text">Menu</span><svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
           <title>bars</title>
-          <use xlink:href="/saasbackupO365/common/svg/sprite.svg#bars"></use>
+          <use xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#bars"></use>
         </svg></a>
       </div>
       <div class="n-property-bar__property-mark n-property-bar__property-mark--has-property-name">
@@ -206,11 +213,11 @@
           <div class="n-property-bar__logo">
             <svg class="n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
               <title>netapp-mark</title>
-              <use xlink:href="/saasbackupO365/common/svg/sprite.svg#netapp-mark"></use>
+              <use xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#netapp-mark"></use>
             </svg>
             <svg class="n-property-bar__logo-svg" aria-labelledby="title">
               <title>NetApp</title>
-              <use xlink:href="/saasbackupO365/common/svg/sprite.svg#netapp-logo"></use>
+              <use xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#netapp-logo"></use>
             </svg>
           </div>
           <h2 class="n-property-bar__property-name">Cloud Docs</h2>
@@ -231,7 +238,7 @@
                 <span class="ie-i18n-lang">English</span>
                 <svg class="ie-i18n-icon-container" class="n-property-bar__logo-svg" aria-labelledby="title">
                   <title>globe</title>
-                  <use xlink:href="/saasbackupO365/common/svg/sprite.svg#globe" class="n-icon-globe n-globe__icon"></use>
+                  <use xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#globe" class="n-icon-globe n-globe__icon"></use>
                 </svg>
               </a>
             </li>
@@ -549,6 +556,10 @@
   
 
   
+    <li><a href="task_enabling_onenote_backups.html">Enabling backups for OneNote</a></li>
+  
+
+  
     <li><a href="task_updating_backup_settings.html">Updating backup settings</a></li>
   
 
@@ -573,11 +584,35 @@
   
 
   
-    <li class="active"><a href="task_performing_granular_level_restore.html">Performing a granular-level restore</a></li>
+    <!-- Check Container -->
+    <li class="subfolders">
+      <a href="#">Performing a granular-level restore</a>
+      <ul>
+        
+
+  
+    <li><a href="task_performing_granular_level_restore_exchange.html">For Exchange</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_sharepoint.html">For SharePoint</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_onedrive.html">For OneDrive</a></li>
+  
+
+
+      </ul>
+    </li>
   
 
   
     <li><a href="task_restoring_from_previous_backup.html">Restoring from a previous backup</a></li>
+  
+
+  
+    <li><a href="task_viewing_restore_file_locations.html">Finding restored files</a></li>
   
 
 
@@ -766,6 +801,10 @@
   
 
   
+    <li><a href="task_viewing_deprovisioned.html">Viewing deprovisioned items</a></li>
+  
+
+  
     <li><a href="task_downloading_data.html">Downloading data</a></li>
   
 
@@ -801,11 +840,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Performing a granular-level restore
+  <h1 class="n-doc__component-detail-heading">New features and updates - Archived
     <span>
       
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/task_performing_granular_level_restore.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[Performing a granular-level restore](https://docs.netapp.com/us-en/saasbackupO365/task_performing_granular_level_restore.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/blob/master/reference_new_archive.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/saasbackupO365/issues/new?body=Page%3A%20[New features and updates - Archived](https://docs.netapp.com/us-en/saasbackupO365/reference_new_archived.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -813,7 +852,7 @@
 
 <p class="page-details">
 
-<time datetime="2019-08-06 19:32:02 +0000">08/06/2019</time>
+<time datetime="2019-12-13 20:17:50 +0000">12/13/2019</time>
 
 
 <span>Contributors
@@ -833,425 +872,158 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>By default, only the most recent backup is available for restore.  You can update your backup settings to maintain a specified number of backed-up versions of individual files.  If you have more versions of a file than you have specified for backup, only the number of versions that you have specified is available for restore.</p>
+<p>The following is an archived list of new features added to SaaS Backup for Office 368.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="for-microsoft-exchange-online">For Microsoft Exchange Online</h2>
+<h2 id="december-2018">December 2018</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Within Microsoft Exchange Online, you can restore granular-level items for a single user, such as individual emails, tasks, contacts, and calendar events. You can also restore granular-level items for a Microsoft Office 365 group mailbox.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>From the Dashboard, click the number above <strong>PROTECTED</strong> in the Exchange box.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/number_protected_exchange.gif" alt="screen shot of number of protected instances in Exchange"></span></p>
-</div>
-</li>
-<li>
-<p>Select your restore option.</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>For shared mailboxes, click the <strong>SHARED</strong> tab.</p>
-</li>
-<li>
-<p>For archive mailboxes, click the <strong>ARCHIVE</strong> tab.</p>
-</li>
-<li>
-<p>For regular mailboxes, remain on the <strong>USER</strong> tab.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Click the mailbox for which you need to perform the granular-level restore.</p>
-</li>
-<li>
-<p>Restore an entire Microsoft Office Exchange category or restore a specific item within a category.<br>
-For a Microsoft Office 365 Group mailbox, you only have the option to restore from the mail category or the calendar category.</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>To restore an entire category:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Select the category that you need to restore.</p>
-</li>
-<li>
-<p>Click <span class="image"><img src="./media/restore.gif" alt="image of restore button"></span></p>
-</li>
-<li>
-<p>Select a restore option.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Restore to the same mailbox<br>
-If you restore to the same mailbox, by default, a restore folder with the current date and time stamp is created in the original content location containing the backup copy. If you select <strong>Replace the existing content</strong>, then your current data is completely replaced by the backup.</p>
-<div class="paragraph">
-<p>For Microsoft Office 365 Groups, you only have the option to restore to the same mailbox and you cannot replace the existing content.  For Microsoft Exchange Online, you can restore to the same mailbox and replace the existing content or you can restore to another mailbox.</p>
-</div>
-</li>
-<li>
-<p>For Microsoft Exchange only: Restore to another mailbox</p>
-<div class="paragraph">
-<p>If you restore to another mailbox, you must enter the destination mailbox in the search field.  You can type in a portion of the destination email address in the search field to initiate an automatic search for matching destination mailboxes.</p>
-</div>
-</li>
-<li>
-<p>For Microsoft Exchange only:  Export to PST</p>
-<div class="paragraph">
-<p>You can select to include all the category subfolders.</p>
-</div>
-<div class="paragraph">
-<p>If you export to PST, you will receive a notification email with the location of the PST file when the export is completed.</p>
-</div>
-<div class="paragraph">
-<p>Note: This option is not available for Microsoft Office 365 Groups.</p>
-</div>
-</li>
-<li>
-<p>For Office 365 groups only:  Export</p>
-<div class="paragraph">
-<p>If you export, a PST file is created with your Microsoft Exchange files and a .zip file is created is your Microsoft SharePoint sites.  You will receive a notification email containing the location of the PST file and an authenticated URL to the location of the .zip file.</p>
-</div>
+<p>SaaS Backup for Office 365 can now be purchased through the AppDirect Marketplace and the CANCOM Marketplace.</p>
 </li>
 </ul>
-</div>
-</li>
-<li>
-<p>Click <strong>Confirm</strong>.</p>
-</li>
-<li>
-<p>Click <strong>View the job progress</strong> to monitor the progress of the restore.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>To restore one or more specific items:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Click the category (Mail, Tasks, Contacts, or Other) of the single items that you want to restore.</p>
-</li>
-<li>
-<p>Select the items that you want to restore.</p>
-<div class="paragraph">
-<p>For mail, you can restore an entire folder or specific emails within the folder.  To restore the entire folder, you select the folder.  To restore individual emails, you select the folder containing the email, and then select the individual emails within the folder.</p>
-</div>
-</li>
-<li>
-<p>Click <span class="image"><img src="./media/restore.gif" alt="image of restore button"></span></p>
-</li>
-<li>
-<p>Select a restore option:<br>
-For Microsoft Office 365 Groups, you only have the option to restore to the same mailbox and you cannot replace the existing content. For Microsoft Exchange Online, you can restore to the same mailbox and replace the existing content or you can restore to a another mailbox.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Restore to the same mailbox<br>
-If you restore to the same mailbox, by default, a restore folder with the current date and time stamp is created in the original content location containing the backup copy. If you select <strong>Replace the existing content</strong>, then your current data is completely replaced by the backup.</p>
-</li>
-<li>
-<p>Export to PST</p>
-<div class="paragraph">
-<p>You can select to include all the category subfolders.</p>
-</div>
-<div class="paragraph">
-<p>If you export to PST, you will receive a notification email containing the location of the PST file when the export is completed. Note: This option is not available for Microsoft Office 365 Groups.</p>
-</div>
-</li>
-<li>
-<p>Restore to another mailbox</p>
-<div class="paragraph">
-<p>If you restore to a another mailbox, you must enter the destination mailbox in the search field.  You can type in a portion of the destination email address in the search field to initiate an automatic search for matching destination mailboxes.</p>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Click <strong>Confirm</strong>.</p>
-<div class="paragraph">
-<p>A message is displayed indicating that the restore job was created.</p>
-</div>
-</li>
-<li>
-<p>Click <strong>View the job progress</strong> to monitor the progress of the restore.</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="for-microsoft-onedrive-for-business">For Microsoft OneDrive for Business</h2>
+<h2 id="august-2018">August 2018</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Within Microsoft OneDrive for Business, you can restore granular-level items, such as individual folders or files, for a list or library.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>From the Dashboard, click the number above <strong>PROTECTED</strong> in the OneDrive box.</p>
-</li>
-<li>
-<p>Click the MySite for which you need to perform the granular-level restore.</p>
-</li>
-<li>
-<p>Restore a group of files or individual files.</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>To restore a group of files:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Select the group of files.</p>
-</li>
-<li>
-<p>Click <strong>Restore</strong>.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/restore.gif" alt="image of restore button"></span></p>
-</div>
-</li>
-<li>
-<p>Select a restore option:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Restore to the same MySite</p>
+<p>The user interface has been redesigned for improved user experience and efficiency.</p>
 </li>
 <li>
-<p>Restore to a different MySite</p>
-<div class="paragraph">
-<p>If you restore to a different MySite, you must enter the destination MySite in the search field.  You can type in a portion of the destination MySite in the search field to initiate an automatic search for matching destination MySites.</p>
-</div>
-</li>
-<li>
-<p>Export</p>
-<div class="paragraph">
-<p>Note: This option is not available for the restore of individual files.  It is available at the folder level.  If you select to export a folder, an option appears to include subfolders, if desired.</p>
-</div>
-<div class="paragraph">
-<p>If you export, a PST file is created with your Microsoft Exchange files and a .zip file is created with your Microsoft SharePoint sites.  You will receive a notification email containing the location of the PST file and an authenticated URL to the location of the .zip file.</p>
-</div>
+<p>Data retention polices have been updated to allow data to be retained for 3 years.<br>
+<a href="concept_backup_policies.html#backup_policies">Backup policies</a></p>
 </li>
 </ul>
-</div>
-</li>
-<li>
-<p>Click <strong>Confirm</strong>.</p>
-</li>
-<li>
-<p>Click <strong>View the job progress</strong> to monitor the progress of the restore.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>To restore one or more individual file:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Click the file group.</p>
-</li>
-<li>
-<p>Select the files that you want to restore.</p>
-<div class="paragraph">
-<p>You can restore an entire folder, or specific files within the folder.  To restore an entire folder, you select the folder. To restore a specific file, you select the folder containing the file, and then select the individual file within the folder.</p>
-</div>
-</li>
-<li>
-<p>Click Restore.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/restore.gif" alt="image of restore button"></span></p>
-</div>
-</li>
-<li>
-<p>Select a restore option.<br>
-You can choose one of the following restore options:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Restore to the same MySite<br>
-If you are restoring individual files to the same MySite, by default, a restore folder with the current date and time stamp is created in the original content location containing the backup copy.  If you select <strong>Replace the existing content</strong>, then your current data is completely replaced by the backup.</p>
-</li>
-<li>
-<p>Restore to another MySite</p>
-<div class="paragraph">
-<p>If you restore to another MySite, you must enter the destination MySite in the search field.  You can type in a portion of the destination MySite in the search field to initiate an automatic search for matching destination MySites.</p>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Click <strong>Confirm</strong>.</p>
-<div class="paragraph">
-<p>A message is displayed indicating that the restore job was created.</p>
-</div>
-</li>
-<li>
-<p>Click <strong>View the job progress</strong> to monitor the progress of the restore.</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="for-microsoft-sharepoint-online">For Microsoft SharePoint Online</h2>
+<h2 id="may-2018">May 2018</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp Cloud Control has been renamed to NetApp SaaS Backup for Office 365.</p>
+</li>
+<li>
+<p>You can now purge users, site collections, and Office 365 groups, completely removing all associated data from SaaS Backup for Office 365.<br>
+<a href="task_purging.html#purging-a-user-site-collection-or-office-365-group">Purging a user, site collection, or Office 365 group</a></p>
+</li>
+<li>
+<p>SaaS Backup now discovers both public and private groups for Office 365 groups.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="april-2018">April 2018</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>SaaS Backup for Office 365 now supports shared mailboxes for Microsoft Office Exchange Online.</p>
+<div class="paragraph">
+<p>Shared mailboxes are discovered through the use of an automatically created service account.  If you have not activated service for Microsoft Office Exchange Online prior to this update, the automatic service account for shared mailboxes is created by SaaS Backup when you activate Microsoft Office Exchange Online. If your service for Microsoft Office Exchange Online is already activated, you must grant SaaS Backup permission to create the automatic service account, so that your shared mailboxes can be discovered and backed up.  <a href="task_granting_permissions_to_enable_shared_mailboxes.html#granting-permissions-to-enable-shared-mailboxes">Granting permissions to enable shared mailboxes</a></p>
+</div>
+<div class="paragraph">
+<p>After your automatic service account is created, your shared mailboxes will be automatically discovered during the next scheduled synchronization of your user account.  If you want your shared mailboxes discovered immediately, you can <a href="task_discovering_new.html#sdiscovering-new-mailboxes-sites-and-groups">discover your user accounts immediately</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="march-2018">March 2018</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Within Microsoft SharePoint Online, you can restore granular-level items for a single user, such as individual folders or files. You can also restore granular-level items for a Microsoft Office 365 group site.</p>
+<p>The location in which you enter an activation code for a free trial was moved to the Add a Service Provider wizard:</p>
 </div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>From the Dashboard, click the number above <strong>PROTECTED</strong> in the SharePoint box.</p>
-</li>
-<li>
-<p>Click the site for which you need to perform the granular-level restore.</p>
-</li>
-<li>
-<p>Restore an entire Microsoft SharePoint Online content category or restore a specific content item.</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>To restore an entire content category:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Select the category that you need to restore.</p>
-</li>
-<li>
-<p>Click <span class="image"><img src="./media/restore.gif" alt="image of restore button"></span></p>
-</li>
-<li>
-<p>Select a restore option:<br>
-For Microsoft Office 365 Groups, you only have the option to restore to the same site.  For Microsoft SharePoint Online, you can restore to the same site or to another site.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/subscription_types_free_trial.jpg" alt="Screenshot that shows where you enter an activation code in the Subscription page when Free Trial is selected."></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="february-2018">February 2018</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Restore to the same site</p>
-<div class="paragraph">
-<p>If you restore to the same site, then by default, a restore folder with the current date and time stamp is created in the original file location containing the backup copy.  If you select the <strong>Overwrite with merge</strong> option, no restore folder is created.  If the version of the backup file and the current file match, the backup is restored to the original location.  Any new content in the destination is ignored and unaffected.  For example, if the backup contains File1 version5 and the destination contains File1 version 6, a restore with the <strong>Overwrite with Merge</strong> option selected fails.  If you select the <strong>Replace the existing content</strong> option, the current version of the data is completely replaced with the backup copy.</p>
-</div>
+<p>Filtering based on Template ID is now available for Microsoft SharePoint Online.<br>
+<a href="task_creating_user_defined_filter.html#creating-a-user-defined-filer">Creating a user defined filter</a></p>
 </li>
 <li>
-<p>Restore to another site</p>
-<div class="paragraph">
-<p>If you restore to another site, you must enter the destination site in the search field.  You can type a portion of the site in the search field to initiate an automatic search for matching sites.</p>
-</div>
+<p>You can now download the SaaS Backup for Office 365 user account activity log to a .csv file.<br>
+<a href="task_viewing_and_downloading_data.html#downloading-the-activity-log">Downloading the activity log</a></p>
 </li>
 <li>
-<p>Export</p>
-<div class="paragraph">
-<p>Note: This option is not available for the restore of individual files.  It is available at the folder level.  If you select to export a folder, an option appears to include subfolders, if desired.  If you export, a PST file is created with your Microsoft Exchange files and a .zip file is created with your Microsoft SharePoint sites.  You will receive a notification email containing the location of the PST file and an authenticated URL to the location of the .zip file.</p>
-</div>
+<p>Synchronization of user accounts, sites, and groups between SaaS Backup for Office 365 and your service is now enabled by default.</p>
+</li>
+<li>
+<p>Inclusion of backup version history is now enabled by default. The default number of versions is 20.<br>
+<a href="task_updating_backup_settings.html#updating-backup-settings">Updating Backup Settings</a></p>
 </li>
 </ul>
 </div>
-</li>
-<li>
-<p>Click <strong>Confirm</strong>.</p>
-<div class="paragraph">
-<p>A message is displayed indicating that the restore job was created.</p>
 </div>
-</li>
-<li>
-<p>Click <strong>View the job progress</strong> to monitor the progress of the restore.</p>
-</li>
-</ol>
 </div>
-</li>
-<li>
-<p>To restore to one or more specific content items:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Click the content category of the single items that you want to restore.</p>
-</li>
-<li>
-<p>Select the items that you want to restore:</p>
+<div class="sect1">
+<h2 id="january-2018">January 2018</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>If you want to restore the most recent version of the item, click <span class="image"><img src="./media/restore.gif" alt="image of restore button"></span>, and then select a restore option.</p>
-<div class="paragraph">
-<p>For Microsoft Office 365 Groups, you only have the option to restore to the same site. For Microsoft SharePoint Online, you can restore to the same site or to another site.</p>
+<p>The activity log now displays the name of the user ID associated with each action performed inside SaaS Backup for Office 365.</p>
+</li>
+<li>
+<p>You can now manually synchronize your user permissions with Azure Active Directory from within SaaS Backup for Office 365.</p>
+</li>
+<li>
+<p>Microsoft Exchange Online now supports export to PST for restore at the folder level.</p>
+</li>
+</ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="november-2017">November 2017</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Restore to the same site</p>
-<div class="paragraph">
-<p>If you restore to the same site, then by default, a restore folder with the current date and time stamp is created in the original file location containing the backup copy.  If you select the <strong>Overwrite with merge</strong> option, no restore folder is created.  If the version of the backup file and the current file match, the backup is restored to the original location.  Any new content in the destination is ignored and unaffected.  For example, if the backup contains File1 version5 and the destination contains File1 version 6, a restore with the <strong>Overwrite with Merge</strong> option selected fails.  If you select the <strong>Replace the existing content</strong> option, the current version of the data is completely replaced with the backup copy.</p>
-</div>
+<p>SaaS Backup for Office 365 now supports Azure Blob as an option for SaaS Backup provided storage.</p>
 </li>
 <li>
-<p>Restore to another site</p>
-<div class="paragraph">
-<p>If you restore to another site, you must enter the destination site in the search field.  You can type a portion of the site in the search field to initiate an automatic search for matching sites.</p>
-</div>
+<p>SaaS Backup for Office 365 now supports Microsoft Office 365 Groups for backup and restore.<br>
+Microsoft Exchange Online or Microsoft SharePoint Online must be activated before you can activate Microsoft Office 365 Groups. Microsoft Office 365 Groups can only be protected by the tier 3 backup policy.</p>
+</li>
+<li>
+<p>Microsoft Exchange Online now supports export to PST for restore at the mailbox level.</p>
 </li>
 </ul>
 </div>
-</li>
-</ul>
 </div>
-</li>
-<li>
-<p>If you want to restore a previous version of the item, click <strong>Show versions</strong>.</p>
+</div>
+<div class="sect1">
+<h2 id="october-2017">October 2017</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Select the version that you want to restore.</p>
-</li>
-<li>
-<p>Click <span class="image"><img src="./media/restore.gif" alt="image of restore button"></span></p>
-<div class="paragraph">
-<p>You can restore to the same site or to a different site.  If you restore to another site, you must enter the destination site in the search field.  You can type a portion of the site in the search field to initiate an automatic search for matching sites.</p>
-</div>
+<p>Rules can be created that allow you to automatically move users to a preselected backup tier based on predefined criteria.<br>
+You can create rules for Microsoft Exchange Online and Microsoft OneDrive for Business.  You cannot create rules for Microsoft SharePoint Online.<br>
+<a href="task_creating_rules.html#creating-rules">Creating Rules</a></p>
 </li>
 </ul>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Click <strong>Confirm</strong>.</p>
-<div class="paragraph">
-<p>A message is displayed indicating that the restore job was created.</p>
-</div>
-</li>
-<li>
-<p>Click <strong>View the job progress</strong> to monitor the progress of the restore.</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
 </div>
 </div>
 </div>
@@ -1282,7 +1054,7 @@ For Microsoft Office 365 Groups, you only have the option to restore to the same
           <div class="n-container">
             <div class="n-footer__bottom-left">
               <div class="n-footer__copyright">
-                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2019 NetApp, Inc.</a>
+                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2020 NetApp, Inc.</a>
               </div>
               <div class="n-footer__copyright">
                 <a href="//www.netapp.com/us/legal/index.aspx" class="n-footer__copyright-link">Legal</a>
@@ -1294,7 +1066,7 @@ For Microsoft Office 365 Groups, you only have the option to restore to the same
                       <span class="n-footer__social-link-text">blog</span>
                       <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
                         <title>blog@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/common/svg/sprite.svg#blog"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#blog"></use>
                       </svg>
                     </a>
                   </li>
@@ -1303,7 +1075,7 @@ For Microsoft Office 365 Groups, you only have the option to restore to the same
                       <span class="n-footer__social-link-text">community</span>
                       <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                         <title>community@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/common/svg/sprite.svg#comments"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#comments"></use>
                       </svg>
                     </a>
                   </li>
@@ -1313,7 +1085,7 @@ For Microsoft Office 365 Groups, you only have the option to restore to the same
                       <span class="n-footer__social-link-text">twitter</span>
                       <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                         <title>twitter@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/common/svg/sprite.svg#twitter"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -1322,7 +1094,7 @@ For Microsoft Office 365 Groups, you only have the option to restore to the same
                       <span class="n-footer__social-link-text">youtube</span>
                       <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
                         <title>youtube@</title>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/common/svg/sprite.svg#youtube"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/saasbackupO365/us-en/common/svg/sprite.svg#youtube"></use>
                       </svg>
                     </a>
                   </li>
@@ -1336,6 +1108,9 @@ For Microsoft Office 365 Groups, you only have the option to restore to the same
               <div class="n-footer__copyright">
                 <a target="_self" class="n-footer__copyright-link" href="javascript:netapp_mailto()">Email your feedback</a>
               </div>
+              <div class="n-footer__copyright">
+                <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright-link">Announcements</a>
+              </div>
             </div>
           </div>
         </div>
@@ -1343,15 +1118,15 @@ For Microsoft Office 365 Groups, you only have the option to restore to the same
 
     </div>
 
-    <script src="/saasbackupO365/common/js/components.js"></script>
-    <script src="/saasbackupO365/common/js/doc-components.js"></script>
+    <script src="/saasbackupO365/us-en/common/js/components.js"></script>
+    <script src="/saasbackupO365/us-en/common/js/doc-components.js"></script>
 
     <!-- Elasticsearch JS -->
-    <script type="text/javascript" src='/saasbackupO365/js/bundle.js'></script>
+    <script type="text/javascript" src='/saasbackupO365/us-en/js/bundle.js'></script>
 
     <!-- Syntax Highlighting -->
-    <script type="text/javascript" src='/saasbackupO365/js/prism.js'></script>
-    <script type="text/javascript" src='/saasbackupO365/js/prism-curl.js'></script>
+    <script type="text/javascript" src='/saasbackupO365/us-en/js/prism.js'></script>
+    <script type="text/javascript" src='/saasbackupO365/us-en/js/prism-curl.js'></script>
 
   </body>
 
