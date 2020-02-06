@@ -22,7 +22,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/concept_backup_settings.html</loc>
       
-      <lastmod>2019-12-19T19:29:15+00:00</lastmod>
+      <lastmod>2020-02-06T15:29:36+00:00</lastmod>
       
     </url>
   
@@ -92,7 +92,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/reference_free_trial_data.html</loc>
       
-      <lastmod>2019-08-19T14:16:54+00:00</lastmod>
+      <lastmod>2020-02-06T15:29:36+00:00</lastmod>
       
     </url>
   
@@ -120,21 +120,21 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/reference_new_saasbackupO365.html</loc>
       
-      <lastmod>2020-01-06T16:14:44+00:00</lastmod>
+      <lastmod>2020-02-06T15:29:36+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365//search.html</loc>
       
-      <lastmod>2020-01-30T17:35:22+00:00</lastmod>
+      <lastmod>2020-02-06T15:51:59+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_activate_support.html</loc>
       
-      <lastmod>2020-01-30T14:35:11+00:00</lastmod>
+      <lastmod>2020-02-06T15:44:05+00:00</lastmod>
       
     </url>
   
@@ -218,7 +218,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_configuring_impersonation.html</loc>
       
-      <lastmod>2019-08-06T19:32:02+00:00</lastmod>
+      <lastmod>2020-02-06T15:29:36+00:00</lastmod>
       
     </url>
   
@@ -463,7 +463,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_viewing_deprovisioned.html</loc>
       
-      <lastmod>2019-12-13T19:20:23+00:00</lastmod>
+      <lastmod>2020-02-06T15:16:14+00:00</lastmod>
       
     </url>
   
@@ -471,6 +471,13 @@
       <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_viewing_history_and_activity.html</loc>
       
       <lastmod>2019-08-06T19:32:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/saasbackupO365/task_viewing_purged.html</loc>
+      
+      <lastmod>2020-02-06T15:10:24+00:00</lastmod>
       
     </url>
   
