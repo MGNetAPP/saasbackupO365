@@ -882,8 +882,11 @@
   <!-- Sidebar Column -->
   
   <div class="col-md-3" >
-    
       
+
+
+
+
 
 <ul id="mysidebar" class="nav">
   
@@ -901,6 +904,10 @@
 
   
     <li><a href="reference_new_saasbackupO365.html">What's new</a></li>
+  
+
+  
+    <li><a href="reference_new_archived.html">What's new archive</a></li>
   
 
   
@@ -1143,6 +1150,10 @@
 
   
     <li><a href="task_performing_granular_level_restore_onedrive.html">For OneDrive</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_teams.html">For TeamsChat</a></li>
   
 
 
@@ -1394,11 +1405,18 @@
 
 <p class="page-details">
 
-<time datetime="2019-08-06 19:32:02 +0000">08/06/2019</time>
-
+<time datetime="2020-04-06 14:25:14 +0000">04/06/2020</time>
 
 
 <span>Contributors
+  
+  <a target="_blank" href="https://github.com/netapp-rlithman">
+    <img  class="avatar avatar-small"
+          alt="netapp-rlithman"
+          width="20" height="20"
+          src="https://avatars2.githubusercontent.com/u/54725121?v=4"
+          style="border-radius: 50%;"/>
+  </a>
   
   <a target="_blank" href="https://github.com/netapp-aherbin">
     <img  class="avatar avatar-small"
@@ -1409,6 +1427,8 @@
   </a>
   
 </span>
+
+
 
 </p>
 
@@ -1424,7 +1444,11 @@
 <li>
 <p>Select your backup option.</p>
 <div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<ol class="loweralpha">
+<li>
+<p>For Exchange</p>
+<div class="ulist">
+<ul>
 <li>
 <p>If you are backing up shared mailboxes, click the <strong>SHARED</strong> tab.</p>
 </li>
@@ -1433,6 +1457,66 @@
 </li>
 <li>
 <p>If you are backing up regular mailboxes, remain on the <strong>USER</strong> tab.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>For SharePoint</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If you are backing up sites, remain on the <strong>SITES</strong> tab.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>For OneDrive</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If you are backing up users, remain on the <strong>USER</strong> tab.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>For Office 365 groups</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If you are backing up groups, remain on the <strong>GROUPS</strong> tab.</p>
+</li>
+<li>
+<p>If you are backing up teams, click the <strong>TEAMS</strong> tab.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+TeamsChat messages are only backed up if TeamsChat is enabled under settings. Contact <a href="https://mysupport.netapp.com/">Support</a> to enable this feature.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Due to API limitations, SaaS backup cannot differentiate between public and private channels.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
 </li>
 </ol>
 </div>

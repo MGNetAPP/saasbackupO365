@@ -882,8 +882,11 @@
   <!-- Sidebar Column -->
   
   <div class="col-md-3" >
-    
       
+
+
+
+
 
 <ul id="mysidebar" class="nav">
   
@@ -901,6 +904,10 @@
 
   
     <li><a href="reference_new_saasbackupO365.html">What's new</a></li>
+  
+
+  
+    <li><a href="reference_new_archived.html">What's new archive</a></li>
   
 
   
@@ -1143,6 +1150,10 @@
 
   
     <li><a href="task_performing_granular_level_restore_onedrive.html">For OneDrive</a></li>
+  
+
+  
+    <li><a href="task_performing_granular_level_restore_teams.html">For TeamsChat</a></li>
   
 
 
@@ -1394,11 +1405,18 @@
 
 <p class="page-details">
 
-<time datetime="2019-08-06 19:32:02 +0000">08/06/2019</time>
-
+<time datetime="2020-04-06 19:11:26 +0000">04/06/2020</time>
 
 
 <span>Contributors
+  
+  <a target="_blank" href="https://github.com/netapp-rlithman">
+    <img  class="avatar avatar-small"
+          alt="netapp-rlithman"
+          width="20" height="20"
+          src="https://avatars2.githubusercontent.com/u/54725121?v=4"
+          style="border-radius: 50%;"/>
+  </a>
   
   <a target="_blank" href="https://github.com/netapp-aherbin">
     <img  class="avatar avatar-small"
@@ -1409,6 +1427,8 @@
   </a>
   
 </span>
+
+
 
 </p>
 
@@ -1483,7 +1503,25 @@ If you restore to another mailbox, you must enter the destination mailbox in the
 </li>
 <li>
 <p>Export<br>
-If you export, a PST file is created with your Microsoft Exchange files and a .zip file is created with your Microsoft SharePoint sites.  You will receive a notification email containing the location of the PST file and an authenticated URL to the location of the .zip file.</p>
+If you export, a PST file is created with your Microsoft Exchange files and a .zip file is created with your Microsoft SharePoint sites. You will receive a notification email containing the location of the PST file and an authenticated URL to the location of the .zip file.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If you are restoring teams under <strong>Microsoft Office 365 Groups</strong> select one of the following options:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Restore to the same team</p>
+</li>
+<li>
+<p>Restore to another team<br>
+This is ideal for situations where a team is deleted from Microsoft Office 365. You should create a new team to use this restore option. If you have recently created a new team in MS Teams, discover it by syncing the service. Go to <strong>Services Settings</strong> on the left. Click <strong>Office 365</strong>. Under <strong>Manage Services</strong>, click <strong>Sync Now</strong> for Microsoft Office 365 Groups.</p>
+</li>
+<li>
+<p>Export data<br>
+If you export data, you need to download it. Go to Reporting on the left menu. Find your export data job. Click on <strong>Total Folders</strong>. Then click <strong>Export Data Download Link</strong>. A zip file downloads. Open the zip file to extract the data.</p>
 </li>
 </ul>
 </div>
